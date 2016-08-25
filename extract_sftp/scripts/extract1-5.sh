@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #PBS -N extract1-4
-#PBS -o /panfs/panasas01/shared-godmc/job_report/extract1-4-output
-#PBS -e /panfs/panasas01/shared-godmc/job_report/extract1-4-error
+#PBS -o /panfs/panasas01/shared-godmc/job_report/extract1-5-output
+#PBS -e /panfs/panasas01/shared-godmc/job_report/extract1-5-error
 #PBS -l walltime=12:00:00
-#PBS -t 15
+#PBS -t 3
 #PBS -l nodes=1:ppn=8
 #PBS -S /bin/bash
 

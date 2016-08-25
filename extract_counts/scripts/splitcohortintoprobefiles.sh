@@ -28,7 +28,7 @@ echo $user
 echo $cohort
 
 #copy positive control
-cp /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/04/positive_control_pcadjusted_cg07959070_qqplot.png /panfs/panasas01/shared-godmc/methQTL_poscon/$user\_$cohort.positive_control_pcadjusted_cg07959070_qqplot.png
+#cp /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/04/positive_control_pcadjusted_cg07959070_qqplot.png /panfs/panasas01/shared-godmc/methQTL_poscon/$user\_$cohort.positive_control_pcadjusted_cg07959070_qqplot.png
 
 
 #merge matrixQTL to AFs
@@ -46,11 +46,19 @@ perl /panfs/panasas01/shared-godmc/scripts/join_file.pl -i "${user}_${cohort}.gw
 awk -F'\t' '{ if(NR>1) print $0; else print "POS","CpG","ID","BETA","SE","P","CHR","SNP","EA","NEA","EAF","N";}' OFS='\t'<${user}\_${cohort}.gwama.formatted.txt2 | sed 's/\:SNP//1'|sed 's/\:INDEL//1' |sed 's/[^:]*://1' >${user}\_${cohort}.gwama.formatted.txt3
 rm ${user}\_${cohort}.gwama.formatted.txt2
 
-cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg0007" "cg0008" "cg0009" "cg001" "cg002" "cg003" "cg004" "cg005" "cg006" "cg007" "cg008" "cg009" "cg01" "cg02" "cg03" "cg04" "cg05" "cg06" "cg07" "cg08" "cg09" "cg10" "cg11" "cg12" "cg13" "cg14" "cg15" "cg16" "cg17" "cg18" "cg19" "cg20" "cg21" "cg22" "cg23" "cg24" "cg25" "cg26" "cg27" "_ch")
+#cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg0007" "cg0008" "cg0009" "cg001" "cg002" "cg003" "cg004" "cg005" "cg006" "cg007" "cg008" "cg009" "cg01" "cg02" "cg03" "cg04" "cg05" "cg06" "cg07" "cg08" "cg09" "cg10" "cg11" "cg12" "cg13" "cg14" "cg15" "cg16" "cg17" "cg18" "cg19" "cg20" "cg21" "cg22" "cg23" "cg24" "cg25" "cg26" "cg27" "_ch")
+
+cpgs=("_ch")
 for j in ${cpgs[@]}; do
 echo $j
 grep $j ${user}_${cohort}.gwama.formatted.txt3 > ${user}_${cohort}.gwama.formatted.$j.txt
-grep $j ${user}\_${cohort}.probes > ${user}\_${cohort}.$j.probes
+
+k=$j
+if [ $k = "_ch" ]; then
+k="ch"
+fi
+
+grep $k ${user}\_${cohort}.probes > ${user}\_${cohort}.$j.probes
 done
 
 ls ${user}\_${cohort}.*.probes >probe.${user}\_${cohort}.files

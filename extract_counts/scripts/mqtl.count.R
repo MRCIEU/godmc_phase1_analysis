@@ -83,7 +83,7 @@ eqtl<-eqtl[which(eqtl$pvalue<as.numeric(pvals[p])),]
 
 eqtl.count[(s1+p),1]<-pvals[p]
 eqtl.count[(s1+p),2]<-as.character(table(eqtl$cis)[1])
-eqtl.count[(s1+p),3]<-as.character(table(eqtl$trans)[2])
+eqtl.count[(s1+p),3]<-as.character(table(eqtl$cis)[2])
 eqtl.count[(s1+p),4]<-length(unique(eqtl[eqtl$cis=="cis","snps"]))
 eqtl.count[(s1+p),5]<-length(unique(eqtl[eqtl$cis=="trans","snps"]))
 eqtl.count[(s1+p),6]<-length(unique(eqtl[eqtl$cis=="cis","gene"]))
@@ -95,8 +95,8 @@ probe.trans[[p]]<-unique(as.character(eqtl[eqtl$cis=="trans","gene"]))
 assoc.cis[[p]]<-unique(as.character(eqtl[eqtl$cis=="cis","assoc"]))
 assoc.trans[[p]]<-unique(as.character(eqtl[eqtl$cis=="trans","assoc"]))
 
-write.table(assoc.cis[[p]],paste("/panfs/panasas01/shared-godmc/counts/cis.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
-write.table(assoc.trans[[p]],paste("/panfs/panasas01/shared-godmc/counts/trans.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
+write.table(assoc.cis[[p]],paste("/panfs/panasas01/shared-godmc/counts/",users[k],"_",cohorts[k],"/cis.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
+write.table(assoc.trans[[p]],paste("/panfs/panasas01/shared-godmc/counts/",users[k],"_",cohorts[k],"/trans.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
 
 }
 
@@ -118,14 +118,14 @@ assoc.cis.all <- lapply(assoc.cis.all, unique)
 assoc.trans.all <- lapply(assoc.trans.all, unique)
 
 }
-write.table(eqtl.count,paste("/panfs/panasas01/shared-godmc/counts/mqtlcount.",users[k],"_",cohorts[k],".txt",sep=""),quote=F,row.names=F,col.names=T,sep="\t")
+write.table(eqtl.count,paste("/panfs/panasas01/shared-godmc/cohort_summary/mqtlcount.",users[k],"_",cohorts[k],".txt",sep=""),quote=F,row.names=F,col.names=T,sep="\t")
 
 #save(assoc.cis.all,file=paste("/panfs/panasas01/shared-godmc/counts/cis.assoc.",users[k],".Robj",sep=""))
 #save(assoc.trans.all,file=paste("/panfs/panasas01/shared-godmc/counts/trans.assoc.",users[k],".Robj",sep=""))
 
 ###
 
-eqtl.count<-read.table(paste("/panfs/panasas01/shared-godmc/counts/mqtlcount.",users[k],"_",cohorts[k],".txt",sep=""),header=T)
+eqtl.count<-read.table(paste("/panfs/panasas01/shared-godmc/cohort_summary/mqtlcount.",users[k],"_",cohorts[k],".txt",sep=""),header=T)
 eqtl.count<-data.frame(eqtl.count)
 for (i in 1:7){eqtl.count[,i]<-as.numeric(eqtl.count[,i])}
 
@@ -140,7 +140,7 @@ names(out)<-c("pval","cisassoc","transassoc","cisSNPs","transSNPs","cisCpGs","tr
 out$cisCpGs<-cis.probes
 out$transCpGs<-trans.probes
 
-write.table(out,paste("/panfs/panasas01/shared-godmc/counts/mqtlcount.",users[k],"_",cohorts[k],".summary.txt",sep=""),quote=F,row.names=F,col.names=T,sep="\t")
+write.table(out,paste("/panfs/panasas01/shared-godmc/cohort_summary/mqtlcount.",users[k],"_",cohorts[k],".summary.txt",sep=""),quote=F,row.names=F,col.names=T,sep="\t")
 }
 
 
