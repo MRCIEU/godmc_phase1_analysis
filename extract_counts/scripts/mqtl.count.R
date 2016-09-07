@@ -67,7 +67,7 @@ eqtl$cis<-ifelse(eqtl$cischr==1 & abs(eqtl$X2-eqtl$position)<1000000,"cis","tran
 #trans chr
 #eqtl$transchr<-ifelse(eqtl$cischr==0,"trans","cis")
 
-write.table(eqtl2,paste("/panfs/panasas01/shared-godmc/meta-analysis/inputfiles/",users[k],"_",cohorts[k],".",i,".gwama.formatted.txt",sep=""),sep="\t",quote=F,row.names=F,col.names=F)
+write.table(eqtl2,paste("/panfs/panasas01/shared-godmc/meta-analysis/inputfiles/",users[k],"_",cohorts[k],"/",users[k],"_",cohorts[k],".",i,".gwama.formatted.txt",sep=""),sep="\t",quote=F,row.names=F,col.names=F)
 
 probe.cis<-list()
 probe.trans<-list()

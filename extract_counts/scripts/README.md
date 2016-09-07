@@ -18,9 +18,8 @@
 - combines {cis/trans}.assoc.*.${user}_${cohort}.{pvaluethreshold}.txt to {cis/trans}.assoc.${user}_${cohort}.{pvaluethreshold}.txt
 - split files in j CpG subsets {cis/trans}.assoc.${user}\_${cohort}.{pvaluethreshold}.${j}.txt
 
-## splitcohortintoprobefiles.sh
-- merge ${user}_${cohort}.gwama.formatted.txt to /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/data.frq.gz and generate ${user}\_${cohort}.gwama.formatted.txt3 which now contains alleles and EAF
-- splits files in j CpG subsets ${user}_${cohort}.gwama.formatted.txt3 -> /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}_${cohort}.gwama.formatted.$j.txt which can be used for clumping, meta-analysis etc.
+- merge ${user}_${cohort}.gwama.formatted.txt to /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/data.frq.gz and generate ${user}\_${cohort}.gwama.formatted.txt which now contains POS,CpG,ID,BETA,SE,P,CHR,SNP,EA,NEA,EAF,N
+- splits files in j CpG subsets ${user}_${cohort}.gwama.formatted.txt -> /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}_${cohort}.gwama.formatted.$j.txt which can be used for clumping, meta-analysis etc.
 
 ## countscohortscombined.R
 - generates plots from  /panfs/panasas01/shared-godmc/cohort_summary/mqtlcount.{user}_{cohort}.summary.txt in /panfs/panasas01/shared-godmc/cohort_summary

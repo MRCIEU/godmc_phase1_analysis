@@ -36,9 +36,11 @@ echo $cohort
  
 cd /panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/extract_counts/scripts
 mkdir -p /panfs/panasas01/shared-godmc/counts/${user}_${cohort}
+mkdir -p /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}_${cohort}
 
 Rscript mqtl.count.R $user $cohort
 
+#74 subgroups
 pvals=("1e-05" "1e-06" "1e-07" "1e-08" "1e-09" "1e-10" "1e-11" "1e-12" "1e-13")
 cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg0007" "cg0008" "cg0009" "cg001" "cg002" "cg003" "cg004" "cg005" "cg006" "cg007" "cg008" "cg009" "cg01[0-4]" "cg01[5-9]" "cg02[0-4]" "cg02[5-9]" "cg03[0-4]" "cg03[5-9]" "cg04[0-4]" "cg04[5-9]" "cg05[0-4]" "cg05[5-9]" "cg06[0-4]" "cg06[5-9]" "cg07[0-4]" "cg07[5-9]" "cg08[0-4]" "cg08[5-9]" "cg09[0-4]" "cg09[5-9]" "cg10[0-4]" "cg10[5-9]" "cg11[0-4]" "cg11[5-9]" "cg12[0-4]" "cg12[5-9]" "cg13[0-4]" "cg13[5-9]" "cg14[0-4]" "cg14[5-9]" "cg15[0-4]" "cg15[5-9]" "cg16[0-4]" "cg16[5-9]" "cg17[0-4]" "cg17[5-9]" "cg18[0-4]" "cg18[5-9]" "cg19[0-4]" "cg19[5-9]" "cg20[0-4]" "cg20[5-9]" "cg21[0-4]" "cg21[5-9]" "cg22[0-4]" "cg22[5-9]" "cg23[0-4]" "cg23[5-9]" "cg24[0-4]" "cg24[5-9]" "cg25[0-4]" "cg25[5-9]" "cg26[0-4]" "cg26[5-9]" "cg27[0-4]" "cg27[5-9]" "_ch")
 
@@ -70,102 +72,55 @@ grep $j trans.assoc.${user}\_${cohort}.$i.txt > trans.assoc.${user}\_${cohort}.$
 done
 done
 
-#grep "cg0000[0-9]" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0000_0_9.txt
-#grep "cg0001" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0001.txt
-#grep "cg0002" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0002.txt
-#grep "cg0003" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0003.txt
-#grep "cg0004" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0004.txt
-#grep "cg0005" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0005.txt
-#grep "cg0006" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0006.txt
-#grep "cg0007" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0007.txt
-#grep "cg0008" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0008.txt
-#grep "cg0009" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg0009.txt
-#grep "cg001" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg001.txt
-#grep "cg002" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg002.txt
-#grep "cg003" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg003.txt
-#grep "cg004" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg004.txt
-#grep "cg005" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg005.txt
-#grep "cg006" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg006.txt
-#grep "cg007" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg007.txt
-#grep "cg008" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg008.txt
-#grep "cg009" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg009.txt
-#grep "cg01" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg01.txt
-#grep "cg02" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg02.txt
-#grep "cg03" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg03.txt
-#grep "cg04" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg04.txt
-#grep "cg05" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg05.txt
-#grep "cg06" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg06.txt
-#grep "cg07" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg07.txt
-#grep "cg08" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg08.txt
-#grep "cg09" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg09.txt
-#grep "cg10" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg10.txt
-#grep "cg11" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg11.txt
-#grep "cg12" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg12.txt
-#grep "cg13" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg13.txt
-#grep "cg14" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg14.txt
-#grep "cg15" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg15.txt
-#grep "cg16" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg16.txt
-#grep "cg17" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg17.txt
-#grep "cg18" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg18.txt
-#grep "cg19" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg19.txt
-#grep "cg20" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg20.txt
-#grep "cg21" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg21.txt
-#grep "cg22" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg22.txt
-#grep "cg23" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg23.txt
-#grep "cg24" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg24.txt
-#grep "cg25" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg25.txt
-#grep "cg26" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg26.txt
-#grep "cg27" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg27.txt
-#grep "ch" cis.assoc.${user}_${cohort}.$i.txt > cis.assoc.${user}_${cohort}.$i.cg28.txt
+#make files by probe rather than by SNPchunks
 
-#grep "cg0000[0-9]" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0000_0_9.txt
-#grep "cg0001" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0001.txt
-#grep "cg0002" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0002.txt
-#grep "cg0003" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0003.txt
-#grep "cg0004" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0004.txt
-#grep "cg0005" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0005.txt
-#grep "cg0006" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0006.txt
-#grep "cg0007" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0007.txt
-#grep "cg0008" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0008.txt
-#grep "cg0009" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg0009.txt
-#grep "cg001" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg001.txt
-#grep "cg002" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg002.txt
-#grep "cg003" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg003.txt
-#grep "cg004" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg004.txt
-#grep "cg005" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg005.txt
-#grep "cg006" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg006.txt
-#grep "cg007" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg007.txt
-#grep "cg008" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg008.txt
-#grep "cg009" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg009.txt
-#grep "cg01" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg01.txt
-#grep "cg02" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg02.txt
-#grep "cg03" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg03.txt
-#grep "cg04" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg04.txt
-#grep "cg05" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg05.txt
-#grep "cg06" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg06.txt
-#grep "cg07" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg07.txt
-#grep "cg08" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg08.txt
-#grep "cg09" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg09.txt
-#grep "cg10" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg10.txt
-#grep "cg11" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg11.txt
-#grep "cg12" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg12.txt
-#grep "cg13" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg13.txt
-#grep "cg14" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg14.txt
-#grep "cg15" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg15.txt
-#grep "cg16" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg16.txt
-#grep "cg17" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg17.txt
-#grep "cg18" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg18.txt
-#grep "cg19" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg19.txt
-#grep "cg20" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg20.txt
-#grep "cg21" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg21.txt
-#grep "cg22" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg22.txt
-#grep "cg23" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg23.txt
-#grep "cg24" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg24.txt
-#grep "cg25" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg25.txt
-#grep "cg26" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg26.txt
-#grep "cg27" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg27.txt
-#grep "ch" trans.assoc.${user}_${cohort}.$i.txt > trans.assoc.${user}_${cohort}.$i.cg28.txt
+cd /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}\_${cohort}
+echo SNP CpG ID BETA SE P |perl -pe 's/ /\t/g' >${user}\_${cohort}.gwama.formatted.txt
+cat ${user}\_${cohort}.*.gwama.formatted.txt >>${user}\_${cohort}.gwama.formatted.txt
+awk 'NR>1 {print $2}' <${user}\_${cohort}.gwama.formatted.txt |sort -u >${user}\_${cohort}.probes
+gzip ${user}\_${cohort}.*.gwama.formatted.txt
 
-#done
-#done
+#split -l $(( $( wc -l < ${user}\_${cohort}.probes ) / 50 + 1 )) ${user}\_${cohort}.probes probe.${user}\_${cohort}
+#ls probe.${user}\_${cohort}* >probe.${user}\_${cohort}.files
+zcat /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/data.frq.gz | sed -e 's/[[:space:]]\+/ /g' |perl -pe 's/^ //g'|perl -pe 's/ /\t/g'|awk -v OFS='\t' '{ if(NR>1) print $1,$2,$3,$4,$5,$6/2; else print $0;}'|perl -pe 's/A1/EA/g' |perl -pe 's/A2/NEA/g' |perl -pe 's/MAF/EAF/g'|perl -pe 's/NCHROBS/N/g' |perl -pe 's/ /\t/g'>$cohort.frq.tmp
+perl /panfs/panasas01/shared-godmc/scripts/join_file.pl -i "${user}_${cohort}.gwama.formatted.txt,TAB,0 $cohort.frq.tmp,TAB,1" -o ${user}_${cohort}.gwama.formatted.txt2 -a 1
+awk -F'\t' '{ if(NR>1) print $0; else print "POS","CpG","ID","BETA","SE","P","CHR","SNP","EA","NEA","EAF","N";}' OFS='\t'<${user}\_${cohort}.gwama.formatted.txt2 | sed 's/\:SNP//1'|sed 's/\:INDEL//1' |sed 's/[^:]*://1' >${user}\_${cohort}.gwama.formatted.txt3
+rm ${user}\_${cohort}.gwama.formatted.txt2
+
+mv ${user}\_${cohort}.gwama.formatted.txt3 ${user}\_${cohort}.gwama.formatted.txt 
+
+for j in ${cpgs[@]}; do
+echo $j
+grep $j ${user}_${cohort}.gwama.formatted.txt > ${user}_${cohort}.gwama.formatted.$j.txt
+
+k=$j
+if [ $k = "_ch" ]; then
+k="ch"
+fi
+
+grep $k ${user}\_${cohort}.probes > ${user}\_${cohort}.$j.probes
+done
+
+ls ${user}\_${cohort}.*.probes >probe.${user}\_${cohort}.files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
