@@ -1,6 +1,9 @@
 # Counting the number of hits at different thresholds (cis/trans)
 
 ## mqtl.count.R 
+
+Each PBS_ARRAYID is a cohort number in 
+
 ###INPUT
 - reads in i matrixqtl files
 

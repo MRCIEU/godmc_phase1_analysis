@@ -83,7 +83,7 @@ gzip ${user}\_${cohort}.*.gwama.formatted.txt
 #split -l $(( $( wc -l < ${user}\_${cohort}.probes ) / 50 + 1 )) ${user}\_${cohort}.probes probe.${user}\_${cohort}
 #ls probe.${user}\_${cohort}* >probe.${user}\_${cohort}.files
 zcat /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/data.frq.gz | sed -e 's/[[:space:]]\+/ /g' |perl -pe 's/^ //g'|perl -pe 's/ /\t/g'|awk -v OFS='\t' '{ if(NR>1) print $1,$2,$3,$4,$5,$6/2; else print $0;}'|perl -pe 's/A1/EA/g' |perl -pe 's/A2/NEA/g' |perl -pe 's/MAF/EAF/g'|perl -pe 's/NCHROBS/N/g' |perl -pe 's/ /\t/g'>$cohort.frq.tmp
-perl /panfs/panasas01/shared-godmc/scripts/join_file.pl -i "${user}_${cohort}.gwama.formatted.txt,TAB,0 $cohort.frq.tmp,TAB,1" -o ${user}_${cohort}.gwama.formatted.txt2 -a 1
+perl ~/repo/godmc_phase1_analysis/extract_counts/scripts/join_file.pl -i "${user}_${cohort}.gwama.formatted.txt,TAB,0 $cohort.frq.tmp,TAB,1" -o ${user}_${cohort}.gwama.formatted.txt2 -a 1
 awk -F'\t' '{ if(NR>1) print $0; else print "POS","CpG","ID","BETA","SE","P","CHR","SNP","EA","NEA","EAF","N";}' OFS='\t'<${user}\_${cohort}.gwama.formatted.txt2 | sed 's/\:SNP//1'|sed 's/\:INDEL//1' |sed 's/[^:]*://1' >${user}\_${cohort}.gwama.formatted.txt3
 rm ${user}\_${cohort}.gwama.formatted.txt2
 
