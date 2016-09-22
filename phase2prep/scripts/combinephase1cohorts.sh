@@ -118,8 +118,8 @@ touch counts.allcohorts.combined.$no.txt
 for i in ${pvals[@]}; do
 echo $i
 
-cis=`awk '$1=='$no' {print $0}' cis.${i}\_allcohorts.txt | grep -v chr23 |wc -l`
-trans=`awk '$1=='$no' {print $0}' trans.${i}\_allcohorts.txt |grep -v chr23 |wc -l`
+cis=`awk '$1=='$no' {print $0}' cis.${i}\_allcohorts.txt | wc -l`
+trans=`awk '$1=='$no' {print $0}' trans.${i}\_allcohorts.txt |wc -l`
 echo $cis
 echo $trans
 
