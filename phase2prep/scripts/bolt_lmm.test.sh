@@ -40,12 +40,12 @@ do
   probe="$line"
   echo $probe
     
-  fgrep $probe $mydir/combined/cis_trans.${i}\_${j}.gt${no}.allcohorts.txt |awk '{print $2}' > ${methylation_processed_dir}/cis_trans.${i}\_${probe}.allcohorts.snps
+  fgrep $probe $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt |awk '{print $2}' > ${methylation_processed_dir}/cis_trans.${i}\_${probe}.allcohorts.snps
   grep -v -f ${methylation_processed_dir}/cis_trans.${i}\_${probe}.allcohorts.snps ${bfile}.bim |awk '{print $2}' >${bfile}.boltlmm.exclude
      
   bolt \
   --bfile=${bfile} \
-  --phenoFile=${methylation_processed_dir}/methylation.subset.${i}\_${j}.gt${no}.txt \
+  --phenoFile=${methylation_processed_dir}/methylation.subset.${i}\_${j}.ge${no}.txt \
   --phenoCol=$probe \
   --exclude=${bfile}.boltlmm.exclude \
   --covarFile=${covariates_combined}.boltlmm \
@@ -55,7 +55,7 @@ do
   --lmm \
   --covarMaxLevels 500 \
   --LDscoresFile=/panfs/panasas01/sscm/epzjlm/bin/BOLT-LMM_v2.2/tables/LDSCORE.1000G_EUR.tab.gz \
-  --statsFile=${boltlmm_res_dir}/stats.tab.${i}\_${probe}.gt${no}.txt \
+  --statsFile=${boltlmm_res_dir}/stats.tab.${i}\_${probe}.ge${no}.txt \
   --numThreads=16
 
   done < "$filename"
