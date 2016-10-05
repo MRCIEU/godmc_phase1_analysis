@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #PBS -N clump
-#PBS -o /panfs/panasas01/shared-godmc/job_report/clump.o
-#PBS -e /panfs/panasas01/shared-godmc/job_report/clump.e
+#PBS -o /panfs/panasas01/shared-godmc/job_report/clump
+#PBS -e /panfs/panasas01/shared-godmc/job_report/clump
 #PBS -l walltime=48:00:00
-#PBS -t 1-100
+#PBS -t 101-200
 # PBS -t 3
 #PBS -l nodes=1:ppn=2
 #PBS -S /bin/bash

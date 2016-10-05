@@ -141,3 +141,37 @@ done
 
 done
 
+#pval cut-off
+i="1e-05"
+#cpgs=("cg0000[0-9]")
+
+#found in number of cohorts
+no="2"
+
+for j in ${cpgs[@]}; do
+echo $j
+
+#cat $mydir/combined/cis.${i}\_${j}.allcohorts.txt $mydir/combined/trans.${i}\_${j}.allcohorts.txt | perl -pe 's/_/ /g' | awk '$1>='$no' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt
+#awk '{print $3}' <$mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt | sort -u > $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.probes
+#rsync -av $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.probes /panfs/panasas01/sscm/epzjlm/repo/godmc/processed_data/methylation_data/
+#rsync -av $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt /panfs/panasas01/sscm/epzjlm/repo/godmc/processed_data/methylation_data/
+
+nocis="1"
+perl -pe 's/_/ /g' <$mydir/combined/cis.${i}\_${j}.allcohorts.txt | awk '$1>='$no' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${nocis}.allcohorts.cis.txt
+notrans="2"
+perl -pe 's/_/ /g' <$mydir/combined/trans.${i}\_${j}.allcohorts.txt| awk '$1>='$no' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${notrans}.allcohorts.trans.txt
+
+no="1.2"
+
+#k=$(echo $j | perl -pe 's/\[/\\[/g'|perl -pe 's/\]/\\]/g')
+#echo $k
+
+cat $mydir/combined/cis_trans.${i}\_${j}.ge${nocis}.allcohorts.cis.txt $mydir/combined/cis_trans.${i}\_${j}.ge${notrans}.allcohorts.trans.txt > $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt
+awk '{print $3}' <$mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt | sort -u > $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.probes
+gzip $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt
+
+done
+
+
+
+

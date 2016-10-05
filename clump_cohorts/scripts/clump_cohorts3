@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #PBS -N clump
-#PBS -o /panfs/panasas01/shared-godmc/job_report/clump.o
-#PBS -e /panfs/panasas01/shared-godmc/job_report/clump.e
+#PBS -o /panfs/panasas01/shared-godmc/job_report/clump
+#PBS -e /panfs/panasas01/shared-godmc/job_report/clump
 #PBS -l walltime=48:00:00
-#PBS -t 1-100
+#PBS -t 201-300
 # PBS -t 3
 #PBS -l nodes=1:ppn=2
 #PBS -S /bin/bash
@@ -53,7 +53,6 @@ myout="/panfs/panasas01/shared-godmc/clump"
 
 cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg0007" "cg0008" "cg0009" "cg001" "cg002" "cg003" "cg004" "cg005" "cg006" "cg007" "cg008" "cg009" "cg01" "cg02" "cg03" "cg04" "cg05" "cg06" "cg07" "cg08" "cg09" "cg10" "cg11" "cg12" "cg13" "cg14" "cg15" "cg16" "cg17" "cg18" "cg19" "cg20" "cg21" "cg22" "cg23" "cg24" "cg25" "cg26" "cg27" "_ch")
 #cpgs2=`printf '${cpgs}\n%.0s' {1..$nocohorts}`
-
 noa=$((PBS_ARRAYID - 1))
 
 no=$((noa / ${#cpgs[@]}))

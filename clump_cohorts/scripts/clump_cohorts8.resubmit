@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #PBS -N clump
-#PBS -o /panfs/panasas01/shared-godmc/job_report/clump.o
-#PBS -e /panfs/panasas01/shared-godmc/job_report/clump.e
-#PBS -l walltime=48:00:00
-#PBS -t 1-100
+#PBS -o /panfs/panasas01/shared-godmc/job_report/clump.resubmit.o
+#PBS -e /panfs/panasas01/shared-godmc/job_report/clump.resubmit.e
+#PBS -l walltime=100:00:00
+#PBS -t 701-705
 # PBS -t 3
 #PBS -l nodes=1:ppn=2
 #PBS -S /bin/bash
@@ -55,7 +55,6 @@ cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg000
 #cpgs2=`printf '${cpgs}\n%.0s' {1..$nocohorts}`
 
 noa=$((PBS_ARRAYID - 1))
-
 no=$((noa / ${#cpgs[@]}))
 #no=$(($PBS_ARRAYID / ${#cpgs[@]}))
 
@@ -71,13 +70,25 @@ file="allprobefiles.txt"
 #47 files for each cohort 
 filename=`head -n ${PBS_ARRAYID} ${file} | tail -n 1 | cut -d " " -f 1`
 echo $filename
+#filename=amcrae_BSGS.cg0000[0-9].probes
 
 prefix=`head -n ${PBS_ARRAYID} ${file} | tail -n 1 | cut -d " " -f 1| perl -pe 's/.probes//g'|sed "s/.[^.]*$//"`
 mkdir -p $myout/$prefix
 echo $prefix
 echo $prefix.gwama.formatted.${j}.txt
 
-touch $myout/$prefix/$prefix.indexSNP.$j
+lastprobe=`tail -n1 $myout/$prefix/$prefix.indexSNP.$j |cut -d " " -f 1`
+echo $lastprobe
+grep -v $lastprobe <$myout/$prefix/$prefix.indexSNP.$j >$myout/$prefix/$prefix.indexSNP.$j.tmp
+mv $myout/$prefix/$prefix.indexSNP.$j.tmp $myout/$prefix/$prefix.indexSNP.$j 
+
+sed -n -E -e '/'$lastprobe'/,$ p' <$filename >$filename.tmp
+
+n=`wc -l $filename`
+n2=`wc -l $filename.tmp`
+
+echo $n
+echo $n2
 
 while read -r line
 do
@@ -115,6 +126,12 @@ do
     echo $check
     if [ $check == "1" ]
     then
+
+    nosnps=`grep -f $myout/$prefix/$prefix.$probe.snps /panfs/panasas01/shared-godmc/1kg_reference_ph3/eur.bim |wc -l`
+    
+    if [ "$nosnps" -gt "0" ]
+   
+    then
     plink --bfile /panfs/panasas01/shared-godmc/1kg_reference_ph3/eur --clump $myout/$prefix/$prefix.$probe.assoc --out $myout/$prefix/$prefix.$probe  --extract $myout/$prefix/$prefix.$probe.snps --clump-r2 0.01 --clump-kb 1000 --clump-p1 1e-5
     #real    0m3.846s
     #user    0m3.214s
@@ -137,10 +154,11 @@ do
     rm $myout/$prefix/$prefix.$probe.log
     rm $myout/$prefix/$prefix.$probe.snps
     rm $myout/$prefix/$prefix.$probe.nosex
+    fi
     else
     echo "grep doesn't work properly"
     fi
-done < "$filename"
+done < "$filename.tmp"
     
    
 
