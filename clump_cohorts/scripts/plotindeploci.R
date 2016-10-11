@@ -4,8 +4,8 @@ path="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/clump_cohorts/data
 l<-list.files(path=path,pattern=".numberofindependentloci.Robj")
 
 cohorts<-read.table("/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/extract_sftp/data/cohorts.txt",sep=" ",header=F)
-cohorts<-cohorts[1:15,]
-cohorts<-cohorts[-4,]
+cohorts<-cohorts[1:length(l),]
+
 
 indexsnps<-data.frame()
 for (i in 1:length(l)){
