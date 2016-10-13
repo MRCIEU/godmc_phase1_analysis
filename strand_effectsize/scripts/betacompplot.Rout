@@ -17,8 +17,17 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
 > library(ggplot2)
 > library(GGally)
+
+Attaching package: 'GGally'
+
+The following objects are masked _by_ '.GlobalEnv':
+
+    ggally_cor, ggally_points
+
 > 
 > load("/panfs/panasas01/shared-godmc/meta-analysis/betacomparison/betacomp.Robj")
 > 
@@ -269,7 +278,7 @@ rluijk_LLS
 > p<-ggpairs(
 +   test[,2:ncol(test)],
 +   upper = list(continuous = "cor"),
-+   lower = list(continuous = wrap("points",size=0.5)),
++   lower = list(continuous = wrap("points",size=0.2)),
 +   diag = list(continuous = wrap('diagAxis', labelSize = 2,gridLabelSize=0)),
 +   columnLabels=rep("",ncol(test)-1),
 + 
@@ -292,4 +301,4 @@ There were 50 or more warnings (use warnings() to see the first 50)
 > 
 > proc.time()
    user  system elapsed 
-704.028   2.167 709.351 
+606.238   1.879 611.340 
