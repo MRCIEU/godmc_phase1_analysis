@@ -234,7 +234,7 @@ assignInNamespace("ggally_points", ggally_points, "GGally")
 p<-ggpairs(
   test[,2:ncol(test)],
   upper = list(continuous = "cor"),
-  lower = list(continuous = wrap("points",size=0.5)),
+  lower = list(continuous = wrap("points",size=0.2)),
   diag = list(continuous = wrap('diagAxis', labelSize = 2,gridLabelSize=0)),
   columnLabels=rep("",ncol(test)-1),
 
