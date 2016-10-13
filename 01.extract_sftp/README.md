@@ -41,8 +41,8 @@ It will give you a file called:
 
 4. I run the following checks:
 
--check plots in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/01`
--check cohort_descriptives.RData in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/01`
--check pcaplot in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/pcaplot.pdf`
+- check plots in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/01`
+- check cohort_descriptives.RData in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/01`
+- check pcaplot in `/panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/pcaplot.pdf`
 
 
