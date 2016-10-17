@@ -1,9 +1,40 @@
 library(ggplot2)
+library(meffil)
+
+y<-meffil.get.features("450k")
+ncpg<-length(unique(y$name))
+
+
+####
+n_independent_regions <- 1000000
+
+#3 billion basepairs residing in 23 pairs of chromosomes
+n_bases <- 3000000000
+
+#SNP-CpG distance is 1 Mb 
+cis_window <- 1000000
+
+n_independent_regions_cis <- n_independent_regions / (n_bases / cis_window)
+n_independent_regions_trans <- n_independent_regions - n_independent_regions_cis
+
+#number of analysed CpGs - all probe on 450k array
+ncpg <- ncpg
+
+ntest_cis <- ncpg * n_independent_regions_cis
+ntest_trans <- ncpg * n_independent_regions_trans
+
+# we used pval threshold of 1e-05
+exp_cis <- ntest_cis * 1e-5
+exp_trans <- ntest_trans * 1e-5
+exp_cis
+exp_trans
+
+#
 
 path="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/clump_cohorts/data"
 l<-list.files(path=path,pattern=".numberofindependentloci.Robj")
 
-cohorts<-read.table("/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/extract_sftp/data/cohorts.txt",sep=" ",header=F)
+cohorts<-read.table("/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt",sep=" ",header=F)
 cohorts<-cohorts[1:length(l),]
 
 
@@ -97,6 +128,7 @@ p1<-ggplot(r.out,aes(x=cohort,nocisindexsnps_1000,fill=Cohort)) +
 geom_bar(stat="identity",position="dodge") +
 xlab("Cohort") +
 ylab("number of indexSNPs (cis) x1e3") +
+geom_hline(yintercept = exp_cis/1000) +
 scale_y_continuous(breaks=c(seq(0,m,10)), limits = c(0, m)) +
 theme(axis.text.x = element_text(face = "bold",angle=90,hjust=1))
 ggsave(p1,file="cisindexSNPbycohort.png",width=8,height=6)
@@ -107,6 +139,7 @@ p1<-ggplot(r.out,aes(x=cohort,notransindexsnps_1e6,fill=Cohort)) +
 geom_bar(stat="identity",position="dodge") +
 xlab("Cohort") +
 ylab("number of indexSNPs (trans) x1e6") +
+geom_hline(yintercept = exp_trans/1000000) +
 scale_y_continuous(breaks=c(seq(0,m,10)), limits = c(0, m)) +
 theme(axis.text.x = element_text(face = "bold",angle=90,hjust=1))
 ggsave(p1,file="transindexSNPbycohort.png",width=8,height=6)
