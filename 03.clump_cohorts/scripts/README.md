@@ -13,10 +13,10 @@ qsub clump_cohorts1
 
 ###INPUT
 
-It uses /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/{$user}_{$cohort}.gwama.formatted.${cpgprobeset}.txt as input file
+It uses `/panfs/panasas01/shared-godmc/meta-analysis/inputfiles/{$user}_{$cohort}.gwama.formatted.${cpgprobeset}.txt` as input file
 
 ###output
-/panfs/panasas01/shared-godmc/clump/{$user_$cohort}/{user}_{cohort}.indexSNP.{cpgprobeset}
+`/panfs/panasas01/shared-godmc/clump/{$user_$cohort}/{user}_{cohort}.indexSNP.{cpgprobeset}`
 
 - Please note that with a new round of clumping you should use 74 probesets rather than 47 probesets.
 
