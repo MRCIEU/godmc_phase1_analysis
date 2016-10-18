@@ -1,0 +1,164 @@
+#!/bin/bash
+
+#PBS -N clump
+#PBS -o /panfs/panasas01/shared-godmc/job_report/clump.resubmit.o
+#PBS -e /panfs/panasas01/shared-godmc/job_report/clump.resubmit.e
+#PBS -l walltime=100:00:00
+#PBS -t 501-600
+# PBS -t 3
+#PBS -l nodes=1:ppn=2
+#PBS -S /bin/bash
+
+set -e
+if [ -n "${1}" ]; then
+  echo "${1}"
+  PBS_ARRAYID=${1}
+fi
+
+#cohorts="/panfs/panasas01/shared-godmc/meta-analysis/inputfiles/cohorts.txt"
+
+#cohort=`head -n ${PBS_ARRAYID} ${cohorts} | tail -n 1 | cut -d " " -f 1`
+#echo $cohort
+#user=`head -n ${PBS_ARRAYID} ${cohorts} | tail -n 1 | cut -d " " -f 2`
+#echo $user
+
+
+mydir="/panfs/panasas01/shared-godmc/meta-analysis/inputfiles"
+cd $mydir
+
+#cat $mydir/probe.*.files >allprobefiles.txt
+#grep -v "files" <allprobefiles.txt >allprobefiles.txt2
+#mv allprobefiles.txt2 allprobefiles.txt
+
+#head allprobefiles.txt
+#probe.amcrae_BSGSaa
+#probe.amcrae_BSGSab
+
+#epzjlm_ARIES.cg0000[0-9].probes
+#epzjlm_ARIES.cg0001.probes
+#epzjlm_ARIES.cg0002.probes
+
+#head probe.amcrae_BSGSaa
+#cg00000029
+#cg00000108
+
+#head epzjlm_ARIES.cg0000[0-9].probes
+#cg00000029
+#cg00000108
+
+myout="/panfs/panasas01/shared-godmc/clump"
+
+#nocohorts=`awk '{print $1}' </panfs/panasas01/shared-godmc/scripts/cohorts.txt |wc -l`
+#echo $nocohorts
+
+cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg0007" "cg0008" "cg0009" "cg001" "cg002" "cg003" "cg004" "cg005" "cg006" "cg007" "cg008" "cg009" "cg01" "cg02" "cg03" "cg04" "cg05" "cg06" "cg07" "cg08" "cg09" "cg10" "cg11" "cg12" "cg13" "cg14" "cg15" "cg16" "cg17" "cg18" "cg19" "cg20" "cg21" "cg22" "cg23" "cg24" "cg25" "cg26" "cg27" "_ch")
+#cpgs2=`printf '${cpgs}\n%.0s' {1..$nocohorts}`
+
+noa=$((PBS_ARRAYID - 1))
+no=$((noa / ${#cpgs[@]}))
+#no=$(($PBS_ARRAYID / ${#cpgs[@]}))
+
+nob=$((${#cpgs[@]} * $no))
+noc=$(($PBS_ARRAYID-$nob))
+j=${cpgs[$noc-1]}
+echo $j
+
+#1200 files- ncohorts * 100
+# 47 * ncohorts = 658 jobs
+file="allprobefiles.txt"
+
+#47 files for each cohort 
+filename=`head -n ${PBS_ARRAYID} ${file} | tail -n 1 | cut -d " " -f 1`
+echo $filename
+#filename=amcrae_BSGS.cg0000[0-9].probes
+
+prefix=`head -n ${PBS_ARRAYID} ${file} | tail -n 1 | cut -d " " -f 1| perl -pe 's/.probes//g'|sed "s/.[^.]*$//"`
+mkdir -p $myout/$prefix
+echo $prefix
+echo $prefix.gwama.formatted.${j}.txt
+
+lastprobe=`tail -n1 $myout/$prefix/$prefix.indexSNP.$j |cut -d " " -f 1`
+echo $lastprobe
+grep -v $lastprobe <$myout/$prefix/$prefix.indexSNP.$j >$myout/$prefix/$prefix.indexSNP.$j.tmp
+mv $myout/$prefix/$prefix.indexSNP.$j.tmp $myout/$prefix/$prefix.indexSNP.$j 
+
+sed -n -E -e '/'$lastprobe'/,$ p' <$filename >$filename.tmp
+
+n=`wc -l $filename`
+n2=`wc -l $filename.tmp`
+
+echo $n
+echo $n2
+
+while read -r line
+do
+    probe="$line"
+    echo $probe
+    echo "POS" "CpG" "ID" "BETA" "SE" "P" "CHR" "SNP" "EA" "NEA" "EAF" "N" |perl -pe 's/ /\t/g'> $myout/$prefix/$prefix.$probe.assoc
+    #LC_ALL=C awk -v mytrait="$probe" 'BEGIN{FS=OFS="\t"} $2==mytrait {print $1}'<$prefix.gwama.formatted.txt > $myout/$prefix/$prefix.$probe.snps
+    
+    #time (awk -v mytrait="$probe" 'BEGIN{FS=OFS="\t"} $2==mytrait {print $0}'<$prefix.gwama.formatted.txt >> $myout/$prefix/$prefix.$probe.in)
+    #real  1m5.080s
+    #user  1m0.498s
+    #sys 0m3.807s
+    
+    #time (LC_ALL=C fgrep $probe $prefix.gwama.formatted.txt >> $myout/$prefix/$prefix.$probe.in)
+    #real    0m11.420s
+    #user    0m3.911s
+    #sys 0m2.744s
+    
+    #time (fgrep $probe $prefix.gwama.formatted.txt >> $myout/$prefix/$prefix.$probe.in)
+    #real 0m10.975s
+    #user    0m3.841s
+    #sys 0m2.628s
+    
+    #time(fgrep $probe $mydir/$prefix.gwama.formatted.${j}.txt >> $myout/$prefix/$prefix.$probe.assoc)
+
+    #real    0m0.095s
+    #user    0m0.052s
+    #sys 0m0.029s
+
+    
+    fgrep $probe $mydir/$prefix.gwama.formatted.${j}.txt >> $myout/$prefix/$prefix.$probe.assoc
+    awk 'NR>1 {print $8}' < $myout/$prefix/$prefix.$probe.assoc >$myout/$prefix/$prefix.$probe.snps
+
+    check=`awk '$2!="CpG" {print $2}' $myout/$prefix/$prefix.$probe.assoc |sort -u |wc -l`
+    echo $check
+    if [ $check == "1" ]
+    then
+
+    nosnps=`grep -f $myout/$prefix/$prefix.$probe.snps /panfs/panasas01/shared-godmc/1kg_reference_ph3/eur.bim |wc -l`
+    
+    if [ "$nosnps" -gt "0" ]
+   
+    then
+    plink --bfile /panfs/panasas01/shared-godmc/1kg_reference_ph3/eur --clump $myout/$prefix/$prefix.$probe.assoc --out $myout/$prefix/$prefix.$probe  --extract $myout/$prefix/$prefix.$probe.snps --clump-r2 0.01 --clump-kb 1000 --clump-p1 1e-5
+    #real    0m3.846s
+    #user    0m3.214s
+    #sys 0m0.495s
+
+   #./plink1.90 --bfile /panfs/panasas01/shared-godmc/1kg_reference_ph3/eur --clump $myout/$prefix/$prefix.$probe.assoc --out $myout/$prefix/$prefix.$probe --clump-r2 0.01 --clump-kb 1000 --clump-p1 1e-5)
+    #real    0m6.220s
+    #user    0m4.900s
+    #sys 0m1.118s
+    indexsnps=`sed -e 's/^ //g' <$myout/$prefix/$prefix.$probe.clumped |sed 's/\+ /\t/g'|awk 'NR>1{print $3}' |sed '/^$/d'`
+    
+    #nosnps=`sed -e 's/^ //g' <$myout/$prefix/$prefix.$probe.clumped |sed 's/\+ /\t/g'|awk 'NR>1{print $3}' |sed '/^$/d' |wc -l`
+    #probes=`printf "%s${nosnps}\n" | sed 's/ /$probe/g'`
+    #probes=`perl -E "print '$probe' x $nosnps"`
+    #probes=`for i in `seq 1 $nosnps`; do echo $probe >> $myout/$prefix.indexSNP.${PBS_ARRAYID}; done`
+    echo $probe $indexsnps >> $myout/$prefix/$prefix.indexSNP.$j
+    #echo $probes indexsnp.${PBS_ARRAYID}.txt >> $myout/$prefix.indexSNP.${PBS_ARRAYID}
+    rm $myout/$prefix/$prefix.$probe.assoc
+    rm $myout/$prefix/$prefix.$probe.clumped
+    rm $myout/$prefix/$prefix.$probe.log
+    rm $myout/$prefix/$prefix.$probe.snps
+    rm $myout/$prefix/$prefix.$probe.nosex
+    fi
+    else
+    echo "grep doesn't work properly"
+    fi
+done < "$filename.tmp"
+    
+   
+

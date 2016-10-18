@@ -27,7 +27,7 @@ Rscript /panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/clump_cohorts/sc
 
 ```
 
-- It extracts the number of independent SNPs from /panfs/panasas01/shared-godmc/clump/{$user_$cohort}/{user}_{cohort}.indexSNP.{cpgprobeset} and generates a /panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/clump_cohorts/data/$user_$cohort.numberofindependentloci.Robj file which has counts of number of independent snps, independent cis and trans snps.
+- It extracts the number of independent SNPs from `/panfs/panasas01/shared-godmc/clump/{$user_$cohort}/{user}_{cohort}.indexSNP.{cpgprobeset}` and generates a `/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/clump_cohorts/data/$user_$cohort.numberofindependentloci.Robj` file which has counts of number of independent snps, independent cis and trans snps.
 
 ## plotindeploci.R
 
