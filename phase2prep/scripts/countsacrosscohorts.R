@@ -3,7 +3,8 @@
 #/panfs/panasas01/shared-godmc/counts_summary
 library(ggplot2)
 path="/panfs/panasas01/shared-godmc/counts/combined"
-cohorts<-read.table("~/repo/godmc_phase1_analysis/extract_sftp/data/cohorts.txt",sep=" ",header=F,stringsAsFactors=F)
+cohorts<-read.table("/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt",sep=" ",header=F)
+cohorts<-cohorts[1:17,]
 
 counts<-data.frame()
 for (i in 1:nrow(cohorts)){

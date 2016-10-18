@@ -18,7 +18,7 @@ fi
 echo "Running on ${HOSTNAME}"
 
 
-filename="/panfs/panasas01/shared-godmc/scripts/cohorts.txt"
+filename="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt"
 
 user=`head -n ${PBS_ARRAYID} ${filename} | tail -n 1 | cut -d " " -f 1`
 cohort=`head -n ${PBS_ARRAYID} ${filename} | tail -n 1 | cut -d " " -f 2`

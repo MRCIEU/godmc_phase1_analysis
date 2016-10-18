@@ -17,7 +17,7 @@
 
 TMPDIR=/panfs/panasas01/shared-godmc/tmp
 
-filename="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/extract_sftp/data/cohorts.txt"
+filename="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt"
 
 mydir="/panfs/panasas01/shared-godmc/counts"
 
@@ -109,9 +109,10 @@ END=$nocoh
 
 ## save $START, just in case if we need it later ##
 no=$START
+echo $no
 while [[ $no -le $END ]]
 do
-#    echo "$no"
+    echo "$no"
 rm counts.allcohorts.combined.$no.txt
 touch counts.allcohorts.combined.$no.txt
 
@@ -137,7 +138,7 @@ echo "Overlapping_cis_SNP-CpG_pairs(%)" $cperc >>counts.allcohorts.combined.$no.
 echo "Overlapping_trans_SNP-CpG_pairs(%)" $tperc >>counts.allcohorts.combined.$no.txt
 
 done
-((no = no + 1))
+((no = $no + 1))
 
 done
 
