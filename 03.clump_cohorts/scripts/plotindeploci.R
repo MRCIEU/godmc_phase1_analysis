@@ -6,13 +6,14 @@ ncpg<-length(unique(y$name))
 
 
 ####
-n_independent_regions <- 1000000
+#n_independent_regions <- 1000000 used in Frank Dudbridge paper
 
+n_independent_regions <- 1000000
 #3 billion basepairs residing in 23 pairs of chromosomes
 n_bases <- 3000000000
 
 #SNP-CpG distance is 1 Mb 
-cis_window <- 1000000
+cis_window <- 2000000
 
 n_independent_regions_cis <- n_independent_regions / (n_bases / cis_window)
 n_independent_regions_trans <- n_independent_regions - n_independent_regions_cis
