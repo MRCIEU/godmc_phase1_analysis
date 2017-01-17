@@ -33,6 +33,10 @@ This script takes the 74 `*ge1.2*` association lists and splits it into ~497 rou
 
 Takes about 20 minutes to run. 
 
+## annotate.R
+
+Takes output from sort_and_split.sh and adds cis/trans annotation
+
 
 ## countsacrosscohorts.R
 
