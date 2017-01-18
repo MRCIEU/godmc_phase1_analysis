@@ -38,6 +38,17 @@ Takes about 20 minutes to run.
 Takes output from sort_and_split.sh and adds cis/trans annotation
 
 
+## prepare_upload.sh
+
+This will tarball the necessary files and create md5 checksum. The .tar and .md5sum files need to be copied to
+
+```
+/srv/sftponly/GoDMC/resources/phase2
+```
+
+on the GoDMC SFTP server `sscmv-filetran.epi.bris.ac.uk`.
+
+
 ## countsacrosscohorts.R
 
 This script generates plots such as the ones in 
