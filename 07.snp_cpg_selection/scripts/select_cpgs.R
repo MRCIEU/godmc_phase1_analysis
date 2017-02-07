@@ -25,10 +25,7 @@ for(i in 1:length(filelist))
 
 dat <- bind_rows(l)
 
-test <- group_by(dat, cohort) %>% filter(cpg %in% testcpg)
-
 means <- spread(subset(dat, select=c(cpg, cohort, mean)), key=cohort, value=mean)
-
 sds <- spread(subset(dat, select=c(cpg, cohort, sd)), key=cohort, value=sd)
 
 cormeans <- cor(means[,-c(1)], use="pair")
@@ -46,6 +43,13 @@ tab_cpg <- table(top_sds$cpg)
 
 cpglist <- names(tab_cpg)[tab_cpg >= 23]
 length(cpglist)
+
+## 
+
+cpgdat <- data.frame(cpg = cpglist, source = "20k most variable sites amongst all 23 GoDMC phase 1 cohorts", stringsAsFactors=FALSE)
+
+##
+
 
 feat <- meffil.get.features()
 
@@ -75,13 +79,17 @@ d <- rbind(d1, d2)
 ggplot(d, aes(x=Var1, y=Freq)) +
 geom_bar(stat="Identity", position="dodge", aes(fill=what))
 
+
+
 # BMI
 bmi <- scan("../data/bmi_cpg.txt", what="character")
 table(bmi %in% cpglist)
 
 table(table(top_sds$cpg[top_sds$cpg %in% bmi]))
 
-cpglist <- c(cpglist, bmi[! bmi %in% cpglist])
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=bmi, source="BMI associated CpGs from Wilson et al 2017")
+)
 
 
 # Age
@@ -92,8 +100,10 @@ age <- unique(as.character(a$CpGmarker[-1]))
 
 table(age %in% cpglist)
 table(table(top_sds$cpg[top_sds$cpg %in% age]))
-cpglist <- c(cpglist, age[! age %in% cpglist])
 
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=age, source="Age associated CpGs used in Horvath predictor")
+)
 
 # Smoking (Illig)
 
@@ -103,9 +113,18 @@ smok <- Illig_data$cpgs
 table(smok %in% cpglist)
 table(table(top_sds$cpg[top_sds$cpg %in% smok]))
 
-cpglist <- c(cpglist, smok[! smok %in% cpglist])
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=smok, source="Smoking associated CpGs from Zeilinger et al 2013")
+)
 
-table(cpglist %in% feat$name)
-table(duplicated(cpglist))
 
-write.table(cpglist, file="../data/selected_cpg.txt", row=F, col=F, qu=F)
+
+## summarise and write
+
+cpgsum <- dplyr::group_by(cpgdat, source) %>%
+	dplyr::summarise(n=n())
+
+
+save(cpgdat, file="../data/cpgdat.rdata")
+
+write.csv(cpgsum, file="../data/cpgsum.csv")
