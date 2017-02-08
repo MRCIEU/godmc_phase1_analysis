@@ -1,0 +1,1884 @@
+"","reason","nsnp"
+"1","Abdominal aortic aneurysm (NA)",4
+"2","Acenocoumarol maintenance dosage (NA)",2
+"3","Acne (severe) (fixed effect model) (NA)",2
+"4","Acne (severe) (NA)",3
+"5","Activated partial thromboplastin time (unit increase)",8
+"6","Acute lymphoblastic leukemia (adolescents and young adults) (NA)",1
+"7","Acute lymphoblastic leukemia (B-cell precursor) (NA)",5
+"8","Acute lymphoblastic leukemia (childhood) (ETV6-RUNX1 positive) (NA)",1
+"9","Acute lymphoblastic leukemia (childhood) (ETV6-RUNX1 positive, Northern European) (NA)",2
+"10","Acute lymphoblastic leukemia (childhood) (NA)",11
+"11","ADAMTS13 activity (Conditional on rs41314453 and rs10456544) (unit increase)",1
+"12","ADAMTS13 activity (unit increase)",2
+"13","Addiction (NR unit increase) (NR unit increase)",1
+"14","Adiponectin levels (log(ug/ml) increase) (log(ug/ml) increase)",1
+"15","Adiponectin levels (NA)",1
+"16","Adiponectin levels (ug/ml increase) (ug/ml increase)",4
+"17","Adiponectin levels (unit increase) (unit increase)",20
+"18","Adiposity (% increase) (% increase)",2
+"19","Adiposity (z-score unit increase) (WC) (z-score unit increase)",1
+"20","Adiposity (z-score unit increase) (WHR in women) (z-score unit increase)",1
+"21","Adolescent idiopathic scoliosis (NA)",1
+"22","Adolescent idiopathic scoliosis (severe) (NA)",1
+"23","Adverse response to chemotherapy in breast cancer (alopecia) (Recessive) (NA)",2
+"24","Age-related macular degeneration (CNV) (NA)",6
+"25","Age-related macular degeneration (CNV vs. GA) (NA)",1
+"26","Age-related macular degeneration (EA) (NA)",1
+"27","Age-related macular degeneration (extreme sampling) (NA)",2
+"28","Age-related macular degeneration (GA) (NA)",4
+"29","Age-related macular degeneration (NA)",42
+"30","Age-related macular degeneration (wet) (NA)",1
+"31","Age-related nuclear cataracts (Random effect) (unit increase)",2
+"32","Aging (facial) (NA)",1
+"33","Aging (NA)",1
+"34","Aging traits (age at natural menopause) (NA)",1
+"35","AIDS progression (NA)",2
+"36","Airflow obstruction (Smoker) (NA)",1
+"37","Airflow obstruction (Smokers) (NA)",1
+"38","Airway responsiveness in chronic obstructive pulmonary disease (unit increase) (Continous PC20) (unit increase)",1
+"39","Alcohol and nictotine co-dependence (Combined, Australian replication) (NA)",1
+"40","Alcohol and nictotine co-dependence (NA)",1
+"41","Alcohol consumption (maxi-drinks) (unit increase)",1
+"42","Alcohol consumption (NA)",1
+"43","Alcohol consumption (transferrin glycosylation) (CDT concentration) (unit increase)",2
+"44","Alcohol consumption (transferrin glycosylation) (CDT percent) (unit increase)",2
+"45","Alcohol consumption (transferrin glycosylation) (Total transferrin) (unit increase)",2
+"46","Alcohol consumption (unit increase) (quantile transformation) (unit increase)",1
+"47","Alcohol consumption (unit increase) (unit increase)",4
+"48","Alcohol dependence (age at onset) (NA)",3
+"49","Alcohol dependence (NA)",4
+"50","Allergic rhinitis (Latino) (NA)",3
+"51","Allergic rhinitis (NA)",2
+"52","Allergic sensitization (NA)",10
+"53","Alopecia areata (NA)",6
+"54","Alzheimer's disease (age of onset) (unit increase)",1
+"55","Alzheimer's disease biomarkers (Cortical Ab) (NA)",5
+"56","Alzheimer's disease biomarkers (unit increase) (ptau) (unit increase)",3
+"57","Alzheimer's disease biomarkers (unit increase) (tau) (unit increase)",1
+"58","Alzheimer's disease (cognitive decline) (unit increase)",13
+"59","Alzheimer's disease in APOE e4+ carriers (NA)",2
+"60","Alzheimer's disease (late onset) (Japanese) (NA)",1
+"61","Alzheimer's disease (late onset) (NA)",34
+"62","Alzheimer's disease (NA)",16
+"63","Amyloid A serum levels (unit increase)",4
+"64","Amyotrophic lateral sclerosis (NA)",7
+"65","Amyotrophic lateral sclerosis (sporadic) (NA)",11
+"66","Amyotrophic lateral sclerosis (years increase) (survival) (years increase)",2
+"67","Androgen levels (DHT levels) (unit increase)",1
+"68","Androgen levels (serum testosterone) (unit increase)",3
+"69","Anger (Temperament) (unit increase)",1
+"70","Angiotensin-converting enzyme activity (% variance)",2
+"71","Ankle-brachial index (unit increase)",1
+"72","Ankylosing spondylitis (less than) (NA)",1
+"73","Ankylosing spondylitis (NA)",13
+"74","Anterior chamber depth (unit increase)",1
+"75","Anthropometric traits in newborns (Sum of Skinfolds, Model 2) (unit increase)",1
+"76","Antibody status in Tripanosoma cruzi seropositivity (NA)",1
+"77","Anticoagulant levels (SD increase) (PC) (SD increase)",1
+"78","Antineutrophil cytoplasmic antibody-associated vasculitis (NA)",9
+"79","Antinuclear antibody levels (unit increase)",1
+"80","Antipsychotic drug-induced weight gain (NA)",1
+"81","Aortic root size (cm increase)",5
+"82","Aortic stiffness (unit increase)",1
+"83","Aortic-valve calcification (NA)",1
+"84","Apolipoprotein Levels (APOA2) (unit increase)",1
+"85","Apolipoprotein Levels (APOB) (unit increase)",1
+"86","Arsenic metabolism (DMA%) (NA)",1
+"87","Arsenic metabolism (MMA%) (NA)",1
+"88","Arthritis (juvenile idiopathic) (NA)",1
+"89","Aspartate aminotransferase (NA)",1
+"90","Aspirin hydrolysis (plasma) (NA)",1
+"91","Asthma (Adult) (NA)",1
+"92","Asthma and hay fever (NA)",10
+"93","Asthma (childhood onset) (NA)",6
+"94","Asthma (childhood onset) (unit increase) (unit increase)",2
+"95","Asthma (corticosteroid response) (unit increase)",1
+"96","Asthma (NA)",33
+"97","Asymmetrical dimethylarginine levels (unit increase)",2
+"98","Atopic dermatitis (NA)",21
+"99","Atopic dermatitis (unit increase) (unit increase)",1
+"100","Atrial fibrillation/atrial flutter (NA)",2
+"101","Atrial fibrillation (NA)",14
+"102","Attention deficit hyperactivity disorder (NA)",3
+"103","Autism (NA)",3
+"104","Autism spectrum disorder, attention deficit-hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia (combined) (5 degree of freedom test) (NA)",3
+"105","Autism spectrum disorder, attention deficit-hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia (combined) (Modelling analysis) (NA)",10
+"106","Autism spectrum disorder, attention deficit-hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia (combined) (NA)",3
+"107","Autism (Str) (NA)",1
+"108","Autoimmune hepatitis type-1 (NA)",1
+"109","Axial length (unit increase)",5
+"110","Barrett's esophagus (NA)",2
+"111","Basal cell carcinoma (NA)",17
+"112","B cell non-Hodgkin lymphoma (NA)",1
+"113","Behcet's disease (NA)",13
+"114","Behcet's disease (Turkish cases with Uveitis - Recessive Model) (NA)",1
+"115","Beta-2 microglubulin plasma levels (unit increase)",7
+"116","Beta thalassemia/hemoglobin E disease (NA)",3
+"117","Beta-trace protein levels (unit increase)",1
+"118","Biliary atresia (NA)",1
+"119","Bilirubin levels (bilirubin level increase) (bilirubin level increase)",4
+"120","Bilirubin levels (bilirubin level increase) \(Conditional on rs11891311\) (bilirubin level increase)",1
+"121","Bilirubin levels (mg/dL increase) (mg/dL increase)",1
+"122","Bilirubin levels (s.d. increase) (s.d. increase)",3
+"123","Bilirubin levels (umol/l increase in log(tbil) (umol/l increase in log(tbil)",2
+"124","Bilirubin levels (unit increase) (Direct bilirubin) (unit increase)",1
+"125","Bilirubin levels (unit increase) (Total bilirubin) (unit increase)",1
+"126","Biochemical measures (umol/l increase) (umol/l increase)",1
+"127","Biomedical quantitative traits (BD-RT) (NA)",1
+"128","Biomedical quantitative traits (beats per minute increase) (beats per minute increase)",2
+"129","Biomedical quantitative traits (increase) (increase)",1
+"130","Bipolar disorder (addtive) (NA)",1
+"131","Bipolar disorder and schizophrenia (NA)",2
+"132","Bipolar disorder (body mass index interaction) (NA)",3
+"133","Bipolar disorder (Latent Class 1) (NA)",1
+"134","Bipolar disorder (Latent Class 2) (NA)",1
+"135","Bipolar disorder (NA)",15
+"136","Bipolar disorder or major depressive disorder (combined) (NA)",1
+"137","Bipolar disorder (recessive) (NA)",1
+"138","Birdshot chorioretinopathy (NA)",1
+"139","Birth length (unit increase)",1
+"140","Birth weight (gram increase) (gram increase)",6
+"141","Birth weight (unit increase) (unit increase)",1
+"142","Bitter taste perception (Caffeine) (unit increase)",1
+"143","Bitter taste perception (PROP) (unit increase)",1
+"144","Bitter taste perception (Quinine) (unit increase)",1
+"145","Bitter taste response (NA)",1
+"146","Black vs. blond hair color (hair color score increase)",5
+"147","Black vs. red hair color (hair color score increase)",5
+"148","Bladder cancer (Japanese) (NA)",1
+"149","Bladder cancer (NA)",13
+"150","Blond vs. brown hair color (NA)",5
+"151","Blood and toenail selenium levels (NA)",12
+"152","Blood metabolite levels (unit increase) (10-undecenoate (11:1n1)) (unit increase)",1
+"153","Blood metabolite levels (unit increase) (1,5-anhydroglucitol (1,5-AG)) (unit increase)",2
+"154","Blood metabolite levels (unit increase) (1-arachidonoylglycerophosphocholine) (unit increase)",1
+"155","Blood metabolite levels (unit increase) (1-arachidonoylglycerophosphoethanolamine) (unit increase)",1
+"156","Blood metabolite levels (unit increase) (1-arachidonoylglycerophosphoinositol) (unit increase)",1
+"157","Blood metabolite levels (unit increase) (1-linoleoylglycerol (1-monolinolein)) (unit increase)",1
+"158","Blood metabolite levels (unit increase) (1-methylurate) (unit increase)",1
+"159","Blood metabolite levels (unit increase) (1-methylxanthine) (unit increase)",1
+"160","Blood metabolite levels (unit increase) (1-palmitoylglycerophosphoethanolamine) (unit increase)",2
+"161","Blood metabolite levels (unit increase) (1-stearoylglycerophosphoethanolamine) (unit increase)",1
+"162","Blood metabolite levels (unit increase) (2-aminobutyrate) (unit increase)",2
+"163","Blood metabolite levels (unit increase) (2-hydroxyisobutyrate) (unit increase)",1
+"164","Blood metabolite levels (unit increase) (3-(4-hydroxyphenyl)lactate) (unit increase)",1
+"165","Blood metabolite levels (unit increase) (3-dehydrocarnitine) (unit increase)",2
+"166","Blood metabolite levels (unit increase) (3-phenylpropionate (hydrocinnamate)) (unit increase)",1
+"167","Blood metabolite levels (unit increase) (4-acetamidobutanoate) (unit increase)",1
+"168","Blood metabolite levels (unit increase) (4-androsten-3beta,17beta-diol disulfate 1) (unit increase)",1
+"169","Blood metabolite levels (unit increase) (4-androsten-3beta,17beta-diol disulfate 2) (unit increase)",1
+"170","Blood metabolite levels (unit increase) (5alpha-androstan-3beta,17beta-diol disulfate) (unit increase)",1
+"171","Blood metabolite levels (unit increase) (5-oxoproline) (unit increase)",1
+"172","Blood metabolite levels (unit increase) (acetylcarnitine) (unit increase)",2
+"173","Blood metabolite levels (unit increase) (ADpSGEGDFXAEGGGVR) (unit increase)",2
+"174","Blood metabolite levels (unit increase) (adrenate (22:4n6)) (unit increase)",1
+"175","Blood metabolite levels (unit increase) (alpha-hydroxyisovalerate) (unit increase)",2
+"176","Blood metabolite levels (unit increase) (androsterone sulfate) (unit increase)",3
+"177","Blood metabolite levels (unit increase) (arachidonate (20:4n6)) (unit increase)",1
+"178","Blood metabolite levels (unit increase) (asparagine) (unit increase)",1
+"179","Blood metabolite levels (unit increase) (betaine) (unit increase)",3
+"180","Blood metabolite levels (unit increase) (biliverdin) (unit increase)",1
+"181","Blood metabolite levels (unit increase) (bradykinin, des-arg(9)) (unit increase)",2
+"182","Blood metabolite levels (unit increase) (butyrylcarnitine) (unit increase)",2
+"183","Blood metabolite levels (unit increase) (caffeine) (unit increase)",1
+"184","Blood metabolite levels (unit increase) (carnitine) (unit increase)",4
+"185","Blood metabolite levels (unit increase) (citrate) (unit increase)",3
+"186","Blood metabolite levels (unit increase) (citrulline) (unit increase)",1
+"187","Blood metabolite levels (unit increase) (cysteine-glutathione disulfide) (unit increase)",1
+"188","Blood metabolite levels (unit increase) (decanoylcarnitine) (unit increase)",1
+"189","Blood metabolite levels (unit increase) (dihomo-linolenate (20:3n3 or n6)) (unit increase)",2
+"190","Blood metabolite levels (unit increase) (docosapentaenoate (n3 DPA; 22:5n3)) (unit increase)",1
+"191","Blood metabolite levels (unit increase) (eicosapentaenoate (EPA; 20:5n3)) (unit increase)",1
+"192","Blood metabolite levels (unit increase) (epiandrosterone sulfate) (unit increase)",1
+"193","Blood metabolite levels (unit increase) (erythritol) (unit increase)",2
+"194","Blood metabolite levels (unit increase) (erythronate) (unit increase)",1
+"195","Blood metabolite levels (unit increase) (gamma-glutamylglutamine) (unit increase)",1
+"196","Blood metabolite levels (unit increase) (glutaroyl carnitine) (unit increase)",5
+"197","Blood metabolite levels (unit increase) (glycine) (unit increase)",1
+"198","Blood metabolite levels (unit increase) (hexanoylcarnitine) (unit increase)",2
+"199","Blood metabolite levels (unit increase) (histidine) (unit increase)",1
+"200","Blood metabolite levels (unit increase) (homocitrulline) (unit increase)",1
+"201","Blood metabolite levels (unit increase) (HWESASXX) (unit increase)",1
+"202","Blood metabolite levels (unit increase) (hydroxyisovaleroyl carnitine) (unit increase)",1
+"203","Blood metabolite levels (unit increase) (hypoxanthine) (unit increase)",1
+"204","Blood metabolite levels (unit increase) (indolelactate) (unit increase)",1
+"205","Blood metabolite levels (unit increase) (indolepropionate) (unit increase)",1
+"206","Blood metabolite levels (unit increase) (inosine) (unit increase)",1
+"207","Blood metabolite levels (unit increase) (isobutyrylcarnitine) (unit increase)",2
+"208","Blood metabolite levels (unit increase) (isovalerylcarnitine) (unit increase)",2
+"209","Blood metabolite levels (unit increase) (kynurenine) (unit increase)",2
+"210","Blood metabolite levels (unit increase) (leucine) (unit increase)",1
+"211","Blood metabolite levels (unit increase) (levulinate (4-oxovalerate)) (unit increase)",1
+"212","Blood metabolite levels (unit increase) (lysine) (unit increase)",1
+"213","Blood metabolite levels (unit increase) (mannose) (unit increase)",1
+"214","Blood metabolite levels (unit increase) (myo-inositol) (unit increase)",2
+"215","Blood metabolite levels (unit increase) (N-acetylornithine) (unit increase)",1
+"216","Blood metabolite levels (unit increase) (octadecanedioate) (unit increase)",1
+"217","Blood metabolite levels (unit increase) (octanoylcarnitine) (unit increase)",1
+"218","Blood metabolite levels (unit increase) (oleoylcarnitine) (unit increase)",1
+"219","Blood metabolite levels (unit increase) (pantothenate) (unit increase)",1
+"220","Blood metabolite levels (unit increase) (phenylalanine) (unit increase)",1
+"221","Blood metabolite levels (unit increase) (phenyllactate (PLA)) (unit increase)",1
+"222","Blood metabolite levels (unit increase) (proline) (unit increase)",1
+"223","Blood metabolite levels (unit increase) (propionylcarnitine) (unit increase)",1
+"224","Blood metabolite levels (unit increase) (pyroglutamine) (unit increase)",2
+"225","Blood metabolite levels (unit increase) (scyllo-inositol) (unit increase)",1
+"226","Blood metabolite levels (unit increase) (serine) (unit increase)",2
+"227","Blood metabolite levels (unit increase) (stearate (18:0)) (unit increase)",1
+"228","Blood metabolite levels (unit increase) (stearidonate (18:4n3)) (unit increase)",1
+"229","Blood metabolite levels (unit increase) (succinylcarnitine) (unit increase)",4
+"230","Blood metabolite levels (unit increase) (tetradecanedioate) (unit increase)",1
+"231","Blood metabolite levels (unit increase) (tryptophan betaine ) (unit increase)",1
+"232","Blood metabolite levels (unit increase) (tryptophan) (unit increase)",2
+"233","Blood metabolite levels (unit increase) (tyrosine) (unit increase)",1
+"234","Blood metabolite levels (unit increase) (urate) (unit increase)",1
+"235","Blood metabolite levels (unit increase) (uridine) (unit increase)",1
+"236","Blood metabolite levels (unit increase) (X-02249) (unit increase)",1
+"237","Blood metabolite levels (unit increase) (X-03056--N-[3-(2-Oxopyrrolidin-1-yl)propyl]acetamide) (unit increase)",3
+"238","Blood metabolite levels (unit increase) (X-03094) (unit increase)",3
+"239","Blood metabolite levels (unit increase) (X-04499--3,4-dihydroxybutyrate) (unit increase)",1
+"240","Blood metabolite levels (unit increase) (X-08402) (unit increase)",2
+"241","Blood metabolite levels (unit increase) (X-09789) (unit increase)",1
+"242","Blood metabolite levels (unit increase) (X-10395) (unit increase)",1
+"243","Blood metabolite levels (unit increase) (X-10510) (unit increase)",1
+"244","Blood metabolite levels (unit increase) (X-11247) (unit increase)",1
+"245","Blood metabolite levels (unit increase) (X-11315) (unit increase)",1
+"246","Blood metabolite levels (unit increase) (X-11423--O-sulfo-L-tyrosine) (unit increase)",1
+"247","Blood metabolite levels (unit increase) (X-11440) (unit increase)",1
+"248","Blood metabolite levels (unit increase) (X-11442) (unit increase)",1
+"249","Blood metabolite levels (unit increase) (X-11444) (unit increase)",1
+"250","Blood metabolite levels (unit increase) (X-11445--5-alpha-pregnan-3beta,20alpha-disulfate) (unit increase)",1
+"251","Blood metabolite levels (unit increase) (X-11469) (unit increase)",2
+"252","Blood metabolite levels (unit increase) (X-11470) (unit increase)",1
+"253","Blood metabolite levels (unit increase) (X-11478) (unit increase)",1
+"254","Blood metabolite levels (unit increase) (X-11529) (unit increase)",1
+"255","Blood metabolite levels (unit increase) (X-11538) (unit increase)",1
+"256","Blood metabolite levels (unit increase) (X-11550) (unit increase)",1
+"257","Blood metabolite levels (unit increase) (X-11593--O-methylascorbate) (unit increase)",1
+"258","Blood metabolite levels (unit increase) (X-11786--methylcysteine) (unit increase)",1
+"259","Blood metabolite levels (unit increase) (X-11787) (unit increase)",1
+"260","Blood metabolite levels (unit increase) (X-11792) (unit increase)",1
+"261","Blood metabolite levels (unit increase) (X-11799) (unit increase)",1
+"262","Blood metabolite levels (unit increase) (X-12038) (unit increase)",1
+"263","Blood metabolite levels (unit increase) (X-12063) (unit increase)",1
+"264","Blood metabolite levels (unit increase) (X-12092) (unit increase)",1
+"265","Blood metabolite levels (unit increase) (X-12093) (unit increase)",1
+"266","Blood metabolite levels (unit increase) (X-12095--N1-methyl-3-pyridone-4-carboxamide) (unit increase)",1
+"267","Blood metabolite levels (unit increase) (X-12100--hydroxytryptophan) (unit increase)",1
+"268","Blood metabolite levels (unit increase) (X-12244--N-acetylcarnosine) (unit increase)",4
+"269","Blood metabolite levels (unit increase) (X-12441--12-hydroxyeicosatetraenoate (12-HETE)) (unit increase)",1
+"270","Blood metabolite levels (unit increase) (X12442--5,8-tetradecadienoate) (unit increase)",1
+"271","Blood metabolite levels (unit increase) (X-12510--2-aminooctanoic acid) (unit increase)",1
+"272","Blood metabolite levels (unit increase) (X-12556) (unit increase)",2
+"273","Blood metabolite levels (unit increase) (X-12627) (unit increase)",1
+"274","Blood metabolite levels (unit increase) (X-12798) (unit increase)",2
+"275","Blood metabolite levels (unit increase) (X-12844) (unit increase)",1
+"276","Blood metabolite levels (unit increase) (X-12990--docosapentaenoic acid (n6-DPA)) (unit increase)",1
+"277","Blood metabolite levels (unit increase) (X-13429) (unit increase)",1
+"278","Blood metabolite levels (unit increase) (X-13431--nonanoylcarnitine) (unit increase)",2
+"279","Blood metabolite levels (unit increase) (X-13435) (unit increase)",2
+"280","Blood metabolite levels (unit increase) (X-13548) (unit increase)",1
+"281","Blood metabolite levels (unit increase) (X-13671) (unit increase)",1
+"282","Blood metabolite levels (unit increase) (X-14189--leucylalanine) (unit increase)",1
+"283","Blood metabolite levels (unit increase) (X-14208--phenylalanylserine) (unit increase)",1
+"284","Blood metabolite levels (unit increase) (X-14473) (unit increase)",1
+"285","Blood metabolite levels (unit increase) (X-14625) (unit increase)",1
+"286","Blood metabolite levels (unit increase) (X-18601) (unit increase)",1
+"287","Blood metabolite levels (Urate levels) (NA)",1
+"288","Blood metabolite levels (X12063 levels) (NA)",2
+"289","Blood metabolite ratios (10-undecenoate (11:1n1)/X-11438) (unit increase)",2
+"290","Blood metabolite ratios (3-(4-hydroxyphenyl)lactate/alpha-hydroxyisovalerate) (unit increase)",1
+"291","Blood metabolite ratios (4-acetamidobutanoate/N1-methyladenosine) (unit increase)",1
+"292","Blood metabolite ratios (acetylcarnitine/hexanoylcarnitine) (unit increase)",1
+"293","Blood metabolite ratios (ADpSGEGDFXAEGGGVR/X-14304--leucylalanine) (unit increase)",1
+"294","Blood metabolite ratios (ADSGEGDFXAEGGGVR/ADpSGEGDFXAEGGGVR) (unit increase)",2
+"295","Blood metabolite ratios (androsterone sulfate/4-androsten-3beta,17beta-diol disulfate 2) (unit increase)",2
+"296","Blood metabolite ratios (androsterone sulfate/epiandrosterone sulfate) (unit increase)",1
+"297","Blood metabolite ratios (arachidonate (20:4n6)/1-arachidonoylglycerophosphoinositol) (unit increase)",1
+"298","Blood metabolite ratios (arachidonate (20:4n6)/dihomo-linolenate (20:3n3 or n6)) (unit increase)",1
+"299","Blood metabolite ratios (aspartylphenylalanine/X-14450--phenylalanylleucine) (unit increase)",1
+"300","Blood metabolite ratios (betaine/pyroglutamine) (unit increase)",1
+"301","Blood metabolite ratios (carnitine/X-12798) (unit increase)",1
+"302","Blood metabolite ratios (C-glycosyltryptophan/succinylcarnitine) (unit increase)",1
+"303","Blood metabolite ratios (DHEA-S/4-androsten-3beta,17beta-diol disulfate 2) (unit increase)",1
+"304","Blood metabolite ratios (docosapentaenoate (n3 DPA; 22:5n3)/X-12627) (unit increase)",1
+"305","Blood metabolite ratios (DSGEGDFXAEGGGVR/ADpSGEGDFXAEGGGVR) (unit increase)",3
+"306","Blood metabolite ratios (glucose/mannose) (unit increase)",1
+"307","Blood metabolite ratios (glutamine/histidine) (unit increase)",1
+"308","Blood metabolite ratios (hexanoylcarnitine/octanoylcarnitine) (unit increase)",1
+"309","Blood metabolite ratios (indoleacetate/N2,N2-dimethylguanosine) (unit increase)",1
+"310","Blood metabolite ratios (isoleucine/X-11529) (unit increase)",1
+"311","Blood metabolite ratios (linoleate (18:2n6)/dihomo-linolenate (20:3n3 or n6)) (unit increase)",1
+"312","Blood metabolite ratios (linoleate (18:2n6)/X-12442--5,8-tetradecadienoate) (unit increase)",1
+"313","Blood metabolite ratios (lysine/glutaroyl carnitine) (unit increase)",2
+"314","Blood metabolite ratios (Metabolite ratio 1) (unit increase)",1
+"315","Blood metabolite ratios (myristate (14:0)/myristoleate (14:1n5)) (unit increase)",1
+"316","Blood metabolite ratios (N-acetylornithine/myo-inositol) (unit increase)",1
+"317","Blood metabolite ratios (octanoylcarnitine/X-13435) (unit increase)",1
+"318","Blood metabolite ratios (phenyllactate (PLA)/phenylalanine) (unit increase)",1
+"319","Blood metabolite ratios (phosphate/erythronate) (unit increase)",1
+"320","Blood metabolite ratios (propionylcarnitine/isovalerylcarnitine) (unit increase)",1
+"321","Blood metabolite ratios (urate/histidine) (unit increase)",1
+"322","Blood metabolite ratios (valine/isovalerylcarnitine) (unit increase)",1
+"323","Blood metabolite ratios (valine/proline) (unit increase)",1
+"324","Blood metabolite ratios (X-04499--3,4-dihydroxybutyrate/C-glycosyltryptophan) (unit increase)",1
+"325","Blood metabolite ratios (X-08402/cholesterol) (unit increase)",1
+"326","Blood metabolite ratios (X-10510/palmitoyl sphingomyelin) (unit increase)",1
+"327","Blood metabolite ratios (X-11315/pyroglutamine) (unit increase)",1
+"328","Blood metabolite ratios (X-11440/4-androsten-3beta,17beta-diol disulfate 2) (unit increase)",1
+"329","Blood metabolite ratios (X-11444/X-11470) (unit increase)",1
+"330","Blood metabolite ratios (X-11444/X-12844) (unit increase)",1
+"331","Blood metabolite ratios (X-11820/cholesterol) (unit increase)",1
+"332","Blood metabolite ratios (X-12038/bradykinin, des-arg(9)) (unit increase)",1
+"333","Blood metabolite ratios (X-12095--N1-methyl-3-pyridone-4-carboxamide/X-12844) (unit increase)",1
+"334","Blood metabolite ratios (X-12798/phenylalanine) (unit increase)",1
+"335","Blood metabolite ratios (X-13215/X-13671) (unit increase)",1
+"336","Blood pressure measurement (cold pressor test) (MAP, Time 0) (mmHg increase)",1
+"337","Blood pressure measurement (cold pressor test) (SBP, Time 0) (mmHg increase)",1
+"338","Blood pressure measurement (high sodium and potassium intervention) (DBP, during intervention) (mmHg increase)",2
+"339","Blood pressure measurement (high sodium and potassium intervention) (MAP, during intervention) (mmHg increase)",1
+"340","Blood pressure measurement (high sodium and potassium intervention) (SBP, during intervention) (mmHg increase)",1
+"341","Blood pressure measurement (high sodium intervention) (SBP, during intervention) (mmHg increase)",1
+"342","Blood pressure measurement (low sodium intervention) (MAP, during intervention) (mmHg increase)",2
+"343","Blood pressure measurement (low sodium intervention) (SBP, response to intervention) (mmHg increase)",1
+"344","Blood pressure (mm Hg increase) (Diastolic) (mm Hg increase)",5
+"345","Blood pressure (mmHg increase) (EA, DBP, Age 20-29) (mmHg increase)",1
+"346","Blood pressure (mmHg increase) (EA, MAP, Age 40-49) (mmHg increase)",1
+"347","Blood pressure (mmHg increase) (EA, MAP, Age 50-59) (mmHg increase)",1
+"348","Blood pressure (mmHg increase) (EA, SBP, Age 50-59) (mmHg increase)",1
+"349","Blood pressure (mmHg increase) (Mean Arterial Pressure) (mmHg increase)",21
+"350","Blood pressure (mmHg increase) (Pulse Pressure) (mmHg increase)",7
+"351","Blood pressure (mm Hg increase) (Systolic) (mm Hg increase)",4
+"352","Blood pressure (SBPLTA) (NA)",1
+"353","Blood pressure (smoking interaction) (SBP,Pack-years) (NA)",3
+"354","Blood pressure (unit increase) (DBP) (unit increase)",4
+"355","Blood pressure (unit increase) (SBP) (unit increase)",1
+"356","Blood trace element (Cu levels) (unit increase)",2
+"357","Blood trace element (Se levels) (NA)",1
+"358","Blood trace element (Se levels) (unit increase) (unit increase)",1
+"359","Blood trace element (Zn levels) (unit increase)",3
+"360","Blue vs. brown eyes (NA)",1
+"361","Blue vs. green eyes (NA)",4
+"362","Body mass in chronic obstructive pulmonary disease (NA)",1
+"363","Body mass index (change over time) (females) (unit increase)",1
+"364","Body mass index in asthmatics (NA)",1
+"365","Body mass index (% increase) (% increase)",4
+"366","Body mass index (kg/m2 increase) (EA) (kg/m2 increase)",2
+"367","Body mass index (kg/m2 increase) (EA, men) (kg/m2 increase)",1
+"368","Body mass index (kg/m2 increase) (EA, women) (kg/m2 increase)",1
+"369","Body mass index (kg/m2 increase) (kg/m2 increase)",54
+"370","Body mass index (NA)",5
+"371","Body mass index (% SD increase) (% SD increase)",8
+"372","Body mass index (unit increase) (AA and Sub-Saharan) (unit increase)",3
+"373","Body mass index (unit increase) (discovery + validation) (unit increase)",1
+"374","Body mass index (unit increase) (rs11142387-C) (unit increase)",1
+"375","Body mass index (unit increase) (unit increase)",23
+"376","Body mass index (z score increase) (z score increase)",1
+"377","Body mass (lean) (kg increase) (kg increase)",1
+"378","Body mass (lean) (NA)",1
+"379","Bone mineral density (FNK) (NA)",2
+"380","Bone mineral density (hip) (NA)",3
+"381","Bone mineral density (hip) (s.d. increase)",14
+"382","Bone mineral density (mg/cm3 increase) (mg/cm3 increase)",2
+"383","Bone mineral density (NA)",1
+"384","Bone mineral density (paediatric, lower limb) (unit increase)",5
+"385","Bone mineral density (paediatric, skull) (unit increase)",8
+"386","Bone mineral density (paediatric, total body less head) (unit increase)",7
+"387","Bone mineral density (paediatric, upper limb) (unit increase)",5
+"388","Bone mineral density (SD increase) (SD increase)",1
+"389","Bone mineral density (spine) (NA)",7
+"390","Bone mineral density (spine) (s.d. increase)",21
+"391","Bone mineral density (unit increase) (Conditional on rs917727) (unit increase)",1
+"392","Bone mineral density (unit increase) (Cortical vBMD) (unit increase)",3
+"393","Bone mineral density (unit increase) (femoral neck) (unit increase)",1
+"394","Bone mineral density (unit increase) (FNBMD) (unit increase)",27
+"395","Bone mineral density (unit increase) (hip, female) (unit increase)",1
+"396","Bone mineral density (unit increase) (LSBMD) (unit increase)",31
+"397","Bone mineral density (unit increase) (spine) (unit increase)",1
+"398","Bone mineral density (unit increase) (Trabecular vBMD) (unit increase)",1
+"399","Bone mineral density (unit increase) (unit increase)",2
+"400","Bone properties (heel) (unit increase) (BUA) (unit increase)",4
+"401","Bone properties (heel) (unit increase) (VOS) (unit increase)",5
+"402","Brain connectivity (Clustering coefficient - L-isthmus of the cingulate) (NA)",1
+"403","Brain connectivity (Clustering coefficient - R-insula) (NA)",2
+"404","Brain connectivity (Strength - L-inferior parietal) (NA)",1
+"405","Brain connectivity (Strength - L-transverse temporal) (NA)",1
+"406","Brain connectivity (Strength - R-banks of the superior temporal sulcus) (NA)",1
+"407","Brain connectivity (strength - R-inferior parietal) (NA)",1
+"408","Brain connectivity (Strength - R paracentral) (NA)",1
+"409","Brain connectivity (Strength - R-pars opercularis) (NA)",2
+"410","Brain connectivity (unit increase) (unit increase)",1
+"411","Brain structure (mm3 increase) (Intracranial volume) (mm3 increase)",1
+"412","Brain structure (mm3 increase) (Mean bilateral hippocampal volume) (mm3 increase)",1
+"413","Breast cancer (all races combined) (NA)",1
+"414","Breast cancer (early onset) (NA)",18
+"415","Breast cancer (East Asian) (NA)",3
+"416","Breast cancer (estrogen-receptor negative, progesterone-receptor negative, and human epidermal growth factor-receptor negative) (NA)",2
+"417","Breast Cancer in BRCA1 mutation carriers (NA)",2
+"418","Breast cancer in BRCA2 mutation carriers (NA)",1
+"419","Breast cancer (male) (NA)",2
+"420","Breast cancer (NA)",82
+"421","Breast cancer (survival) (ER -ve) (NA)",1
+"422","Breast cancer (survival) (NA)",1
+"423","Breast size (cup size increase)",6
+"424","Bronchodilator response in asthma (inhaled corticosteroid treatment interaction) (NA)",3
+"425","Bronchodilator response in asthma (unit increase)",1
+"426","Brugada syndrome (NA)",3
+"427","B-type natriuretic peptide (unit increase)",2
+"428","Butyrylcholinesterase levels (SD increase)",3
+"429","C4b binding protein levels (NA)",1
+"430","Caffeine consumption (mg/day increase)",2
+"431","Calcium levels (unit increase) (unit increase)",10
+"432","Cardiac hypertrophy (additive, recessive) (NA)",1
+"433","Cardiac muscle measurement (Relative wall thickness) (NA)",1
+"434","Cardiac repolarization (ms increase) (ms increase)",1
+"435","Cardiac structure and function (LV internal diastolic dimensions) (cm increase)",1
+"436","Cardiac Troponin-T levels (ug/L increase) (ug/L increase)",1
+"437","Cardiovascular disease risk factors (mg/l increase) (mg/l increase)",1
+"438","Cardiovascular disease risk factors (mmol/l increase) (HDL) (mmol/l increase)",2
+"439","Cardiovascular disease risk factors (mmol/l increase) (LDL) (mmol/l increase)",4
+"440","Cardiovascular disease risk factors (mmol/l increase) (TRIG) (mmol/l increase)",3
+"441","Cardiovascular disease risk factors (% SD increase) (HDL-cholesterol) (% SD increase)",1
+"442","Cardiovascular disease risk factors (% SD increase) (LDL-cholesterol) (% SD increase)",1
+"443","Cardiovascular disease risk factors (umol/l increase) (umol/l increase)",4
+"444","Cardiovascular disease risk factors (units/l increase) (BCHE) (units/l increase)",1
+"445","Cardiovascular disease risk factors (units/l increase) (GGT) (units/l increase)",1
+"446","Cardiovascular heart disease in diabetics (NA)",1
+"447","Carotenoid and tocopherol levels (alpha-tocopherol) (umol/L increase)",1
+"448","Carotenoid and tocopherol levels (beta-carotene) (umol/L increase)",1
+"449","Carotid atherosclerosis in HIV infection (common cIMT) (NA)",1
+"450","Carotid intima media thickness (unit increase) (cIMT) (unit increase)",3
+"451","Carotid intima media thickness (unit increase) (Plaque) (unit increase)",2
+"452","CD4:CD8 lymphocyte ratio (CD4:CD8) (SD increase)",1
+"453","Celiac disease (NA)",33
+"454","Celiac disease or Rheumatoid arthritis (NA)",11
+"455","Central corneal thickness (SD increase) (SD increase)",2
+"456","Central corneal thickness (unit increase) (unit increase)",6
+"457","Cerebral amyloid angiopathy (unit increase)",1
+"458","Cerebrospinal AB1-42 levels (Controls) (NA)",1
+"459","Cerebrospinal AB1-42 levels in Alzheimer's disease dementia (unit increase)",2
+"460","Cerebrospinal fluid levels of Alzheimer's disease-related proteins (Angiotensin-converting enzyme) (NA)",1
+"461","Cerebrospinal fluid levels of Alzheimer's disease-related proteins (Interleukin-6 receptor) (NA)",1
+"462","Cerebrospinal fluid levels of Alzheimer's disease-related proteins (Macrophage Inflammatory protein-1 beta) (NA)",1
+"463","Cerebrospinal fluid levels of Alzheimer's disease-related proteins (Matrix metalloproteinase-3) (NA)",1
+"464","Cerebrospinal fluid levels of Alzheimer's disease-related proteins (Monocyte chemotactic protein 1) (NA)",1
+"465","Cerebrospinal T-tau levels (Controls) (NA)",1
+"466","Cervical artery dissection (NA)",2
+"467","Cervical cancer (Matched) (NA)",3
+"468","Cervical cancer (NA)",2
+"469","Cervical cancer (Stringently Matched) (NA)",1
+"470","Change in intraocular pressure in response to steroid treatment (triamcinolone acetonide) (NA)",1
+"471","Cholelithiasis-related traits in sickle cell anemia (unit increase)",1
+"472","Cholesterol (mg/dl increase between hmz)",1
+"473","Cholesterol, total (mg/dL increase) (mg/dL increase)",13
+"474","Cholesterol, total (s.d. increase) (s.d. increase)",12
+"475","Cholesterol, total (unit increase) (unit increase)",63
+"476","Chronic bronchitis and chronic obstructive pulmonary disease (EA, COPDGene + GenKOLS) (NA)",1
+"477","Chronic bronchitis and chronic obstructive pulmonary disease (EA) (NA)",1
+"478","Chronic bronchitis and chronic obstructive pulmonary disease (NA)",2
+"479","Chronic hepatitis B infection (NA)",13
+"480","Chronic hepatitis C infection (NA)",7
+"481","Chronic kidney disease and serum creatinine levels (NA)",1
+"482","Chronic kidney disease (CKD) (NA)",1
+"483","Chronic kidney disease (eGFRcrea) (NA)",4
+"484","Chronic kidney disease (eGFRcys) (NA)",1
+"485","Chronic kidney disease (ml/min/1.73 m2 increase) (eGFRcrea) (ml/min/1.73 m2 increase)",15
+"486","Chronic kidney disease (ml/min/1.73 m2 increase) (eGFRcys) (ml/min/1.73 m2 increase)",1
+"487","Chronic kidney disease (ml/min/1.73m^2 increase) (ml/min/1.73m^2 increase)",2
+"488","Chronic kidney disease (ml/min/1.73m2 increase) (ml/min/1.73m2 increase)",1
+"489","Chronic kidney disease (NA)",1
+"490","Chronic lymphocytic leukemia \(0.66\) (NA)",1
+"491","Chronic lymphocytic leukemia (NA)",29
+"492","Chronic myeloid leukemia (NA)",1
+"493","Chronic obstructive pulmonary disease (moderate to severe) (NA)",4
+"494","Chronic obstructive pulmonary disease (NA)",8
+"495","Chronic obstructive pulmonary disease-related biomarkers (CC16) (NA)",5
+"496","Chronic obstructive pulmonary disease-related biomarkers (SP-D) (NA)",12
+"497","Chronic obstructive pulmonary disease (severe) (NA)",5
+"498","Circulating cell-free DNA (ug/ml increase)",1
+"499","Circulating myeloperoxidase levels (plasma) (unit increase)",2
+"500","Circulating myeloperoxidase levels (serum) (unit increase)",3
+"501","Circulating vasoactive peptide levels (nmol/l increase) (nmol/l increase)",1
+"502","Circulating vasoactive peptide levels (pmol/l increase) (pmol/l increase)",3
+"503","Classic bladder exstrophy (NA)",1
+"504","Cleft lip (NA)",2
+"505","Clozapine-induced cytotoxicity (30x) (NA)",2
+"506","Coagulation factor levels (lU/dL increase)",1
+"507","Cocaine dependence (Symptom count) (NA)",1
+"508","Coffee consumption (cups per day increase) (cups per day increase)",2
+"509","Coffee consumption (cups per day) (unit increase)",5
+"510","Coffee consumption (unit increase) (unit increase)",5
+"511","Cognitive decline (age-related) (unit increase)",2
+"512","Cognitive decline (NA)",1
+"513","Cognitive decline (unit increase) (unit increase)",1
+"514","Cognitive function (unit increase)",5
+"515","Cold medicine related Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS-TEN) with severe mucosal involvement (NA)",1
+"516","Colorectal cancer (diet interaction) (Processed meat) (NA)",1
+"517","Colorectal cancer (distal colon cancer) (NA)",1
+"518","Colorectal cancer (East Asian) (NA)",10
+"519","Colorectal cancer (NA)",29
+"520","Colorectal cancer (rs10795668) (NA)",1
+"521","Common traits (Other) (asparagus anosmia) (NA)",1
+"522","Common traits (Other) (sneeze) (NA)",1
+"523","Common traits (Other) (unit increase) (unit increase)",3
+"524","Complement C3 and C4 levels (Serum level of C3) (g/L increase)",2
+"525","Complement C3 and C4 levels (Serum level of C4) (g/L increase)",8
+"526","Conduct disorder (symptom count) (unit increase)",3
+"527","Congenital heart disease (ASD) (NA)",1
+"528","Congenital heart malformation (NA)",2
+"529","Congenital left-sided heart lesions (EA) (NA)",1
+"530","Contrast sensitivity (unit increase)",1
+"531","Corneal astigmatism (NA)",1
+"532","Corneal curvature (unit increase) (unit increase)",8
+"533","Corneal structure (NA)",1
+"534","Corneal structure (unit increase) (unit increase)",26
+"535","Coronary arterial lesions in patients with Kawasaki disease (NA)",1
+"536","Coronary artery calcification (% increase) (% increase)",2
+"537","Coronary artery calcification (unit increase) (unit increase)",1
+"538","Coronary artery disease (NA)",12
+"539","Coronary artery disease or ischemic stroke (NA)",13
+"540","Coronary artery disease or large artery stroke (NA)",17
+"541","Coronary heart disease (NA)",48
+"542","Cortical structure (interaction) (NA)",1
+"543","Cortical thickness (mm increase)",3
+"544","Cotinine glucuronidation (unit increase)",11
+"545","C-reactive protein (AA women) (NA)",1
+"546","C-reactive protein and white blood cell count (10^3/ul increase) (10^3/ul increase)",3
+"547","C-reactive protein and white blood cell count (mg/dl increase) (mg/dl increase)",6
+"548","C-reactive protein (% increase) (% increase)",5
+"549","C-reactive protein levels (unit increase)",20
+"550","C-reactive protein (log mg/dl increase) (log mg/dl increase)",1
+"551","C-reactive protein (mg/dl increase) (mg/dl increase)",6
+"552","C-reactive protein (mg/l increase in log(CRP) level) (mg/l increase in log(CRP) level)",1
+"553","C-reactive protein (unit increase) (AA women) (unit increase)",4
+"554","C-reactive protein (unit increase) (HA women) (unit increase)",2
+"555","C-reactive protein (unit increase) (unit increase)",7
+"556","Creatine kinase in statin users (unit increase)",2
+"557","Creatinine levels (% increase) (% increase)",4
+"558","Creatinine levels (NA)",1
+"559","Creutzfeldt-Jakob disease (NA)",1
+"560","Creutzfeldt-Jakob disease (sporadic) (NA)",1
+"561","Creutzfeldt-Jakob disease (variant) (NA)",3
+"562","Crohn's disease and celiac disease (NA)",2
+"563","Crohn's disease and psoriasis (same-effect analysis) (NA)",2
+"564","Crohn's disease (NA)",156
+"565","Crohn's disease-related phenotypes (CDC stricturing) (NA)",1
+"566","Cutaneous lupus erythematosus (NA)",3
+"567","Cutaneous nevi (log nevus count increase) (log nevus count increase)",2
+"568","Cystatin C (NA)",1
+"569","Cystic fibrosis-related diabetes (NA)",1
+"570","Cystic fibrosis severity \(p.Phe508del/p.Phe508del only\) (NA)",1
+"571","D-dimer levels (% increase)",3
+"572","Dehydroepiandrosterone sulphate levels (u mol/L increase) (u mol/L increase)",2
+"573","Dehydroepiandrosterone sulphate levels (umol/L increase) (umol/L increase)",6
+"574","Dementia and core Alzheimer's disease neuropathologic changes (Primary) (unit increase)",1
+"575","Dengue shock syndrome (NA)",2
+"576","Dental caries (DMFS2) (NA)",1
+"577","Dental caries (DMFS5max, DMFS5) (NA)",1
+"578","Diabetes (gestational) (NA)",2
+"579","Diabetic retinopathy (NA)",4
+"580","Diastolic blood pressure (mm Hg increase) (mm Hg increase)",9
+"581","Diastolic blood pressure (mmHg increase) (mmHg increase)",17
+"582","Diastolic blood pressure (unit increase) (unit increase)",9
+"583","Dietary macronutrient intake (% increase) (Fat) (% increase)",1
+"584","Dietary macronutrient intake (% increase) (Protein) (% increase)",1
+"585","Dietary macronutrient intake (percent increase) (Protein - model 2) (percent increase)",1
+"586","Diffuse large B cell lymphoma (NA)",5
+"587","Digestive system disease (Barrett's esophagus and esophageal adenocarcinoma combined) (NA)",3
+"588","Digit length ratio (NA)",1
+"589","Diisocyanate-induced asthma (NA)",1
+"590","Dilated cardiomyopathy (NA)",2
+"591","Disc degeneration (lumbar) (NA)",1
+"592","Disc degeneration (lumbar) (unit increase) (unit increase)",3
+"593","DNA methylation (parent-of-origin) (H19-ICR-CpG02) (NA)",1
+"594","DNA methylation (parent-of-origin) (H19-ICR CpG 09-10) (NA)",1
+"595","DNA methylation (parent-of-origin) (KvDMR 10-11-12) (NA)",1
+"596","DNA methylation (parent-of-origin) (KvDMR 21) (NA)",1
+"597","DNA methylation (parent-of-origin) (NESPAS CpG08_09) (NA)",1
+"598","DNA methylation (variation) (H19-ICR) (NA)",1
+"599","DNA methylation (variation) (KvDMR) (NA)",1
+"600","DNA methylation (variation) (NESPAS-ICR) (NA)",1
+"601","Drinking behavior (NA)",3
+"602","Drug-induced liver injury (amoxicillin-clavulanate) (NA)",2
+"603","Drug-induced liver injury (flucloxacillin) (B*5701 positive) (NA)",1
+"604","Drug-induced liver injury (flucloxacillin) (NA)",1
+"605","Drug-induced liver injury (NA)",1
+"606","Drug-induced Stevens-Johnson syndrome or toxic epidermal necrolysis (SJS/TEN) (NA)",3
+"607","Drug-induced Stevens-Johnson syndrome or toxic epidermal necrolysis (SJS/TEN) (NW-EA) (NA)",1
+"608","Duodenal ulcer (NA)",1
+"609","Dupuytren's disease (NA)",9
+"610","Educational attainment (NA)",3
+"611","Educational attainment (unit increase) (Edu Years) (unit increase)",4
+"612","Educational attainment (unit increase) (unit increase)",3
+"613","Ejection fraction in Tripanosoma cruzi seropositivity (NA)",1
+"614","Electrocardiographic conduction measures (msec increase) (msec increase)",5
+"615","Electrocardiographic traits (ms increase) (QTc interval) (ms increase)",1
+"616","Electrocardiographic traits (% s.d. increase) (HR) (% s.d. increase)",1
+"617","Electrocardiographic traits (% s.d. increase) (PR interval) (% s.d. increase)",3
+"618","Electrocardiographic traits (% s.d. increase) (QRS complex) (% s.d. increase)",1
+"619","Electrocardiographic traits (% s.d. increase) (QRS duration) (% s.d. increase)",2
+"620","Electrocardiographic traits (% s.d. increase) (QT interval) (% s.d. increase)",4
+"621","Electrocardiographic traits (unit increase) (PR) (unit increase)",1
+"622","Electrocardiographic traits (unit increase) (QT) (unit increase)",1
+"623","Electroencephalographic traits in alcoholism (unit increase)",1
+"624","Elevated serum carcinoembryonic antigen levels (NA)",12
+"625","Endometrial cancer (NA)",1
+"626","Endometriosis (NA)",8
+"627","Endothelial growth factor levels (HGF) (unit increase)",1
+"628","Endothelial growth factor levels (sTie-2) (unit increase)",2
+"629","End-stage coagulation (D-dimer) (unit increase)",1
+"630","End-stage coagulation (Fibrin lag time) (unit increase)",1
+"631","End-stage coagulation (FVII:C) (unit increase)",5
+"632","End-stage coagulation (FVIII) (unit increase)",1
+"633","End-stage coagulation (FXIII activity) (unit increase)",2
+"634","End-stage coagulation (FXIIIA) (unit increase)",7
+"635","End-stage coagulation (FXIIIB) (unit increase)",1
+"636","End-stage coagulation (FX) (unit increase)",1
+"637","End-stage coagulation (vWF) (unit increase)",2
+"638","End-stage renal disease in Type 1 diabetics (NA)",1
+"639","End-stage renal disease (non-diabetic) (NA)",1
+"640","Enteric fever (NA)",1
+"641","Entorhinal cortical volume (Alzheimer's disease interaction) (unit increase)",1
+"642","Eosinophil counts (% standard unit increase)",5
+"643","Eosinophilic esophagitis (NA)",7
+"644","Eosinophilic esophagitis (pediatric) (NA)",2
+"645","Epilepsy (All epilepsy) (NA)",2
+"646","Epilepsy (generalized) (All GGE) (NA)",2
+"647","Epilepsy (generalized) (GAE) (NA)",1
+"648","Epilepsy (generalized) (JME) (NA)",1
+"649","Epilepsy (GGE) (NA)",2
+"650","Epilepsy (NA)",1
+"651","Epirubicin-induced leukopenia (NA)",1
+"652","Episodic memory (unit increase)",1
+"653","Epithelial ovarian cancer (NA)",13
+"654","Epstein-Barr virus immune response (EBNA-1) (Conditional on rs477515 - Quantitative) (unit increase)",1
+"655","Epstein-Barr virus immune response (EBNA-1) (Quantitative) (unit increase)",1
+"656","Erythrocyte sedimentation rate (unit increase)",5
+"657","E-selectin levels (ng/ml increase)",1
+"658","Esophageal cancer  (alcohol interaction) (NA)",1
+"659","Esophageal cancer and gastric cancer (ESCC) (NA)",2
+"660","Esophageal cancer and gastric cancer (Total gastric) (NA)",1
+"661","Esophageal cancer (NA)",11
+"662","Esophageal cancer (squamous cell) (NA)",7
+"663","Esophageal squamous cell cancer (length of survival) (NA)",1
+"664","Esophageal squamous cell carcinoma (NA)",5
+"665","Essential tremor (NA)",1
+"666","Estradiol plasma levels (breast cancer) (unit increase)",1
+"667","Ewing sarcoma (NA)",3
+"668","Exfoliation glaucoma or exfoliation syndrome (NA)",2
+"669","Exhaled carbon monoxide levels (unit increase)",1
+"670","Expressive vocabulary in infants (15-18 months) (unit increase)",1
+"671","Exudative age-related macular degeneration (NA)",7
+"672","Eye color (NA)",2
+"673","Eye color traits (% increase) (% increase)",2
+"674","Eye color traits (NA)",1
+"675","Eye color (unit increase) (eye color) (unit increase)",4
+"676","Eye color (unit increase) (Eye color) (unit increase)",1
+"677","Facial morphology (mm increase)",1
+"678","Facial pigmentation (unit increase)",3
+"679","Factor VIII levels (unit increase)",1
+"680","Factor VII levels (NA)",1
+"681","Factor VII (NA)",1
+"682","Fasting glucose-related traits (FPG) (NA)",15
+"683","Fasting glucose-related traits (HOMA-B) (NA)",1
+"684","Fasting glucose-related traits (HOMA-IR) (NA)",1
+"685","Fasting glucose-related traits (interaction with BMI) (NA)",22
+"686","Fasting insulin (interaction) (Carbohydrate) (NA)",1
+"687","Fasting insulin-related traits (HOMA-IR) (NA)",2
+"688","Fasting insulin-related traits (interaction with BMI) (NA)",10
+"689","Fasting plasma glucose (0.04-0.09) mmol/L increase) (0.04-0.09) mmol/L increase)",1
+"690","Fasting plasma glucose (mmol/l increase) (mmol/l increase)",4
+"691","Fasting plasma glucose (NA)",1
+"692","Fasting plasma glucose (tFPG) (NA)",1
+"693","Fasting plasma glucose (unit increase) (unit increase)",14
+"694","Fat body mass (Adjusted by Lean body mass) (unit increase)",1
+"695","Fat body mass (unit increase)",1
+"696","F-cell distribution (% variance) (% variance)",2
+"697","Febrile seizures (MMR-related vs MMR-unrelated) (NA)",3
+"698","Febrile seizures (MMR vaccine-related) (NA)",4
+"699","Febrile seizures (MMR vaccine-unrelated) (NA)",2
+"700","Febrile seizures (Overall) (NA)",4
+"701","Fetal hemoglobin levels in sickle cell anemia (unit increase)",2
+"702","Fetal hemoglobin levels (s.d. increase in HbF) (s.d. increase in HbF)",2
+"703","Fetal hemoglobin levels (unit increase) (African) (unit increase)",2
+"704","Fibrinogen (g/L increase) (g/L increase)",8
+"705","Fibrinogen (mg/dl increase) (mg/dl increase)",3
+"706","Fibrinogen (unit increase) (EA) (unit increase)",21
+"707","Fibrinogen (unit increase) (unit increase)",1
+"708","Folate pathway vitamin levels (ng/ml increase) (vitamin B6) (ng/ml increase)",1
+"709","Folate pathway vitamin levels (pg/ml increase) (pg/ml increase)",1
+"710","Folate pathway vitamin levels (unit increase) (plasma homocysteine) (unit increase)",1
+"711","Folate pathway vitamin levels (unit increase) (Plasma homocysteine) (unit increase)",1
+"712","Folate pathway vitamin levels (unit increase) (Plasma PLP) (unit increase)",1
+"713","Folate pathway vitamin levels (unit increase) (Plasma Vitamin B12) (unit increase)",2
+"714","Follicular lymphoma (CLL/SLL) (NA)",1
+"715","Follicular lymphoma (FL) (NA)",1
+"716","Follicular lymphoma (NA)",8
+"717","Follicule stimulating hormone (NA)",1
+"718","Follicule stimulating hormone (unit increase) (unit increase)",1
+"719","Forced vital capacity (EA) (ml increase)",6
+"720","Fractional exhaled nitric oxide (childhood) (EA) (unit increase)",2
+"721","Fractional exhaled nitric oxide (childhood) (unit increase)",3
+"722","Freckles (NA)",3
+"723","Freckling (unit increase)",4
+"724","Frontotemporal dementia (All Frontotemporal dementia) (NA)",1
+"725","Fuchs's corneal dystrophy (NA)",1
+"726","Gallstones (NA)",1
+"727","Gamma gluatamyl transferase levels (unit increase)",4
+"728","Gamma glutamyl transpeptidase (IU/L increase)",7
+"729","Gastric cancer (NA)",2
+"730","Gene methylation in lung tissue (NA)",1
+"731","Glaucoma (AA, incident) (NA)",1
+"732","Glaucoma (AA) (NA)",2
+"733","Glaucoma (AA, prevalent) (NA)",2
+"734","Glaucoma (exfoliation) (NA)",1
+"735","Glaucoma (high intraocular pressure) (NA)",1
+"736","Glaucoma (Hispanic, incident) (NA)",1
+"737","Glaucoma (NA)",4
+"738","Glaucoma (primary angle closure) (NA)",3
+"739","Glaucoma (primary open-angle) (NA)",10
+"740","Glaucoma (primary open-angle) (NPG) (NA)",1
+"741","Glioma (high-grade) (NA)",5
+"742","Glioma (NA)",8
+"743","Glomerular filtration rate (3-measure model) (unit increase)",1
+"744","Glomerular filtration rate (3-measure Model) (unit increase)",1
+"745","Glomerular filtration rate (6-measure model) (unit increase)",1
+"746","Glomerular filtration rate (6-measure Model) (unit increase)",1
+"747","Glomerular filtration rate (unit increase)",1
+"748","Glomerulosclerosis (NA)",1
+"749","Glucose homeostasis traits (AIRg) (unit increase)",1
+"750","Glycated hemoglobin levels (% increase) (% increase)",13
+"751","Glycated hemoglobin levels (unit increase) (HbA1c, Malay) (unit increase)",1
+"752","Glycated hemoglobin levels (unit increase) (unit increase)",10
+"753","Glycemic traits (1-hPG) (mmol-1 increase)",4
+"754","Glycemic traits (FPG) (mmol-1 increase)",2
+"755","Glycemic traits (pregnancy) (1HPG) (unit increase)",1
+"756","Glycemic traits (pregnancy) (2HPG) (unit increase)",1
+"757","Glycemic traits (pregnancy) (FCP) (unit increase)",2
+"758","Glycemic traits (pregnancy) (FPG) (unit increase)",3
+"759","Gout (NA)",7
+"760","Gout (unit increase) (unit increase)",2
+"761","Graves' disease (NA)",21
+"762","Hair color (hair color) (NA)",1
+"763","Hair color (NA)",1
+"764","Hair color (unit increase) (red hair) (unit increase)",2
+"765","Hair color (unit increase) (unit increase)",6
+"766","Hair morphology (NA)",1
+"767","Hair morphology (% variance) (% variance)",1
+"768","Handedness in dyslexia (SD increase)",1
+"769","Haptoglobin levels (SFS family cohort)",1
+"770","Hashimoto thyroiditis versus Graves' disease (NA)",1
+"771","HbA2 levels (NA)",2
+"772","HDL cholesterol (mg/dl increase) (mg/dl increase)",6
+"773","HDL cholesterol (mg/dL increase) (mg/dL increase)",19
+"774","HDL cholesterol (mmol/l increase) (mmol/l increase)",2
+"775","HDL cholesterol (percentage SD increase) (percentage SD increase)",3
+"776","HDL cholesterol (s.d. increase) (s.d. increase)",14
+"777","HDL Cholesterol - Triglycerides (HDLC-TG) (unit increase)",8
+"778","HDL cholesterol (unit increase) (AA) (unit increase)",5
+"779","HDL cholesterol (unit increase) (unit increase)",76
+"780","Head circumference (infant) (SD increase)",2
+"781","Hearing function (unit increase) (unit increase)",1
+"782","Heart failure (EA) (NA)",1
+"783","Heart rate (unit increase) (Conditional on rs1015451, rs11154027) (unit increase)",1
+"784","Heart rate (unit increase) (Conditional on rs1015451, rs17083533) (unit increase)",1
+"785","Heart rate (unit increase) (Conditonal on rs11118555) (unit increase)",1
+"786","Heart rate (unit increase) (unit increase)",20
+"787","Height adjusted BMI (unit increase)",2
+"788","Height (cm increase) (cm increase)",15
+"789","Height (Conditiond on rs2780226) (NA)",1
+"790","Height (Conditioned on rs11107116) (NA)",1
+"791","Height (Conditioned on rs1173727) (NA)",1
+"792","Height (Conditioned on rs12153391) (NA)",1
+"793","Height (Conditioned on rs2145998) (NA)",1
+"794","Height (Conditioned on rs227724) (NA)",1
+"795","Height (Conditioned on rs2780226) (NA)",1
+"796","Height (Conditioned on rs3791675) (NA)",1
+"797","Height (Conditioned on rs5742915) (NA)",1
+"798","Height (Conditioned on rs6449353) (NA)",1
+"799","Height (Conditioned on rs7689420) (NA)",1
+"800","Height (males) (males)",14
+"801","Height (NA)",59
+"802","Height (% s.d. increase) (% s.d. increase)",12
+"803","Height (s.d. increase) (s.d. increase)",6
+"804","Height (unit increase) (unit increase)",418
+"805","Helicobacter pylori serologic status (NA)",2
+"806","Hematocrit (% increase)",8
+"807","Hematological and biochemical traits (ALB) (unit increase)",1
+"808","Hematological and biochemical traits (ALP) (unit increase)",4
+"809","Hematological and biochemical traits (ALT) (unit increase)",2
+"810","Hematological and biochemical traits (AST) (unit increase)",1
+"811","Hematological and biochemical traits (BUN) (unit increase)",3
+"812","Hematological and biochemical traits (CK) (unit increase)",1
+"813","Hematological and biochemical traits (GGT) (unit increase)",2
+"814","Hematological and biochemical traits (Hb) (unit increase)",1
+"815","Hematological and biochemical traits (HDL) (unit increase)",3
+"816","Hematological and biochemical traits (Ht) (unit increase)",1
+"817","Hematological and biochemical traits (sCr) (unit increase)",1
+"818","Hematological and biochemical traits (TP) (unit increase)",2
+"819","Hematological parameters (10^12/l increase) (10^12/l increase)",1
+"820","Hematological parameters (10^9/l increase) (PLT) (10^9/l increase)",3
+"821","Hematological parameters (10^9/l increase) (WBC) (10^9/l increase)",1
+"822","Hematological parameters (fl increase) (fl increase)",4
+"823","Hematological parameters (pg increase) (pg increase)",1
+"824","Hematology traits (s.d. increase) (MCH) (s.d. increase)",1
+"825","Hematology traits (s.d. increase) (MCV) (s.d. increase)",2
+"826","Hematology traits (s.d. increase) (PLT) (s.d. increase)",1
+"827","Hematology traits (unit increase) (AA, HCT) (unit increase)",1
+"828","Hematology traits (unit increase) (AA, RBC) (unit increase)",2
+"829","Hematology traits (unit increase) (AA, WBC) (unit increase)",1
+"830","Hematology traits (unit increase) (ALB/GLB) (unit increase)",2
+"831","Hematology traits (unit increase) (EA, WBC) (unit increase)",1
+"832","Hematology traits (unit increase) (HGB) (unit increase)",1
+"833","Hematology traits (unit increase) (RBC) (unit increase)",1
+"834","Hematology traits (unit increase) (WBC) (unit increase)",1
+"835","Hemoglobin A2 levels in sickle cell anemia (NA)",1
+"836","Hemoglobin (g/dl increase) (g/dl increase)",7
+"837","Hemoglobin (NA)",1
+"838","Hemostatic factors and hematological phenotypes (unit increase) (unit increase)",1
+"839","Hepatitis B (NA)",7
+"840","Hepatitis B vaccine response (NA)",4
+"841","Hepatitis B (viral clearance) (Protective effects against CHB) (NA)",2
+"842","Hepatitis C induced liver cirrhosis (NA)",5
+"843","Hepatitis C induced liver fibrosis (Duration F0-1/F3-4, transfused) (NA)",1
+"844","Hepatitis C induced liver fibrosis (QTF) (NA)",1
+"845","Hepatitis (NA)",8
+"846","Hepatocellular carcinoma (hepatitis B virus related) (NA)",2
+"847","Hepatocellular carcinoma (NA)",5
+"848","Hepcidin levels (Iron) (ng/ml increase)",1
+"849","Hepcidin levels (Tf) (ng/ml increase)",1
+"850","Hepcidin levels (Tf Sat) (ng/ml increase)",1
+"851","Hereditary hemochromatosis-related traits (HFE mutation homozygotes) (Trasferrin) (unit increase)",1
+"852","High serum lipase activity (NA)",1
+"853","Hip circumference (psychosocial stress interaction) (EA) (NA)",1
+"854","Hippocampal atrophy (Hippocampal volume) (NA)",2
+"855","Hippocampal sclerosis of aging (NA)",1
+"856","Hippocampal volume (mm3 increase) (mm3 increase)",3
+"857","Hirschsprung disease (NA)",3
+"858","HIV-1 control (AA) (NA)",4
+"859","HIV-1 control (EA) (NA)",3
+"860","HIV-1 control (% increase) (% increase)",1
+"861","HIV-1 control (progression) (NA)",1
+"862","HIV-1 susceptibility (NA)",1
+"863","Hodgkin's lymphoma (EBV-negative cHL) (NA)",1
+"864","Hodgkin's lymphoma (NA)",8
+"865","Hodgkin's lymphoma (Total cHL) (NA)",2
+"866","Homeostasis model assessment of beta-cell function (interaction) (n-6 PUFA) (NA)",2
+"867","Homeostasis model assessment of insulin resistance (interaction) (Carbohydrate) (NA)",2
+"868","Homoarginine levels (unit increase)",1
+"869","Homocysteine levels (unit increase)",17
+"870","Homocysteine levels (WGHS) (unit increase)",1
+"871","Hormone measurements (unit increase) (Oestradiol) (unit increase)",2
+"872","Hormone measurements (unit increase) (SHBG) (unit increase)",1
+"873","HPV seropositivity (NA)",1
+"874","Hyperopia (NA)",2
+"875","Hypertension (log odds increase) (log odds increase)",1
+"876","Hypertension (NA)",8
+"877","Hypertension risk in short sleep duration (NA)",1
+"878","Hypertension (unit increase) (unit increase)",6
+"879","Hypertriglyceridemia (NA)",4
+"880","Hypospadias (NA)",19
+"881","Hypothyroidism (eMERGE) (NA)",1
+"882","Hypothyroidism (NA)",5
+"883","Idiopathic membranous nephropathy (NA)",20
+"884","Idiopathic pulmonary fibrosis (NA)",5
+"885","IFN-related cytopenia (NA)",1
+"886","IgA nephropathy (EA) (NA)",1
+"887","IgA nephropathy (East Asian) (NA)",1
+"888","IgA nephropathy (NA)",19
+"889","IgE grass sensitization (NA)",3
+"890","IgE levels (% increase) (% increase)",1
+"891","IgE levels (unit increase) (unit increase)",9
+"892","IgG glycosylation (IGP14) (unit increase)",1
+"893","IgG glycosylation (IGP17) (unit increase)",1
+"894","IgG glycosylation (IGP23) (unit increase)",1
+"895","IgG glycosylation (IGP26) (unit increase)",1
+"896","IgG glycosylation (IGP29) (unit increase)",2
+"897","IgG glycosylation (IGP2) (unit increase)",1
+"898","IgG glycosylation (IGP31) (unit increase)",1
+"899","IgG glycosylation (IGP38) (unit increase)",1
+"900","IgG glycosylation (IGP39) (unit increase)",1
+"901","IgG glycosylation (IGP40) (unit increase)",2
+"902","IgG glycosylation (IGP41) (unit increase)",2
+"903","IgG glycosylation (IGP42) (unit increase)",2
+"904","IgG glycosylation (IGP53) (unit increase)",2
+"905","IgG glycosylation (IGP59) (unit increase)",1
+"906","IgG glycosylation (IGP63) (unit increase)",1
+"907","IgG glycosylation (IGP67) (unit increase)",1
+"908","IgG glycosylation (IGP69) (unit increase)",1
+"909","IgG glycosylation (IGP70) (unit increase)",1
+"910","IgG glycosylation (IGP72) (unit increase)",1
+"911","IgG glycosylation (IGP7) (unit increase)",1
+"912","IgG levels (NA)",1
+"913","IgG levels (unit increase) (unit increase)",1
+"914","IgM levels (NA)",1
+"915","Immune reponse to smallpox (secreted IFN-alpha) (AA) (NA)",13
+"916","Immune reponse to smallpox (secreted IFN-alpha) (EA) (NA)",4
+"917","Immune reponse to smallpox (secreted IL-10) (AA) (NA)",3
+"918","Immune reponse to smallpox (secreted IL-12p40) (EA) (NA)",4
+"919","Immune reponse to smallpox (secreted IL-1beta) (AA) (NA)",3
+"920","Immune reponse to smallpox (secreted IL-1beta) (EA) (NA)",4
+"921","Immune reponse to smallpox (secreted IL-2) (AA) (NA)",5
+"922","Immune reponse to smallpox (secreted IL-2) (EA) (NA)",3
+"923","Immune reponse to smallpox (secreted TNF-alpha) (AA) (NA)",1
+"924","Immune response to measles-mumps-rubella vaccine (IFN gamma response) (NA)",2
+"925","Immune response to smallpox vaccine (IL-6) (AA) (NA)",8
+"926","Immune response to smallpox vaccine (IL-6) (Hispanic) (NA)",2
+"927","Immunoglobulin A (NA)",3
+"928","Immunoglobulin G index levels in multiple sclerosis (unit increase)",2
+"929","Infantile hypertrophic pyloric stenosis (NA)",4
+"930","Infant length (unit increase)",11
+"931","Inflammatory biomarkers (ESR) (NA)",2
+"932","Inflammatory biomarkers (hsCRP-IL6 pattern prefenofibrate) (NA)",1
+"933","Inflammatory biomarkers (hsCRP) (NA)",2
+"934","Inflammatory biomarkers in Kawasaki disease (mg/dL increase)",1
+"935","Inflammatory biomarkers (MCP-1) (NA)",2
+"936","Inflammatory biomarkers (unit increase) (IL18) (unit increase)",2
+"937","Inflammatory biomarkers (unit increase) (IL-1ra) (unit increase)",1
+"938","Inflammatory bowel disease (early onset) (NA)",4
+"939","Inflammatory bowel disease (NA)",113
+"940","Inflammatory skin disease (Atopic dermatitis) (NA)",1
+"941","Inflammatory skin disease (Opposed) (NA)",1
+"942","Inflammatory skin disease (Psoriasis) (NA)",7
+"943","Information processing speed (LDST/DSST- age, sex, and education adjusted) (unit increase)",1
+"944","Insulin-like growth factors (IGFBP-3) (NA)",4
+"945","Insulin-related traits (FI) (unit increase)",1
+"946","Insulin-related traits (IR) (unit increase)",1
+"947","Interferon alpha levels in systemic lupus erythematosus (EA) (NA)",1
+"948","Interleukin-18 levels (NA)",2
+"949","Interstitial lung disease (NA)",11
+"950","Intracerebral hemorrhage (NA)",1
+"951","Intracranial aneurysm (NA)",11
+"952","Intracranial volume (ml increase)",2
+"953","Intraocular pressure (mm Hg increase) (mm Hg increase)",8
+"954","Intraocular pressure (mmHg increase) (mmHg increase)",1
+"955","Intraocular pressure (unit increase) (unit increase)",1
+"956","Iris characteristics (Crypts) (unit increase)",1
+"957","Iris characteristics (Furrows) (unit increase)",1
+"958","Iris characteristics (Pigmented Ring) (unit increase)",1
+"959","Iris color (NA)",1
+"960","Iron levels (ug/dL increase)",1
+"961","Iron status biomarkers (ferritin levels) (unit increase)",5
+"962","Iron status biomarkers (iron levels) (unit increase)",5
+"963","Iron status biomarkers (mg/dl increase) (mg/dl increase)",1
+"964","Iron status biomarkers (s.d. increase) (serum transferrin) (s.d. increase)",1
+"965","Iron status biomarkers (transferrin levels) (unit increase)",9
+"966","Iron status biomarkers (transferrin saturation) (NA)",2
+"967","Iron status biomarkers (transferrin saturation) (unit increase)",4
+"968","Iron status biomarkers (ug/dl increase) (ug/dl increase)",2
+"969","Iron status biomarkers (unit increase) (ferritin) (unit increase)",1
+"970","Iron status biomarkers (unit increase) (sTfR) (unit increase)",4
+"971","Iron status biomarkers (unit increase) (TIBC) (unit increase)",2
+"972","Ischemic stroke (NA)",1
+"973","Kashin-Beck disease (NA)",1
+"974","Kawasaki disease (NA)",8
+"975","Keloid (NA)",3
+"976","Kidney function decline traits (eGFRchange overall) (unit increase)",1
+"977","Kidney stones (NA)",1
+"978","Knee osteoarthritis (NA)",1
+"979","Large artery stroke (NA)",1
+"980","L-arginine levels (unit increase)",1
+"981","Laryngeal squamous cell carcinoma (NA)",3
+"982","LDL cholesterol (LDL) (NA)",1
+"983","LDL cholesterol (mg/dl increase) (mg/dl increase)",3
+"984","LDL cholesterol (mg/dL increase) (mg/dL increase)",9
+"985","LDL cholesterol (mmol/L increase) (mmol/L increase)",1
+"986","LDL cholesterol (NA)",1
+"987","LDL cholesterol (percentage SD increase) (percentage SD increase)",4
+"988","LDL cholesterol (% s.d. increase) (% s.d. increase)",1
+"989","LDL cholesterol (s.d. increase) (s.d. increase)",13
+"990","LDL cholesterol (unit increase) (AA) (unit increase)",5
+"991","LDL cholesterol (unit increase) (unit increase)",54
+"992","LDL (oxidized) (U/L increase)",1
+"993","Left inferior lateral ventricle volume (Cerebrospinal fluid biomarker status interaction) (Baseline, amyloid positive) (interaction)",1
+"994","Left inferior lateral ventricle volume (Cerebrospinal fluid biomarker status interaction) (Dilation, amyloid positive) (interaction)",2
+"995","Leishmaniasis (visceral) (NA)",1
+"996","Leprosy (NA)",26
+"997","Lewy body disease (Ordinal I) (unit increase)",1
+"998","Lifespan (unit increase)",1
+"999","Lipid levels in hepatitis C treatment (NA)",1
+"1000","Lipid metabolism phenotypes (Albumin) (unit increase)",1
+"1001","Lipid metabolism phenotypes (APOB.assay, whole) (unit increase)",4
+"1002","Lipid metabolism phenotypes (HDL-C.assay, fasting) (unit increase)",1
+"1003","Lipid metabolism phenotypes (HDL-C.assay, whole) (unit increase)",2
+"1004","Lipid metabolism phenotypes (HDL-C.by.NMR, whole) (unit increase)",1
+"1005","Lipid metabolism phenotypes (HDL-C) (unit increase)",1
+"1006","Lipid metabolism phenotypes (HDL.large, fasting) (unit increase)",1
+"1007","Lipid metabolism phenotypes (HDL.large, whole) (unit increase)",1
+"1008","Lipid metabolism phenotypes (HDL.total, whole) (unit increase)",1
+"1009","Lipid metabolism phenotypes (IDL.total, whole) (unit increase)",1
+"1010","Lipid metabolism phenotypes (LA/PUFA) (unit increase)",2
+"1011","Lipid metabolism phenotypes (LDL-C.assay, fasting) (unit increase)",1
+"1012","Lipid metabolism phenotypes (LDL-C.assay, whole) (unit increase)",2
+"1013","Lipid metabolism phenotypes (LDL.large, whole) (unit increase)",1
+"1014","Lipid metabolism phenotypes (LDL.total, fasting) (unit increase)",1
+"1015","Lipid metabolism phenotypes (L-LDL-FC) (unit increase)",2
+"1016","Lipid metabolism phenotypes (M-LDL-C/M-LDL-PL) (unit increase)",1
+"1017","Lipid metabolism phenotypes (MobCH) (unit increase)",1
+"1018","Lipid metabolism phenotypes (M-VLDL-PL) (unit increase)",1
+"1019","Lipid metabolism phenotypes (TG.assay, whole) (unit increase)",1
+"1020","Lipid metabolism phenotypes (Tot-C/Est-C) (unit increase)",1
+"1021","Lipid metabolism phenotypes (Val/serum TG) (unit increase)",1
+"1022","Lipid metabolism phenotypes (VLDL-D) (unit increase)",1
+"1023","Lipid metabolism phenotypes (VLDL.medium, fasting) (unit increase)",1
+"1024","Lipid metabolism phenotypes (VLDL.small, fasting) (unit increase)",2
+"1025","Lipid metabolism phenotypes (VLDL.small, whole) (unit increase)",1
+"1026","Lipid metabolism phenotypes (VLDL.total, fasting) (unit increase)",1
+"1027","Lipid metabolism phenotypes (VLDL.total, whole) (unit increase)",1
+"1028","Lipid metabolism phenotypes (XL-HDL-CE) (unit increase)",1
+"1029","Lipid metabolism phenotypes (XL-HDL-TG) (unit increase)",2
+"1030","Lipid metabolism phenotypes (XXL-VLDL-P) (unit increase)",1
+"1031","Lipid traits (mmol/L increase) (HDL) (mmol/L increase)",3
+"1032","Lipid traits (mmol/L increase) (LDL) (mmol/L increase)",2
+"1033","Lipid traits (mmol/L increase) (TC) (mmol/L increase)",1
+"1034","Lipid traits (mmol/L increase) (TG) (mmol/L increase)",1
+"1035","Lipid traits (unit increase) (HDL-C) (unit increase)",3
+"1036","Lipid traits (unit increase) (LDL-C) (unit increase)",2
+"1037","Lipid traits (unit increase) (TG) (unit increase)",2
+"1038","Lipid traits (unit increase) (Triglycerides) (unit increase)",1
+"1039","Lipid traits (unit increase) (unit increase)",1
+"1040","Lipoprotein (a) - cholesterol levels (NA)",14
+"1041","Lipoprotein-associated phospholipase A2 activity and mass (ng/ml increase) (activity) (ng/ml increase)",6
+"1042","Lipoprotein-associated phospholipase A2 activity and mass (ng/ml increase) (mass) (ng/ml increase)",1
+"1043","Lipoprotein-associated phospholipase A2 activity and mass (nmol/ml/min increase) (nmol/ml/min increase)",3
+"1044","Lipoprotein-associated phospholipase A2 activity and mass (unit increase) (Activity concentrations) (unit increase)",5
+"1045","Lipoprotein-associated phospholipase A2 activity and mass (unit increase) (Mass concentrations) (unit increase)",2
+"1046","Lipoprotein-associated phospholipase A2 activity change in response to statin therapy (percent increase) (percent increase)",2
+"1047","Liver enzyme levels (alanine transaminase) (% increase) (% increase)",4
+"1048","Liver enzyme levels (alkaline phosphatase) (% increase)",14
+"1049","Liver enzyme levels (ALP) (U/L increase)",5
+"1050","Liver enzyme levels (ALT) (U/L increase)",2
+"1051","Liver enzyme levels (gamma-glutamyl transferase) (% increase)",26
+"1052","Liver enzyme levels (GGT) (U/L increase)",2
+"1053","Local histogram emphysema pattern (unit increase) (Moderate Centrilobular, EA) (unit increase)",1
+"1054","Local histogram emphysema pattern (unit increase) (Moderate Centrilobular) (unit increase)",2
+"1055","Local histogram emphysema pattern (unit increase) (normal) (unit increase)",3
+"1056","Local histogram emphysema pattern (unit increase) (Panlobular) (unit increase)",2
+"1057","Local histogram emphysema pattern (unit increase) (Severe Centrilobular) (unit increase)",2
+"1058","Longevity (85 years and older) (NA)",1
+"1059","Longevity (90 years and older) (NA)",2
+"1060","Longevity (NA)",2
+"1061","Lp (a) levels (mg/dl increase) (mg/dl increase)",1
+"1062","Lp (a) levels (mg/dL increase) (mg/dL increase)",3
+"1063","Lumiracoxib-related liver injury (NA)",1
+"1064","Lung adenocarcinoma (NA)",9
+"1065","Lung cancer (Adenocarcinoma) (NA)",1
+"1066","Lung cancer (NA)",13
+"1067","Lung cancer (Squamous cell carcinoma) (NA)",2
+"1068","Lymphoma (FL) (NA)",4
+"1069","Lymphoma (LYM) (NA)",1
+"1070","Magnesium levels (mmol/L increase) (mmol/L increase)",6
+"1071","Major depressive disorder (% improvement - 12 weeks) (NA)",1
+"1072","Major depressive disorder (NA)",1
+"1073","Major depressive disorder (unit increase) (% improvement - SSRI treated - 2 weeks) (unit increase)",1
+"1074","Major mood disorders (NA)",1
+"1075","Malaria (NA)",6
+"1076","Male-pattern baldness (males) (NA)",1
+"1077","Male-pattern baldness (NA)",10
+"1078","Mammographic density (dense area) (NA)",1
+"1079","Mammographic density (dense area) (unit increase) (unit increase)",7
+"1080","Mammographic density (non-dense area) (unit increase) (unit increase)",1
+"1081","Marginal zone lymphoma (NA)",2
+"1082","Mathematical ability in children with dyslexia (% increase)",1
+"1083","Matrix metalloproteinase levels (unit increase) (unit increase)",3
+"1084","Mean corpuscular hemoglobin concentration (unit increase) (AA) (unit increase)",2
+"1085","Mean corpuscular hemoglobin concentration (unit increase) (unit increase)",8
+"1086","Mean corpuscular hemoglobin (pg increase) (pg increase)",9
+"1087","Mean corpuscular hemoglobin (unit increase) (AA) (unit increase)",1
+"1088","Mean corpuscular hemoglobin (unit increase) (unit increase)",19
+"1089","Mean corpuscular volume (fl increase) (fl increase)",15
+"1090","Mean corpuscular volume (unit increase) (AA) (unit increase)",2
+"1091","Mean corpuscular volume (unit increase) (unit increase)",19
+"1092","Mean platelet volume (10^9 L increase) (10^9 L increase)",7
+"1093","Mean platelet volume (fl increase) (fl increase)",7
+"1094","Mean platelet volume (fL increase) (fL increase)",2
+"1095","Mean platelet volume (ln(fl) increase) (ln(fl) increase)",29
+"1096","Mean platelet volume (per log fl increase) (per log fl increase)",1
+"1097","Mean platelet volume (unit increase) (unit increase)",3
+"1098","Melanoma (NA)",13
+"1099","Menarche (age at onset) (months increase) (months increase)",1
+"1100","Menarche (age at onset) (unit increase) (EA) (unit increase)",1
+"1101","Menarche (age at onset) (unit increase) (unit increase)",117
+"1102","Menarche (age at onset) (week increase) (week increase)",20
+"1103","Menarche (age at onset) (year increase) (year increase)",1
+"1104","Menarche and menopause (age at onset) (age at menarche) (years increase)",2
+"1105","Menarche and menopause (age at onset) (age at natural menopause) (years increase)",3
+"1106","Meningioma (NA)",1
+"1107","Meningococcal disease (NA)",1
+"1108","Menopause (age at onset) (years increase) (years increase)",20
+"1109","Mesial temporal lobe epilepsy with hippocampal sclerosis (MTLEHS+FS vs. Controls) (NA)",1
+"1110","Metabolic syndrome (bivariate traits) (BP-HDLC) (unit increase)",2
+"1111","Metabolic syndrome (bivariate traits) (HDLC-GLUC) (unit increase)",3
+"1112","Metabolic syndrome (bivariate traits) (HDLC-WC) (unit increase)",3
+"1113","Metabolic syndrome (bivariate traits) (TG-GLUC) (unit increase)",4
+"1114","Metabolic syndrome (cm increase) (cm increase)",1
+"1115","Metabolic syndrome (mmHg increase) (SBP) (mmHg increase)",1
+"1116","Metabolic syndrome (mmol/l increase) (GLU) (mmol/l increase)",5
+"1117","Metabolic syndrome (mmol/l increase) (HDL) (mmol/l increase)",11
+"1118","Metabolic syndrome (mmol/l increase) (TG) (mmol/l increase)",6
+"1119","Metabolic syndrome (unit increase) (unit increase)",5
+"1120","Metabolic traits (mmol/l increase) (CRP) (mmol/l increase)",2
+"1121","Metabolic traits (mmol/l increase) (GLU) (mmol/l increase)",1
+"1122","Metabolic traits (mmol/l increase) (TG) (mmol/l increase)",2
+"1123","Metabolic traits (unit increase) (5-oxoproline) (unit increase)",1
+"1124","Metabolic traits (unit increase) (alpha-hydroxyisovalerate + 6 other traits) (unit increase)",1
+"1125","Metabolic traits (unit increase) (androsterone sulfate + 2 other traits) (unit increase)",1
+"1126","Metabolic traits (unit increase) (aspartylphenylalanine) (unit increase)",1
+"1127","Metabolic traits (unit increase) (bradykinin, des-arg(9)) (unit increase)",1
+"1128","Metabolic traits (unit increase) (caffeine/quinate + 3 other traits) (unit increase)",1
+"1129","Metabolic traits (unit increase) (carnitine) (unit increase)",1
+"1130","Metabolic traits (unit increase) (decanoylcarnitine + 25 other traits) (unit increase)",1
+"1131","Metabolic traits (unit increase) (glucose/mannose + 54 other traits) (unit increase)",1
+"1132","Metabolic traits (unit increase) (glutamine + 7 other traits) (unit increase)",1
+"1133","Metabolic traits (unit increase) (glutaroyl carnitine/lysine + 3 other traits) (unit increase)",1
+"1134","Metabolic traits (unit increase) (glycine + 17 other traits) (unit increase)",1
+"1135","Metabolic traits (unit increase) (inosine + 1 other trait) (unit increase)",1
+"1136","Metabolic traits (unit increase) (isobutyrylcarnitine + 3 other traits) (unit increase)",1
+"1137","Metabolic traits (unit increase) (isoleucine/tyrosine + 10 other traits) (unit increase)",1
+"1138","Metabolic traits (unit increase) (isovalerylcarnitine + 7 other traits) (unit increase)",1
+"1139","Metabolic traits (unit increase) (proline + 5 other traits) (unit increase)",1
+"1140","Metabolic traits (unit increase) (serine) (unit increase)",1
+"1141","Metabolic traits (unit increase) (SM-10 + 59 other traits) (unit increase)",1
+"1142","Metabolic traits (unit increase) (SM-1 + 12 other traits) (unit increase)",1
+"1143","Metabolic traits (unit increase) (SM-11 + 2 other traits) (unit increase)",1
+"1144","Metabolic traits (unit increase) (SM-12 + 1 other trait) (unit increase)",1
+"1145","Metabolic traits (unit increase) (SM-13) (unit increase)",1
+"1146","Metabolic traits (unit increase) (SM-14 + 6 other traits) (unit increase)",1
+"1147","Metabolic traits (unit increase) (SM-15 + 12 other traits) (unit increase)",1
+"1148","Metabolic traits (unit increase) (SM-16 + 7 other traits) (unit increase)",1
+"1149","Metabolic traits (unit increase) (SM-17 + 8 other traits) (unit increase)",1
+"1150","Metabolic traits (unit increase) (SM-2 + 2 other traits) (unit increase)",1
+"1151","Metabolic traits (unit increase) (SM-3 + 152 other traits) (unit increase)",1
+"1152","Metabolic traits (unit increase) (SM-4 + 74 other traits) (unit increase)",1
+"1153","Metabolic traits (unit increase) (SM-5 + 17 other traits) (unit increase)",1
+"1154","Metabolic traits (unit increase) (SM-6 + 94 other traits) (unit increase)",1
+"1155","Metabolic traits (unit increase) (SM-7 + 11 other traits) (unit increase)",1
+"1156","Metabolic traits (unit increase) (SM-9 + 17 other traits) (unit increase)",1
+"1157","Metabolic traits (unit increase) (succinylcarnitine) (unit increase)",1
+"1158","Metabolic traits (unit increase) (urate, histidine) (unit increase)",1
+"1159","Metabolite levels (2,6 dimethylheptanoyl carnitine) (NA)",1
+"1160","Metabolite levels (Bilirubin) (NA)",1
+"1161","Metabolite levels (C9H14Ona) (NA)",1
+"1162","Metabolite levels (Caprolactam) (NA)",1
+"1163","Metabolite levels (g/dL increase) (g/dL increase)",2
+"1164","Metabolite levels (Glycerolphosphocholine) (NA)",2
+"1165","Metabolite levels (Glycerophospho-N-Palmitoyl Ethanolamine) (NA)",1
+"1166","Metabolite levels (Glycochenodeoxycholic acid 3-glucuronide) (NA)",1
+"1167","Metabolite levels (IU/L increase) (IU/L increase)",2
+"1168","Metabolite levels (mg/dL increase) (BUN) (mg/dL increase)",4
+"1169","Metabolite levels (mg/dL increase) (FPG) (mg/dL increase)",4
+"1170","Metabolite levels (mg/dL increase) (LDL) (mg/dL increase)",4
+"1171","Metabolite levels (NA)",30
+"1172","Metabolite levels (Pyroglutamine) (unit increase)",1
+"1173","Metabolite levels (serine) (NA)",1
+"1174","Metabolite levels (SM) (NA)",2
+"1175","Metabolite levels (unit increase) (adrenate) (unit increase)",1
+"1176","Metabolite levels (unit increase) (Ala, Gln) (unit increase)",1
+"1177","Metabolite levels (unit increase) (Ala, Tyr) (unit increase)",1
+"1178","Metabolite levels (unit increase) (Ala, Val) (unit increase)",1
+"1179","Metabolite levels (unit increase) (betaine) (unit increase)",2
+"1180","Metabolite levels (unit increase) (Citrate) (unit increase)",1
+"1181","Metabolite levels (unit increase) (Fischer's ratio) (unit increase)",2
+"1182","Metabolite levels (unit increase) (Glc) (unit increase)",2
+"1183","Metabolite levels (unit increase) (Gln, Glc) (unit increase)",1
+"1184","Metabolite levels (unit increase) (Gln, His) (unit increase)",1
+"1185","Metabolite levels (unit increase) (glycine) (unit increase)",1
+"1186","Metabolite levels (unit increase) (His, Val) (unit increase)",1
+"1187","Metabolite levels (unit increase) (N-ACu) (unit increase)",1
+"1188","Metabolite levels (unit increase) (Phe, Tyr) (unit increase)",1
+"1189","Metabolite levels (unit increase) (Phe) (unit increase)",1
+"1190","Metabolite levels (unit increase) (TMAu) (unit increase)",1
+"1191","Metabolite levels (Unknown) (NA)",1
+"1192","Metabolite levels (% variance) (C12/C10) (% variance)",1
+"1193","Metabolite levels (% variance) (C14:1-OH/C10) (% variance)",1
+"1194","Metabolite levels (% variance) (C3/C4) (% variance)",1
+"1195","Metabolite levels (% variance) (C9/C10:2) (% variance)",1
+"1196","Metabolite levels (% variance) (PC aa C36:3/PC aa C36:4) (% variance)",1
+"1197","Metabolite levels  (X-11787) (unit increase)",2
+"1198","Methotrexate clearance (acute lymphoblastic leukemia) (mL/min/m2 increase)",1
+"1199","Methotrexate phramacokinetics (acute lymphoblastic leukemia) (mL/min/m2 increase) (mL/min/m2 increase)",1
+"1200","Migraine - clinic-based (NA)",4
+"1201","Migraine (NA)",13
+"1202","Migraine without aura (NA)",5
+"1203","Mixed cryoglobulinemia vasculitis in chronic hepatitis C infection (NA)",2
+"1204","Monocyte chemoattractant protein-1 (NA)",2
+"1205","Monocyte count (EA) (unit increase)",4
+"1206","Monocyte count (Japanese) (unit increase)",2
+"1207","Monocyte count (unit increase)",5
+"1208","Morbidity-free survival (NA)",2
+"1209","Motion sickness (unit increase)",35
+"1210","Moyamoya disease (NA)",1
+"1211","Multiple cancers (lung cancer, gastric cancer, and squamous cell carcinoma) (All Cancers) (NA)",2
+"1212","Multiple myeloma (hyperdiploidy) (HD vs. controls) (NA)",4
+"1213","Multiple myeloma (NA)",6
+"1214","Multiple sclerosis (Cluxel size) (NA)",1
+"1215","Multiple sclerosis (Conditioned on rs11581062) (NA)",1
+"1216","Multiple sclerosis (Conditioned on rs17066096) (NA)",1
+"1217","Multiple sclerosis (Conditioned on rs3118470) (NA)",1
+"1218","Multiple sclerosis (Conditioned on rs4410871) (NA)",1
+"1219","Multiple sclerosis (Conditioned on rs669607) (NA)",1
+"1220","Multiple sclerosis (Conditioned on rs7238078) (NA)",1
+"1221","Multiple sclerosis (Conditioned on rs9282641) (NA)",1
+"1222","Multiple sclerosis (NA)",66
+"1223","Multiple sclerosis (OCB status) (NA)",1
+"1224","Multiple sclerosis (OCB status) (OCB positive vs. controls) (NA)",5
+"1225","Musician's dystonia (NA)",1
+"1226","Myasthenia gravis (NA)",3
+"1227","Myeloproliferative neoplasms (NA)",1
+"1228","Myocardial infarction (early onset) (NA)",9
+"1229","Myocardial infarction (NA)",5
+"1230","Myopia (NA)",1
+"1231","Myopia (pathological) (mm increase) (mm increase)",1
+"1232","Myopia (pathological) (NA)",35
+"1233","Myopia (severe) (NA)",2
+"1234","Narcolepsy (age of onset) (year increase)",3
+"1235","Narcolepsy (NA)",6
+"1236","Narcolepsy (onset before 2009 H1N1 influenza pandemic) (NA)",2
+"1237","Narcolepsy with cataplexy (NA)",1
+"1238","Nasopharyngeal carcinoma (NA)",9
+"1239","Natriuretic peptide levels (unit increase)",1
+"1240","Neonatal lupus (NA)",1
+"1241","Nephrolithiasis (NA)",3
+"1242","Nephropathy (NA)",6
+"1243","Neuranatomic and neurocognitive phenotypes (NA)",1
+"1244","Neuritic plaque (Case/control) (unit increase)",1
+"1245","Neuritic plaque (Ordinal) (unit increase)",1
+"1246","Neuroblastoma (high-risk) (NA)",1
+"1247","Neuroblastoma (NA)",8
+"1248","Neurofibrillary tangles (Ordinal I) (unit increase)",1
+"1249","Neutrophil count in HIV-infection (unit increase)",1
+"1250","Neutrophil count (NA)",1
+"1251","Neutrophil count (unit increase) (EA) (unit increase)",1
+"1252","Neutrophil count (unit increase) (unit increase)",3
+"1253","Nevirapine-induced rash (NA)",1
+"1254","N-glycan levels (DG11) (unit increase)",1
+"1255","N-glycan levels (DG1) (unit increase)",1
+"1256","N-glycan levels (DG6) (unit increase)",1
+"1257","N-glycan levels (DG7) (unit increase)",1
+"1258","N-glycan levels (DG9) (unit increase)",1
+"1259","Nicotine dependence (cigarettes per day increase) (cigarettes per day increase)",1
+"1260","Nicotine dependence (NA)",1
+"1261","Nicotine glucouronidation (unit increase)",1
+"1262","Non-albumin protein levels (ALB) (unit increase)",1
+"1263","Non-albumin protein levels (NAP) (unit increase)",3
+"1264","Non-alcoholic fatty liver disease histology (other) (unit increase) (Fibrosis) (unit increase)",1
+"1265","Non-alcoholic fatty liver disease (NA)",1
+"1266","Nonalcoholic fatty liver disease (unit increase) (unit increase)",1
+"1267","Non-melanoma skin cancer (unit increase)",2
+"1268","Non-obstructive azoospermia (NA)",4
+"1269","Non-small cell lung cancer (NA)",1
+"1270","Nonsyndromic cleft lip with or without cleft palate (NA)",5
+"1271","Obesity (early onset extreme) (NA)",12
+"1272","Obesity (extreme) (NA)",2
+"1273","Obesity (NA)",6
+"1274","Obesity (Obesity class III) (NA)",1
+"1275","Obesity (Obesity class II) (NA)",12
+"1276","Obesity (Obesity class I) (NA)",20
+"1277","Obesity (Obesity II) (NA)",2
+"1278","Obesity (Obesity I) (NA)",3
+"1279","Obesity (obesity) (NA)",1
+"1280","Obesity (Overweight) (NA)",13
+"1281","Obesity-related traits (µIU/mL increase) (µIU/mL increase)",1
+"1282","Obesity-related traits (kcal/d increase) (Total energy expenditure adj for weight ) (kcal/d increase)",1
+"1283","Obesity-related traits (mg/dL increase) (GLU ) (mg/dL increase)",1
+"1284","Obesity-related traits (mg/dL increase) (TG ) (mg/dL increase)",1
+"1285","Obesity-related traits (min/d increase) (Sedentary&light activity ) (min/d increase)",1
+"1286","Obesity-related traits (pg/mL increase) (MCP1 ) (pg/mL increase)",3
+"1287","Obesity-related traits (SD increase) (hip) (SD increase)",1
+"1288","Obesity-related traits (TFM) (NA)",1
+"1289","Obesity (waist) (NA)",1
+"1290","Obesity (WHR) (NA)",1
+"1291","Odorant perception (&beta;-ionone) (unit increase)",1
+"1292","Odorant perception (isobutyraldehyde) (unit increase)",1
+"1293","Oleic acid (18:1n-9) plasma levels (unit increase)",1
+"1294","Oligoclonal band status in multiple sclerosis (NA)",1
+"1295","Opioid sensitivity (NA)",1
+"1296","Optic cup area (EA) (unit increase)",7
+"1297","Optic cup area (unit increase)",15
+"1298","Optic disc area (mm2 increase) (Asian) (mm2 increase)",3
+"1299","Optic disc area (unit increase) (EA) (unit increase)",1
+"1300","Optic disc area (unit increase) (unit increase)",13
+"1301","Optic disc parameters (mm increase)",3
+"1302","Optic nerve measurement (disc area) (unit increase)",2
+"1303","Orofacial clefts (interaction) (NA)",1
+"1304","Orofacial clefts (Meta-All, NSCL/P) (NA)",9
+"1305","Orofacial clefts (Meta-All, NSCLP) (NA)",1
+"1306","Orofacial clefts (NA)",2
+"1307","Ossification of the posterior longitudinal ligament of the spine (NA)",6
+"1308","Osteoarthritis (hand, severe) (NA)",1
+"1309","Osteoarthritis (hip) (Male-specifc) (NA)",1
+"1310","Osteoarthritis (hip) (NA)",1
+"1311","Osteoarthritis (mm increase) (mm increase)",1
+"1312","Osteoarthritis (NA)",2
+"1313","Osteoporosis (NA)",3
+"1314","Osteoporosis-related phenotypes (g/cm2 increase) (LS BMD, women) (g/cm2 increase)",1
+"1315","Osteoporosis-related phenotypes (NA)",1
+"1316","Osteoprotegerin levels (Female-specific) (unit increase)",1
+"1317","Osteoprotegerin levels (Sex-combined) (unit increase)",2
+"1318","Osteosarcoma (NA)",2
+"1319","Other erythrocyte phenotypes (1 M cell/mm^3 increase) (1 M cell/mm^3 increase)",1
+"1320","Other erythrocyte phenotypes (1 M cells/mm^3 increase) (1 M cells/mm^3 increase)",1
+"1321","Other erythrocyte phenotypes (g/dl increase) (g/dl increase)",2
+"1322","Otitis media (chronic/recurrent) (NA)",1
+"1323","Otosclerosis (NA)",1
+"1324","Ovarian cancer (All invasive) (NA)",1
+"1325","Ovarian cancer in BRCA1 mutation carriers (NA)",4
+"1326","Ovarian cancer (NA)",2
+"1327","Ovarian cancer (Serious invasive) (NA)",7
+"1328","Paget's disease (NA)",9
+"1329","Pain (onset time of analgesia) (NA)",1
+"1330","Palmitic acid (16:0) plasma levels (unit increase)",1
+"1331","Palmitoleic acid (16:1n-7) plasma levels (unit increase)",5
+"1332","Pancreatic cancer (NA)",15
+"1333","Pancreatitis (NA)",2
+"1334","Panic disorder (NA)",1
+"1335","Paraoxonase activity (Serum Arylesterase activity) (NA)",1
+"1336","Paraoxonase activity (Serum Paraoxonases activity) (NA)",1
+"1337","Parent of origin effect on language impairment (paternal) (unit increase) (unit increase)",1
+"1338","Parkinson's disease (Asian) (NA)",2
+"1339","Parkinson's disease (EA) (NA)",3
+"1340","Parkinson's disease (NA)",50
+"1341","Parkinson's disease (Sporadic) (NA)",1
+"1342","PCA3 expression level (unit increase)",2
+"1343","Peanut allergy (NA)",1
+"1344","Percent mammographic density (% increase) (% increase)",1
+"1345","Percent mammographic density (NA)",2
+"1346","Percent mammographic density (unit increase) (unit increase)",2
+"1347","Pericardial fat (NA)",1
+"1348","Periodontitis (NA)",1
+"1349","Permanent tooth development (unit increase)",4
+"1350","Personality dimensions (unit increase) (Openness) (unit increase)",1
+"1351","Personality traits in bipolar disorder (TCI-C1) (NA)",1
+"1352","Personality traits in bipolar disorder (TCI-C3) (NA)",1
+"1353","Personality traits in bipolar disorder (TCI-ST1) (NA)",1
+"1354","Phospholipid levels (plasma) (ALA) (% increase)",1
+"1355","Phospholipid levels (plasma) (a-linolenic acid) (% increase)",1
+"1356","Phospholipid levels (plasma) (DHA) (% increase)",1
+"1357","Phospholipid levels (plasma) (Docosapentaenoic acid) (% increase)",1
+"1358","Phospholipid levels (plasma) (DPA) (% increase)",11
+"1359","Phospholipid levels (plasma) (EPA) (% increase)",7
+"1360","Phospholipid levels (plasma) (levels) (% increase)",14
+"1361","Phospholipid levels (plasma) (Lower docosahexaenoic acid) (% increase)",1
+"1362","Phospholipid levels (plasma) (proportions) (% increase)",10
+"1363","Phosphorus levels (mg/dl increase) (mg/dl increase)",4
+"1364","Phosphorus levels (unit increase) (unit increase)",1
+"1365","Phytosterol levels (% increase)",2
+"1366","Pit-and-Fissure caries (unit increase)",1
+"1367","Plasma cystastin c levels in acute coronary syndrome (mg/L increase) (mg/L increase)",1
+"1368","Plasma homocysteine levels (post-methionine load test) (NA)",1
+"1369","Plasma homocysteine levels (post-methionine load test) (unit increase) (unit increase)",4
+"1370","Plasma omega-6 polyunsaturated fatty acid levels (adrenic acid) (unit increase)",1
+"1371","Plasma omega-6 polyunsaturated fatty acid levels (arachidonic acid) (Conditioned on rs174547) (unit increase)",1
+"1372","Plasma omega-6 polyunsaturated fatty acid levels (arachidonic acid) (unit increase)",3
+"1373","Plasma omega-6 polyunsaturated fatty acid levels (dihomo-gamma-linolenic acid) (Conditioned on rs16966952) (unit increase)",1
+"1374","Plasma omega-6 polyunsaturated fatty acid levels (dihomo-gamma-linolenic acid) (unit increase)",2
+"1375","Plasma omega-6 polyunsaturated fatty acid levels (gamma-linolenic acid) (unit increase) (unit increase)",2
+"1376","Plasma omega-6 polyunsaturated fatty acid levels (linoleic acid) (Conditioned on rs16966952) (unit increase)",1
+"1377","Plasma omega-6 polyunsaturated fatty acid levels (linoleic acid) (Conditioned on rs174547) (unit increase)",1
+"1378","Plasma omega-6 polyunsaturated fatty acid levels (linoleic acid) (unit increase)",3
+"1379","Plasma plasminogen activator levels (unit increase)",4
+"1380","Plasma plasminogen levels (Conditioned on rs4252129 and rs1084651) (unit increase)",1
+"1381","Plasma plasminogen levels (unit increase)",3
+"1382","Plasma renin activity levels (NA)",2
+"1383","Plasma thyroid-stimulating hormone levels (uIU/L increase)",2
+"1384","Plasminogen activator inhibitor type 1 levels (PAI-1) (unit increase)",3
+"1385","Platelet aggregation (epinephrine) (NA)",2
+"1386","Platelet count (10^9/l increase) (10^9/l increase)",53
+"1387","Platelet count (unit increase) (unit increase)",11
+"1388","Pneumoconiosis in silica exposure (NA)",1
+"1389","Polycystic ovary syndrome (NA)",13
+"1390","Post-traumatic stress disorder (asjusted for relatedness) (Whole cohort; EA) (NA)",1
+"1391","Post-traumatic stress disorder (NA)",1
+"1392","Post-traumatic stress disorder (Whole cohort; EA) (NA)",1
+"1393","Primary biliary cirrhosis (NA)",27
+"1394","Primary sclerosing cholangitis (NA)",2
+"1395","Primary tooth development (number of teeth) (unit increase) (unit increase)",11
+"1396","Primary tooth development (number of teeth) (% variance) (% variance)",4
+"1397","Primary tooth development (time to first tooth eruption) (unit increase) (unit increase)",10
+"1398","Primary tooth development (time to first tooth eruption) (% variance) (% variance)",3
+"1399","PR interval in Tripanosoma cruzi seropositivity (NA)",5
+"1400","PR interval (ms increase) (ms increase)",9
+"1401","PR interval (unit increase) (Conditional) (unit increase)",2
+"1402","PR interval (unit increase) (unit increase)",12
+"1403","Progranulin levels (ng/ml increase)",1
+"1404","Progressive supranuclear palsy (controlling for rs7571971) (NA)",1
+"1405","Progressive supranuclear palsy (controlling for rs8070723) (NA)",1
+"1406","Progressive supranuclear palsy (NA)",5
+"1407","Proinsulin levels (NA)",9
+"1408","Prostate cancer (All) (NA)",1
+"1409","Prostate cancer (conditioned on rs9364554) (NA)",1
+"1410","Prostate cancer (EA, early-onset) (NA)",1
+"1411","Prostate cancer (EA) (NA)",9
+"1412","Prostate cancer (early onset) (NA)",3
+"1413","Prostate cancer (Japanese and Latin American) (NA)",1
+"1414","Prostate cancer (Japanese) (NA)",2
+"1415","Prostate cancer (NA)",93
+"1416","Prostate cancer (unit increase) (unit increase)",4
+"1417","Prostate-specific antigen levels (% increase) (% increase)",5
+"1418","Prostate-specific antigen levels (unit increase) (unit increase)",7
+"1419","Protein biomarker (unit increase)",1
+"1420","Protein C levels (ug/ml increase) (ug/ml increase)",4
+"1421","Protein C levels (unit increase) (Conditioned on rs7580658 and rs1799808) (unit increase)",2
+"1422","Protein C levels (unit increase) (unit increase)",1
+"1423","Protein quantitative trait loci (Alkaline phosphatase) (NA)",1
+"1424","Protein quantitative trait loci (Ft3) (NA)",1
+"1425","Protein quantitative trait loci (IL18) (NA)",1
+"1426","Protein quantitative trait loci (LPA) (NA)",1
+"1427","Protein quantitative trait loci (MIPb) (NA)",1
+"1428","Protein quantitative trait loci (sIL-6R) (NA)",1
+"1429","Protein quantitative trait loci (Soluble transferrin receptor) (NA)",1
+"1430","Prothrombin time (unit increase)",2
+"1431","PR segment (unit increase)",8
+"1432","Psoriasis (NA)",31
+"1433","Psoriatic arthritis (NA)",4
+"1434","Psychosis and Alzheimer's disease (NA)",1
+"1435","Pubertal anthropometrics (Late pubertal growth) (unit increase)",1
+"1436","Pubertal anthropometrics (Pubertal growth, females) (unit increase)",1
+"1437","Pubertal anthropometrics (Pubertal growth) (unit increase)",1
+"1438","Pubertal anthropometrics (Single Height) (unit increase)",1
+"1439","Puberty onset (genital enlargement) (unit increase)",1
+"1440","Puberty onset (unit increase)",1
+"1441","Pulmonary arterial hypertension (without BMPR2 mutations) (NA)",1
+"1442","Pulmonary artery enlargement and chronic obstructive pulmonary disease (NA)",1
+"1443","Pulmonary artery enlargement in chronic obstructive pulmonary disease (NA)",2
+"1444","Pulmonary emphysema (Chinese) (unit increase)",2
+"1445","Pulmonary emphysema (Hispanic) (unit increase)",1
+"1446","Pulmonary function (FEV1/FVC) (NA)",1
+"1447","Pulmonary function (% increase) (% increase)",4
+"1448","Pulmonary function (% increase in FEV1/FVC ratio) (% increase in FEV1/FVC ratio)",1
+"1449","Pulmonary function (interaction) (FEV1, Ever-smoking) (NA)",2
+"1450","Pulmonary function (interaction) (FEV1/FVC, Ever-smoking) (NA)",8
+"1451","Pulmonary function (interaction) (FEV1/FVC, Pack-years) (NA)",6
+"1452","Pulmonary function (interaction) (unit increase) (FEV1, Ever-smoking) (unit increase)",1
+"1453","Pulmonary function (interaction) (unit increase) (FEV1/FVC, Ever-smoking) (unit increase)",1
+"1454","Pulmonary function (interaction) (unit increase) (FEV1/FVC, Pack-years) (unit increase)",1
+"1455","Pulmonary function (ml increase) (ml increase)",1
+"1456","Pulmonary function (s.d. increase) (FEV1/FVC) (s.d. increase)",3
+"1457","Pulmonary function (s.d. increase) (FEV1) (s.d. increase)",3
+"1458","Pulmonary function (unit increase) (FEV1/FVC) (unit increase)",13
+"1459","Pulmonary function (unit increase) (FEV1) (unit increase)",3
+"1460","P wave duration (unit increase)",3
+"1461","QRS duration (ms increase) (ms increase)",12
+"1462","QRS duration (unit increase) (unit increase)",3
+"1463","QT interval (msec increase) (msec increase)",9
+"1464","QT interval (ms increase) (ms increase)",10
+"1465","QT interval (NA)",1
+"1466","QT interval (unit increase) (unit increase)",72
+"1467","Quantitative traits (mg/dL increase) (TG) (mg/dL increase)",1
+"1468","Reading or mathematical ability (unit increase)",1
+"1469","Recombination measurement (African-enrichment) (NA)",2
+"1470","Recombination measurement (females) (NA)",1
+"1471","Recombination measurement (Hotspot usage) (NA)",1
+"1472","Recombination measurement (males) (NA)",1
+"1473","Recombination rate (females) (cM increase)",1
+"1474","Recombination rate (males) (cM increase)",1
+"1475","Red blood cell count (unit increase)",8
+"1476","Red blood cell fatty acid levels (AA) (unit increase)",2
+"1477","Red blood cell fatty acid levels (ALA) (unit increase)",1
+"1478","Red blood cell fatty acid levels (DGLA) (unit increase)",1
+"1479","Red blood cell fatty acid levels (DPA-n3) (unit increase)",1
+"1480","Red blood cell fatty acid levels (DTA) (unit increase)",1
+"1481","Red blood cell fatty acid levels (GLA) (unit increase)",1
+"1482","Red blood cell fatty acid levels (LA) (unit increase)",2
+"1483","Red blood cell fatty acid levels (OA) (unit increase)",3
+"1484","Red blood cell traits (d/dL increase) (d/dL increase)",1
+"1485","Red blood cell traits (g/dL increase) (Hgb, AA) (g/dL increase)",1
+"1486","Red blood cell traits (g/dL increase) (MCHC, AA) (g/dL increase)",1
+"1487","Red blood cell traits (% increase) (Ht, AA) (% increase)",1
+"1488","Red blood cell traits (NA)",1
+"1489","Red blood cell traits (pg increase) (MCH, AA) (pg increase)",2
+"1490","Red blood cell traits (pg increase) (MCH) (pg increase)",1
+"1491","Red blood cell traits (unit increase) (EA, Hgb) (unit increase)",4
+"1492","Red blood cell traits (unit increase) (EA, MCHC) (unit increase)",2
+"1493","Red blood cell traits (unit increase) (EA, MCH) (unit increase)",10
+"1494","Red blood cell traits (unit increase) (EA, MCV) (unit increase)",16
+"1495","Red blood cell traits (unit increase) (EA, PCV) (unit increase)",2
+"1496","Red blood cell traits (unit increase) (EA, RBCC) (unit increase)",5
+"1497","Red blood cell traits (unit increase) (EA, RBCC\) (unit increase)",1
+"1498","Red blood cell traits (unit increase) (Hgb) (unit increase)",1
+"1499","Red blood cell traits (unit increase) (MCHC) (unit increase)",2
+"1500","Red blood cell traits (unit increase) (MCH) (unit increase)",4
+"1501","Red blood cell traits (unit increase) (MCV) (unit increase)",1
+"1502","Red blood cell traits (unit increase) (PCV) (unit increase)",1
+"1503","Red blood cell traits (unit increase) (RBC count) (unit increase)",1
+"1504","Red blood cell traits (x10^6/uL, increase) (x10^6/uL, increase)",1
+"1505","Red vs non-red hair color (NA)",1
+"1506","Refractive astigmatism (EA, 25 years or older) (NA)",1
+"1507","Refractive error (diopter increase) (diopter increase)",2
+"1508","Refractive error (unit increase) (unit increase)",25
+"1509","Relative hand skill in reading disability (unit increase)",1
+"1510","Renal cell carcinoma (NA)",5
+"1511","Renal cell carcinoma (Western European) (NA)",2
+"1512","Renal function and chronic kidney disease (ml/min/1.73m2 increase) (ml/min/1.73m2 increase)",3
+"1513","Renal function-related traits (BUN) (mg/dl increase)",13
+"1514","Renal function-related traits (eGRFcrea) (ml/min/1.73m2 increase)",7
+"1515","Renal function-related traits (sCR) (mg/dl increase)",8
+"1516","Renal function-related traits (urea) (mg/dl increase)",4
+"1517","Renal transplant outcome (unit increase)",1
+"1518","Resistin levels (unit increase) (unit increase)",2
+"1519","Response to alcohol consumption (flushing response) (unit increase)",1
+"1520","Response to antidepressants (unit increase) (nortriptyline) (unit increase)",1
+"1521","Response to antipsychotic therapy (extrapyramidal side effects) (SAS) (NA)",1
+"1522","Response to antipsychotic treatment (Effect of Quetiapine on PGI) (NA)",1
+"1523","Response to antipsychotic treatment (Effect of Risperidone on CGI-S) (NA)",1
+"1524","Response to antipsychotic treatment (olanzapine-hemoglobin A1c\) (NA)",1
+"1525","Response to antipsychotic treatment (risperidone-hip circumference) (NA)",1
+"1526","Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 2 peripheral neuropathy) (Hispanic) (NA)",1
+"1527","Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 3 peripheral neuropathy) (EA) (NA)",4
+"1528","Response to anti-retroviral therapy (ddI/d4T) in HIV-1 infection (Grade 3 peripheral neuropathy) (Hispanic) (NA)",4
+"1529","Response to bleomycin (chromatid breaks) (unit increase)",1
+"1530","Response to citalopram treatment (EA + AA - Vision\hearing) (NA)",1
+"1531","Response to clopidogrel therapy (NA)",1
+"1532","Response to Dalcetrapib treatment in acute coronary syndrome (NA)",1
+"1533","Response to fenofibrate (VLDL diameter) (unit increase)",1
+"1534","Response to gemcitabine in pancreatic cancer (NA)",1
+"1535","Response to hepatitis C treatment (Change in Hb) (NA)",1
+"1536","Response to hepatitis C treatment (Change of Hb) (NA)",1
+"1537","Response to hepatitis C treatment (combined, EA) (NA)",1
+"1538","Response to hepatitis C treatment (NA)",1
+"1539","Response to inhaled glucocorticoid treatment in asthma (percentage change of FEV1) (NA)",2
+"1540","Response to interferon beta therapy (unit increase)",2
+"1541","Response to metformin in type 2 diabetes (glycemic) (NA)",1
+"1542","Response to metformin (NA)",1
+"1543","Response to radiotherapy in cancer (late toxicity) (unit increase) (Prostate cancer, rectal incontinence, univariable analysis) (unit increase)",1
+"1544","Response to radiotherapy in prostate cancer (toxicity) (unit increase)",1
+"1545","Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels) (S-DCT/S-CT ratio, adjusted for CYP2C19) (NA)",1
+"1546","Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels) (S-DCT/S-CT ratio) (NA)",1
+"1547","Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels) (S-DDCT concentration) (NA)",2
+"1548","Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels) (S-DDCT/S-DCT ratio) (NA)",1
+"1549","Response to statins (LDL cholesterol change) (unit increase)",2
+"1550","Response to statin therapy (chol, diff) (NA)",1
+"1551","Response to statin therapy (HDL, sum) (NA)",1
+"1552","Response to statin therapy (LDL-C) (% increase) (% increase)",2
+"1553","Response to statin therapy (LDL-C) (mg/dL increase) (baseline LDL-C) (mg/dL increase)",2
+"1554","Response to statin therapy (mmol/L increase) (mmol/L increase)",1
+"1555","Response to statin therapy (NA)",1
+"1556","Response to tamoxifen in breast cancer (NA)",1
+"1557","Response to temozolomide (NA)",1
+"1558","Response to thiopurine immunosuppressants in inflammatory bowel disease (pancreatitis) (azathioprine and mercaptopurine) (NA)",1
+"1559","Response to tocilizumab in rheumatoid arthritis (CSJC , EA, RF-) (unit increase)",1
+"1560","Response to Vitamin E supplementation (mg/L increase) (mg/L increase)",1
+"1561","Resting heart rate (ms increase) (ms increase)",8
+"1562","Resting heart rate (ms increase) \(Random effects analysis\) (ms increase)",1
+"1563","Resting heart rate (NA)",2
+"1564","Resting oxygen saturation in chronic osbtructive pulmonary disease (pulse oxymetry) (unit increase)",1
+"1565","Restless legs syndrome (NA)",9
+"1566","Retinal arteriolar caliber (unit increase)",2
+"1567","Retinal vascular caliber (um increase)",4
+"1568","Retinol levels (ug/L increase)",2
+"1569","Rheumatoid arthritis (ACPA+ cases vs. all controls) (NA)",5
+"1570","Rheumatoid arthritis (ACPA-negative) (NA)",2
+"1571","Rheumatoid arthritis (ACPA-positive RA vs ACPA-negative RA) (NA)",2
+"1572","Rheumatoid arthritis (ACPA-positive RA vs controls) (NA)",1
+"1573","Rheumatoid arthritis (EA) (NA)",25
+"1574","Rheumatoid arthritis (East Asian) (NA)",2
+"1575","Rheumatoid arthritis (NA)",92
+"1576","Ribavirin-induced anemia (NA)",1
+"1577","RR interval (heart rate) (unit increase)",1
+"1578","Sagittal craniosynostosis (NA)",2
+"1579","Sarcoidosis (Chronic) (NA)",1
+"1580","Sarcoidosis (NA)",1
+"1581","Schizophrenia, bipolar disorder and depression (combined) (NA)",1
+"1582","Schizophrenia (EA) (NA)",2
+"1583","Schizophrenia (NA)",134
+"1584","Schizophrenia or bipolar disorder (SCZ or BP vs. controls) (NA)",6
+"1585","Schizophrenia, schizoaffective disorder or bipolar disorder (NA)",4
+"1586","Sclerosing cholangitis and ulcerative colitis (combined) (NA)",2
+"1587","Scoliosis (NA)",2
+"1588","Select biomarker traits (CRP average 2,6,7) (NA)",1
+"1589","Select biomarker traits (MCP1) (NA)",2
+"1590","Self-reported allergy (unit increase)",15
+"1591","Sensory disturbances after bilateral sagittal split ramus osteotomy (Hypoesthesia, Recessive) (NA)",1
+"1592","Serum albumin level (NA)",1
+"1593","Serum albumin level (unit increase) (EA) (unit increase)",1
+"1594","Serum albumin level (unit increase) (unit increase)",5
+"1595","Serum alkaline phosphatase levels (U/L increase)",3
+"1596","Serum ceruloplasmin levels (mg/dl increase)",1
+"1597","Serum dimethylarginine levels (asymmetric/symetric ratio) (unit increase)",2
+"1598","Serum ferritin levels (unit increase)",1
+"1599","Serum IgA levels (g/l increase)",1
+"1600","Serum lipase activity (unit increase)",2
+"1601","Serum metabolite levels (3-hydroxydecanoate) (unit increase)",1
+"1602","Serum metabolite levels (Acetylcarnitine) (unit increase)",1
+"1603","Serum metabolite levels (Aspartylphenylalanine) (unit increase)",1
+"1604","Serum metabolite levels (Biliverdin) (unit increase)",1
+"1605","Serum metabolite levels (Creatine) (unit increase)",1
+"1606","Serum metabolite levels (Deoxycarnitine) (unit increase)",1
+"1607","Serum metabolite levels (Hexadecanedioate) (unit increase)",1
+"1608","Serum metabolite levels (HXGXA) (unit increase)",1
+"1609","Serum metabolite levels (N-acetylornithine) (unit increase)",1
+"1610","Serum metabolite levels (N-acetylphenylalanine) (unit increase)",1
+"1611","Serum metabolite levels (Palmitoleate (16:1n7)) (unit increase)",1
+"1612","Serum metabolite levels (Phenylacetate) (unit increase)",1
+"1613","Serum metabolite levels (Trehalose) (unit increase)",1
+"1614","Serum prostate-specific antigen levels (% increase) (% increase)",6
+"1615","Serum prostate-specific antigen levels (NA)",1
+"1616","Serum protein levels (sST2) (unit increase) (unit increase)",11
+"1617","Serum thyroid-stimulating hormone levels (unit increase) (EA) (unit increase)",1
+"1618","Serum thyroid-stimulating hormone levels (unit increase) (unit increase)",2
+"1619","Serum total protein level (unit increase)",3
+"1620","Serum uric acid levels (NA)",1
+"1621","Serum uric acid levels (s.d. increase) (s.d. increase)",1
+"1622","Serum uric acid levels (unit increase) (unit increase)",4
+"1623","Serum VEGFR2 concentration (ng/mL increase)",1
+"1624","Serum vitamin D-binding protein levels (nmol/L increase)",2
+"1625","Sex hormone-binding globulin levels (nmol/L increase) (Men + Women) (nmol/L increase)",2
+"1626","Sex hormone-binding globulin levels (umol/L increase) (Men) (umol/L increase)",2
+"1627","Sex hormone-binding globulin levels (umol/L increase) (Men + Women) (umol/L increase)",7
+"1628","Sex hormone-binding globulin levels (unit increase) (Men + Women, Conditional) (unit increase)",3
+"1629","Sex hormone-binding globulin levels (unit increase) (unit increase)",1
+"1630","Sexual dimorphism in anthropometric traits (WHRadjBMI, women) (NA)",3
+"1631","Sickle cell anemia (haemolysis) (unit increase) (unit increase)",3
+"1632","Sitting height ratio (EA) (unit increase)",1
+"1633","Sitting height ratio (unit increase)",2
+"1634","Sjögren's syndrome (NA)",5
+"1635","Skin pigmentation (NA)",3
+"1636","Skin sensitivity to sun (NA)",1
+"1637","Sleep duration (EA) (unit increase)",1
+"1638","Sleep duration (unit increase)",1
+"1639","Sleep-related phenotypes (Sleepiness) (NA)",1
+"1640","Smoking behavior (CPD increase) (CPD) (CPD increase)",3
+"1641","Smoking behavior (CPD increase) (CPD increase)",2
+"1642","Smoking behavior (smoking cessation) (NA)",1
+"1643","Smoking behavior (smoking initiation) (NA)",1
+"1644","Smoking behavior (unit increase) (CPD) (unit increase)",1
+"1645","Smoking behavior (unit increase) (unit increase)",1
+"1646","Social communication problems (Age 17) (unit increase)",1
+"1647","Soluble E-selectin levels (NA)",1
+"1648","Soluble ICAM-1 (ng/mL increase) (ng/mL increase)",2
+"1649","Soluble ICAM-1 (umol/L increase) (umol/L increase)",1
+"1650","Soluble leptin receptor levels (% increase)",1
+"1651","Soluble levels of adhesion molecules (ICAM) (% increase)",2
+"1652","Soluble levels of adhesion molecules (P-Selectin) (% increase)",3
+"1653","Sphingolipid levels (% increase) (levels) (% increase)",8
+"1654","Sphingolipid levels (% increase) (proportions) (% increase)",2
+"1655","Sphingolipid levels (mol % increase) (SM 14:0Mol%) (mol % increase)",1
+"1656","Sphingolipid levels (unit increase) (GluCer) (unit increase)",1
+"1657","Sphingolipid levels (unit increase) (SM 16:1) (unit increase)",1
+"1658","Spontaneous preterm birth (preterm birth) (NA)",1
+"1659","Sporadic pituitary adenoma (NA)",1
+"1660","Squamous cell carcinoma (NA)",1
+"1661","Stearic acid (18:0) plasma levels (unit increase)",5
+"1662","Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS-TEN) (NA)",1
+"1663","Stroke (ischemic) (CS) (NA)",2
+"1664","Stroke (ischemic) (LVD) (NA)",1
+"1665","Stroke (ischemic) (NA)",1
+"1666","Stroke (LVD) (NA)",1
+"1667","Stroke (NA)",1
+"1668","Subcortical brain region volumes (mm3 increase) (Caudate, EA) (mm3 increase)",1
+"1669","Subcortical brain region volumes (mm3 increase) (Hippocampus, EA) (mm3 increase)",2
+"1670","Subcortical brain region volumes (mm3 increase) (Intracranial volume, EA) (mm3 increase)",1
+"1671","Subcortical brain region volumes (mm3 increase) (Putamen, EA) (mm3 increase)",4
+"1672","Subcortical brain region volumes (unit increase) (Hippocampus, EA) (unit increase)",1
+"1673","Subcortical brain region volumes (unit increase) (Intracranial volume, EA) (unit increase)",1
+"1674","Sudden cardiac arrest (NA)",1
+"1675","Sudden cardiac arrest (Recessive) (NA)",12
+"1676","Sunburns (unit increase)",2
+"1677","Superior frontal gyrus grey matter volume (Right superior frontal gyrus) (unit increase)",1
+"1678","Symmetrical dimethylarginine levels (unit increase)",4
+"1679","Systemic lupus erythematosus and Systemic sclerosis (ACA) (NA)",1
+"1680","Systemic lupus erythematosus and Systemic sclerosis (lcSSc) (NA)",1
+"1681","Systemic lupus erythematosus and Systemic sclerosis (NA)",9
+"1682","Systemic lupus erythematosus (anti-dsDNA -) (NA)",1
+"1683","Systemic lupus erythematosus (anti-dsDNA +) (NA)",3
+"1684","Systemic lupus erythematosus (NA)",54
+"1685","Systemic sclerosis (ACA positive) (NA)",2
+"1686","Systemic sclerosis (ATA positive) (NA)",4
+"1687","Systemic sclerosis (IcSSc) (NA)",1
+"1688","Systemic sclerosis (NA)",7
+"1689","Systolic blood pressure (alcohol consumption interaction) (drinks/week) (unit increase)",1
+"1690","Systolic blood pressure (mm Hg increase) (mm Hg increase)",6
+"1691","Systolic blood pressure (mmHg increase) (mmHg increase)",18
+"1692","Systolic blood pressure (unit increase) (unit increase)",10
+"1693","Tanning (tanning ability score increase) (tanning ability score increase)",5
+"1694","Tanning (unit increase) (unit increase)",5
+"1695","Telomere length (kb increase) (kb increase)",1
+"1696","Telomere length (unit increase) (unit increase)",9
+"1697","Temperament (bipolar disorder) (Hyperthymic) (unit increase)",2
+"1698","Temperament (bipolar disorder) (Irritable) (unit increase)",1
+"1699","Testicular cancer (NA)",3
+"1700","Testicular germ cell cancer (NA)",6
+"1701","Testicular germ cell tumor (NA)",19
+"1702","Testosterone levels (ng/dl increase) (ng/dl increase)",2
+"1703","Tetralogy of Fallot (NA)",2
+"1704","Thiazide-induced adverse metabolic effects in hypertensive patients (AA-triglyceride response) (mg/dL increase)",1
+"1705","Thoracic aortic aneurysms and dissections (NA)",1
+"1706","Thrombin generation potential phenotypes (min increase) (min increase)",1
+"1707","Thrombin generation potential phenotypes (nM increase) (nM increase)",1
+"1708","Thrombin generation potential phenotypes (nM/min increase) (nM/min increase)",1
+"1709","Thyroid cancer (NA)",6
+"1710","Thyroid cancer (Papillary, radiation-related) (NA)",1
+"1711","Thyroid function (unit increase)",4
+"1712","Thyroid hormone levels (FT4-Females) (unit increase)",1
+"1713","Thyroid hormone levels (FT4) (unit increase)",4
+"1714","Thyroid hormone levels (TSH - Males) (unit increase)",1
+"1715","Thyroid hormone levels (TSH) (unit increase)",18
+"1716","Thyroid peroxidase antibody levels (unit increase)",3
+"1717","Thyroid peroxidase antibody positivity (NA)",4
+"1718","Thyroid stimulating hormone (uIU/ml increase) (uIU/ml increase)",1
+"1719","Thyroid volume (NA)",3
+"1720","Thyroid volume (unit increase) (unit increase)",3
+"1721","Thyrotoxic hypokalemic periodic paralysis (NA)",2
+"1722","Toenail selenium levels (unit increase)",3
+"1723","Total bilirubin levels in HIV-1 infection (unit increase)",9
+"1724","Tourette syndrome (NA)",1
+"1725","Trans fatty acid levels (Cis/trans-18:2, EA) (unit increase)",31
+"1726","Trans fatty acid levels (Trans/trans-18:2, EA) (unit increase)",1
+"1727","Triglycerides-Blood Pressure (TG-BP) (unit increase)",6
+"1728","Triglycerides (% increase) (% increase)",3
+"1729","Triglycerides (increase) (increase)",1
+"1730","Triglycerides (mg/dl increase) (mg/dl increase)",5
+"1731","Triglycerides (mg/dL increase) (mg/dL increase)",49
+"1732","Triglycerides (NA)",10
+"1733","Triglycerides (percentage SD increase) (percentage SD increase)",4
+"1734","Triglycerides (s.d. increase) (s.d. increase)",11
+"1735","Triglycerides (unit increase) (AA) (unit increase)",3
+"1736","Triglycerides (unit increase) (Hispanic) (unit increase)",1
+"1737","Triglycerides (unit increase) (unit increase)",7
+"1738","Triglycerides (% variance) (HDL) (% variance)",1
+"1739","Triglycerides (% variance) (LDL) (% variance)",1
+"1740","Tuberculosis (binary model) (NA)",1
+"1741","Tuberculosis (NA)",3
+"1742","Tumor biomarkers (ng/ml increase) (AFP) (ng/ml increase)",2
+"1743","Tumor biomarkers (ng/ml increase) (CEA) (ng/ml increase)",3
+"1744","Tumor biomarkers (U/ml increase) (U/ml increase)",4
+"1745","Two-hour glucose challenge (mmol/L increase)",3
+"1746","Type 1 diabetes and autoimmune thyroid diseases (NA)",6
+"1747","Type 1 diabetes autoantibodies (I-A2A) (NA)",1
+"1748","Type 1 diabetes autoantibodies (T1D) (NA)",16
+"1749","Type 1 diabetes (NA)",52
+"1750","Type 1 diabetes nephropathy (ESRD vs. non-ESRD) (NA)",2
+"1751","Type 2 diabetes (AA) (NA)",1
+"1752","Type 2 diabetes and other traits (NA)",4
+"1753","Type 2 diabetes (DGI+FUSION+WTCCC) (NA)",2
+"1754","Type 2 diabetes (East Asian) (NA)",1
+"1755","Type 2 diabetes (Indian) (NA)",1
+"1756","Type 2 diabetes (Lean) (NA)",1
+"1757","Type 2 diabetes (NA)",106
+"1758","Type 2 diabetes (obese) (NA)",1
+"1759","Type 2 diabetes (Obese) (NA)",2
+"1760","Type 2 diabetes (Punjabi Sikhs) (NA)",1
+"1761","Type 2 diabetes (South Asian, East Asian, Europeans) (NA)",1
+"1762","Ulcerative colitis (Analysis III) (NA)",1
+"1763","Ulcerative colitis (NA)",89
+"1764","Ulcerative colitis or Crohn's disease (NA)",2
+"1765","Upper aerodigestive tract cancers (NA)",4
+"1766","Urate levels in lean individuals (kg/m2 increase)",1
+"1767","Urate levels in lean individuals (Men) (kg/m2 increase)",2
+"1768","Urate levels in lean individuals (Women) (kg/m2 increase)",1
+"1769","Urate levels in obese individuals (kg/m2 increase)",1
+"1770","Urate levels in obese individuals (women) (kg/m2 increase)",1
+"1771","Urate levels in overweight individuals (kg/m2 increase)",3
+"1772","Urate levels in overweight individuals (men) (kg/m2 increase)",3
+"1773","Urate levels in overweight individuals (women) (kg/m2 increase)",1
+"1774","Urate levels (mg/dl increase) (AA) (mg/dl increase)",4
+"1775","Urate levels (mg/dl increase in uric acid) (mg/dl increase in uric acid)",1
+"1776","Urate levels (mg/dl increase) (mg/dl increase)",29
+"1777","Urate levels (mg/dl increase) (network) (mg/dl increase)",2
+"1778","Urate levels (SD increase in serum uric acid level) (SD increase in serum uric acid level)",2
+"1779","Urate levels (uM increase in uric acid) (uM increase in uric acid)",1
+"1780","Urate levels (umol/l increase) (umol/l increase)",6
+"1781","Urate levels (unit increase) (unit increase)",5
+"1782","Uric acid levels (mg/dl increase in uric serum levels) (mg/dl increase in uric serum levels)",1
+"1783","Uric acid levels (mg/dl increase) (men) (mg/dl increase)",1
+"1784","Uric acid levels (mg/dl increase) (mg/dl increase)",7
+"1785","Uric acid levels (mg/dl increase) (women) (mg/dl increase)",1
+"1786","Uric acid levels (NA)",1
+"1787","Uric acid levels (Non-obese) (NA)",1
+"1788","Uric acid levels (umol/L increase) (umol/L increase)",1
+"1789","Uric acid levels (unit increase) (unit increase)",1
+"1790","Urinary albumin excretion (CKDGen) (CKDGen)",1
+"1791","Urinary bladder cancer (NA)",3
+"1792","Urinary metabolites (2-Hydroxyisobutyrate concentration) (NA)",1
+"1793","Urinary metabolites (3-Aminoisobutyrate concentration) (NA)",1
+"1794","Urinary metabolites (Alanine/N,N-dimethylglycine ratio) (NA)",1
+"1795","Urinary metabolites (Formate/succinate ratio) (NA)",1
+"1796","Urinary metabolites (H-NMR features) (0.8475, Unknown) (unit increase)",1
+"1797","Urinary metabolites (H-NMR features) (0.8875, Unknown) (unit increase)",1
+"1798","Urinary metabolites (H-NMR features) (1.2025, Aminoisobutyrate) (unit increase)",2
+"1799","Urinary metabolites (H-NMR features) (1.2575, Fucose) (unit increase)",1
+"1800","Urinary metabolites (H-NMR features) (1.3625, 2-Hydroxyisobutyrate) (unit increase)",1
+"1801","Urinary metabolites (H-NMR features) (1.6975, N-Acetylated compunds) (unit increase)",1
+"1802","Urinary metabolites (H-NMR features) (1.8025, Unknown) (unit increase)",1
+"1803","Urinary metabolites (H-NMR features) (2.0375, N-Acetylated compunds) (unit increase)",1
+"1804","Urinary metabolites (H-NMR features) (2.1875, Unknown) (unit increase)",1
+"1805","Urinary metabolites (H-NMR features) (2.8575, Trimethylamine) (unit increase)",1
+"1806","Urinary metabolites (H-NMR features) (2.8725, Trimethylamine) (unit increase)",1
+"1807","Urinary metabolites (H-NMR features) (2.8825, Trimethylamine) (unit increase)",1
+"1808","Urinary metabolites (H-NMR features) (3.0275, Aminoisobutyrate) (unit increase)",1
+"1809","Urinary metabolites (H-NMR features) (3.0325, Lysine) (unit increase)",1
+"1810","Urinary metabolites (H-NMR features) (3.0925, Aminoisobutyrate) (unit increase)",1
+"1811","Urinary metabolites (H-NMR features) (5.1825, Unknown) (unit increase)",1
+"1812","Urinary metabolites (H-NMR features) (5.2125, Fucose) (unit increase)",1
+"1813","Urinary metabolites (H-NMR features) (5.2625, Unknown) (unit increase)",1
+"1814","Urinary metabolites (Lysine/valine ratio) (NA)",1
+"1815","Urinary uromodulin levels (unit increase)",3
+"1816","Uterine fibroids (NA)",3
+"1817","Vascular dementia (NA)",1
+"1818","Vascular endothelial growth factor levels (NA)",4
+"1819","Vaspin levels (unit increase)",1
+"1820","Venous thromboembolism (NA)",17
+"1821","Verbal declarative memory (PAR-dr, EA) (NA)",2
+"1822","Verbal declarative memory (unit increase) (CERAD-dr) (unit increase)",1
+"1823","Verbal declarative memory (unit increase) (CVLT-dr, EA) (unit increase)",1
+"1824","Verbal declarative memory (unit increase) (RAVLT-dr, EA) (unit increase)",1
+"1825","Vertical cup-disc ratio (mm2 increase) (mm2 increase)",6
+"1826","Vertical cup-disc ratio (unit increase) (unit increase)",17
+"1827","Very long-chain saturated fatty acid levels (fatty acid 20:0) (Z score increase)",3
+"1828","Very long-chain saturated fatty acid levels (fatty acid 22:0) (Z score increase)",2
+"1829","Very long-chain saturated fatty acid levels (fatty acid 24:0) (Z score increase)",2
+"1830","Vincristine-induced peripheral neuropathy in acute lymphoblastic leukemia (NA)",5
+"1831","Visceral adipose tissue/subcutaneous adipose tissue ratio (overall) (NA)",1
+"1832","Visceral fat (women) (NA)",1
+"1833","Vitamin B12 levels (pg/ml increase)",6
+"1834","Vitamin B levels in ischemic stroke (Vitamin B12) (unit increase)",2
+"1835","Vitamin B levels in ischemic stroke (Vitamin B6) (unit increase)",1
+"1836","Vitamin D insufficiency (NA)",3
+"1837","Vitamin D levels (unit increase) (Age 14) (unit increase)",3
+"1838","Vitamin D levels (unit increase) (Age 6) (unit increase)",2
+"1839","Vitamin D levels (unit increase) (unit increase)",3
+"1840","Vitamin E levels (unit increase)",3
+"1841","Vitiligo (NA)",29
+"1842","Vitiligo (non-segmental) (NA)",1
+"1843","Vogt-Koyanagi-Harada syndrome (NA)",3
+"1844","Volumetric brain MRI (ATCBV) (NA)",1
+"1845","vWF levels (unit increase)",2
+"1846","Waist circumference and related phenotypes (cm increase) (cm increase)",1
+"1847","Waist circumference and related phenotypes (HDL cholesterol) (NA)",1
+"1848","Waist circumference and related phenotypes (triglycerides) (NA)",1
+"1849","Waist circumference (NA)",1
+"1850","Waist Circumference - Triglycerides (WC-TG) (unit increase)",7
+"1851","Waist circumference (unit increase) (BMI_pooled) (unit increase)",1
+"1852","Waist-hip ratio (NA)",3
+"1853","Waist-hip ratio (unit increase) (BMI_pooled) (unit increase)",1
+"1854","Waist-hip ratio (unit increase) (unit increase)",14
+"1855","Waist-to-hip ratio adjusted for body mass index (EA) (unit increase)",3
+"1856","Waist-to-hip ratio adjusted for body mass index (EA, women) (unit increase)",5
+"1857","Waist-to-hip ratio adjusted for body mass index (men) (unit increase)",1
+"1858","Waist-to-hip ratio adjusted for body mass index (unit increase)",9
+"1859","Waist-to-hip ratio adjusted for body mass index (women) (unit increase)",6
+"1860","Warfarin maintenance dose (mg/week increase) (mg/week increase)",4
+"1861","Warfarin maintenance dose (NA)",3
+"1862","Wegener's granulomatosis (NA)",2
+"1863","Weight (percentage SD increase) (percentage SD increase)",11
+"1864","White blood cell count (K/ul increase) (AA) (K/ul increase)",2
+"1865","White blood cell count (K/ul increase) (EA) (K/ul increase)",1
+"1866","White blood cell count (NA)",1
+"1867","White blood cell count (unit increase) (AA) (unit increase)",1
+"1868","White blood cell count (unit increase) (Basophils) (unit increase)",1
+"1869","White blood cell count (unit increase) (Japanese) (unit increase)",2
+"1870","White blood cell count (unit increase) (Lymphocytes) (unit increase)",2
+"1871","White blood cell count (unit increase) (Monocytes) (unit increase)",4
+"1872","White blood cell count (unit increase) (Neutrophils) (unit increase)",1
+"1873","White blood cell count (unit increase) (unit increase)",9
+"1874","White blood cell count (unit increase) (WBC) (unit increase)",2
+"1875","White blood cell types (basophil count) (unit increase)",4
+"1876","White blood cell types (eosinophil count) (unit increase)",2
+"1877","White blood cell types (monocyte count) (unit increase)",4
+"1878","White blood cell types (neutrophil count) (unit increase)",2
+"1879","White matter hyperintensity burden (NA)",2
+"1880","White matter microstructure (global fractional anisotropy) (NA)",5
+"1881","White wine liking (unit increase)",1
+"1882","Wilms tumor (NA)",6
+"1883","YKL-40 levels (ng/ml increase)",1

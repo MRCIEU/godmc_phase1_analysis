@@ -221,16 +221,27 @@ dat <- rbind(
 # 	dplyr::summarise(n=n(), source=first(source)) %>%
 # 	arrange(desc(source)) %>% as.data.frame()
 
-group_by(dat, source) %>%
-	dplyr::summarise(n=n())
+sum1 <- group_by(dat, source) %>%
+	dplyr::summarise(nsnp=n())
+
+sum2 <- filter(dat, source == "mrbase") %>%
+	group_by(reason) %>%
+	dplyr::summarise(nsnp=n())
+
+sum3 <- filter(dat, source == "GWAS catalog") %>%
+	group_by(reason) %>%
+	dplyr::summarise(nsnp=n())
 
 save(dat, file="../data/snplist.rdata")
 
+write.csv(sum1, "../data/sum1.csv")
+write.csv(sum2, "../data/sum2.csv")
+write.csv(sum3, "../data/sum3.csv")
 
 
 ### 
 
-## Selection SNPs
+## Selection SNPs enrichment
 
 test <- ucsc_get_position(unique(out$SNP))
 test <- subset(test, !duplicated(name))

@@ -1,0 +1,153 @@
+"","reason","nsnp"
+"1","2hr glucose || MAGIC || 2013 || mmol/L",7
+"2","Adiponectin || ADIPOGen || 2012 || ln(mg/dL)",14
+"3","Advanced age related macular degeneration || AMDGene || 2013 || log odds",13
+"4","Age at menarche || ReproGen || 2014 || years",72
+"5","Age at menopause || ReproGen || 2015 || years",42
+"6","Alzheimer's disease || IGAP || 2013 || log odds",20
+"7","Amygdala volume || ENIGMA || 2015 || mm3",1
+"8","Amyotrophic lateral sclerosis || ALSgene || 2014 || log odds",1
+"9","Amyotrophic lateral sclerosis || Project MinE || 2016 || log odds",7
+"10","Anorexia nervosa || GCAN || 2014 || log odds",1
+"11","Asthma || GABRIEL || 2007 || log odds",8
+"12","Autism || PGC || 2015 || log odds",1
+"13","Autoimmune thyroid disease || NA || 2012 || log odds",8
+"14","Bipolar disorder || PGC || 2011 || log odds",4
+"15","Birth length || EGG || 2015 || SD (cm)",2
+"16","Birth weight || EGG || 2013 || g",3
+"17","Birth weight || NA || 2016 || SD",58
+"18","Body fat || NA || 2016 || SD",10
+"19","Body mass index || GIANT || 2015 || SD (kg/m^2)",79
+"20","Body mass index || UK Biobank || 2016 || NA",1
+"21","Bulimia nervosa || NA || 2013 || log odds",5
+"22","Celiac disease || NA || 2010 || log odds",16
+"23","Celiac disease || NA || 2011 || log odds",50
+"24","Childhood obesity || EGG || 2012 || log odds",12
+"25","Chronic kidney disease || CKDGen || 2015 || log odds",4
+"26","Chronotype || UK Biobank || 2016 || SD",13
+"27","Cigarettes smoked per day || TAG || 2010 || Cigarettes per day",1
+"28","College completion || SSGAC || 2013 || log odds",3
+"29","Copper || NA || 2013 || SD",2
+"30","Coronary heart disease || CARDIoGRAMplusC4D || 2013 || log odds",8
+"31","Coronary heart disease || CARDIoGRAMplusC4D || 2015 || log odds",41
+"32","Corrected insulin response || MAGIC || 2014 || SD",3
+"33","Crohn's disease || IIBDGC || 2012 || log odds",82
+"34","Crohn's disease || IIBDGC || 2015 || log odds",164
+"35","Depressive symptoms || SSGAC || 2016 || SD",2
+"36","Diastolic blood pressure || ICBP || 2011 || SD",7
+"37","Difference in height between adolescence and adulthood || EGG || 2013 || SD",1
+"38","Difference in height between childhood and adulthood || EGG || 2013 || SD",2
+"39","Eczema || EAGLE || 2014 || log odds",12
+"40","E-selectin || DCCT & EDIC || 2009 || log ng/ml",1
+"41","Extreme body mass index || GIANT || 2013 || log odds",7
+"42","Extreme height || GIANT || 2013 || log odds",48
+"43","Extreme waist-to-hip ratio || GIANT || 2013 || log odds",2
+"44","Fasting glucose || MAGIC || 2012 || mmol/L",35
+"45","Fasting insulin || MAGIC || 2013 || log pmol/L",14
+"46","Fasting proinsulin || MAGIC || 2011 || log pmol/L",8
+"47","Father’s age at death || UK Biobank || 2016 || SD",1
+"48","Femoral neck bone mineral density || GEFOS || 2012 || SD (g/cm2)",22
+"49","Femoral neck bone mineral density || GEFOS || 2015 || SD",20
+"50","Ferritin || GIS || 2014 || SD",4
+"51","Forearm bone mineral density || GEFOS || 2015 || SD",3
+"52","Glioma || GliomaScan || 2013 || log odds",14
+"53","Gout || GUGC || 2013 || log odds",2
+"54","Haemoglobin concentration || HaemGen || 2012 || g/dL",20
+"55","HbA1C || MAGIC || 2010 || %",11
+"56","HDL cholesterol || GLGC || 2013 || SD (mg/dL)",89
+"57","Heart rate || HRgene consortium || 2013 || beats per minute",15
+"58","Height || EGG || 2013 || SD",5
+"59","Height || GIANT || 2014 || SD (m)",386
+"60","Hip circumference || GIANT || 2015 || SD (cm)",50
+"61","Hippocampus volume || ENIGMA || 2015 || mm3",2
+"62","HOMA-B || MAGIC || 2011 || log HOMA",4
+"63","IgA nephropathy || NA || 2010 || log odds",1
+"64","Immunoglobulin G index levels || NA || 2015 || log2 IgG index ratio",2
+"65","Inflammatory bowel disease || IIBDGC || 2012 || log odds",92
+"66","Inflammatory bowel disease || IIBDGC || 2015 || log odds",188
+"67","Intracranial volume || ENIGMA || 2015 || mm3",1
+"68","Iron || GIS || 2014 || SD",3
+"69","Ischaemic stroke || NA || 2007 || log odds",1
+"70","Juvenile idiopathic arthritis || NA || 2013 || log odds",3
+"71","LDL cholesterol || GLGC || 2013 || SD (mg/dL)",80
+"72","Leptin || NA || 2016 || log ng/ml",2
+"73","Lp(a) Levels || NA || 2009 || NA",7
+"74","Lumbar spine bone mineral density || GEFOS || 2012 || SD (g/cm2)",21
+"75","Lumbar spine bone mineral density || GEFOS || 2015 || SD",22
+"76","Lung adenocarcinoma || ILCCO || 2014 || log odds",2
+"77","Lung adenocarcinoma || TRICL || NA || NA",14
+"78","Lung cancer || ILCCO || 2014 || log odds",4
+"79","Lung cancer || TRICL || NA || NA",17
+"80","Mean arterial pressure || ICBP || 2011 || SD",10
+"81","Mean cell haemoglobin concentration || HaemGen || 2012 || g/dL",14
+"82","Mean cell haemoglobin || HaemGen || 2012 || pg",32
+"83","Mean cell volume || HaemGen || 2012 || fl",45
+"84","Mean platelet volume || HaemGen || 2011 || log fl",30
+"85","Melanoma || MDACC || 2011 || log odds",2
+"86","Microalbuminuria || CKDGen || 2015 || log odds",6
+"87","Migraine in bipolar disorder || NA || 2015 || log odds",1
+"88","Mother’s age at death || UK Biobank || 2016 || SD",1
+"89","Multiple sclerosis || IMSGC || 2011 || log odds",20
+"90","Multiple sclerosis || IMSGC || 2013 || log odds",49
+"91","Myocardial infarction || CARDIoGRAMplusC4D || 2015 || log odds",26
+"92","Narcolepsy || NA || 2013 || log odds",4
+"93","Neo-conscientiousness || GPC || 2012 || arbitrary score",1
+"94","Neo-openness to experience || GPC || 2012 || arbitrary score",1
+"95","Neuroblastoma || NA || 2013 || log odds",3
+"96","Neuroticism || GPC || 2014 || arbitrary score",1
+"97","Neuroticism || SSGAC || 2016 || SD",9
+"98","Obesity class 1 || GIANT || 2013 || log odds",18
+"99","Obesity class 2 || GIANT || 2013 || log odds",11
+"100","Obesity class 3 || GIANT || 2013 || log odds",2
+"101","Oligoclonal band status || NA || 2015 || log odds",1
+"102","Overweight || GIANT || 2013 || log odds",14
+"103","Packed cell volume || HaemGen || 2012 || %",14
+"104","Paget's disease || NA || 2011 || log odds",5
+"105","Percent emphysema || MESA || 2014 || log (% emphysema + 1)",2
+"106","PGC cross-disorder traits || PGC || 2013 || log odds",4
+"107","Plasma cortisol || CORNET || 2014 || SD",1
+"108","Platelet count || HaemGen || 2011 || 1x10^9/l",38
+"109","Primary biliary cirrhosis || NA || 2012 || log odds",22
+"110","Primary biliary cirrhosis || NA || 2015 || log odds",21
+"111","Psoriasis || NA || 2012 || log odds",68
+"112","Pulse pressure || ICBP || 2011 || SD",6
+"113","Putamen volume || ENIGMA || 2015 || mm3",4
+"114","Red blood cell count || HaemGen || 2012 || 10^12/L",30
+"115","Rheumatoid arthritis || NA || 2012 || log odds",11
+"116","Rheumatoid arthritis || NA || 2014 || log odds",57
+"117","Schizophrenia || PGC || 2014 || log odds",81
+"118","Selenium || NA || 2013 || SD",2
+"119","Serum creatinine (eGFRcrea) || CKDGen || 2015 || log ml/min/1.73 m^²",46
+"120","Serum cystatin C (eGFRcys) || CKDGen || 2015 || log ml/min/1.73 m^²",5
+"121","Sitting height ratio || NA || 2015 || SD",6
+"122","Sleep duration || UK Biobank || 2016 || SD",3
+"123","Small cell lung carcinoma || TRICL || NA || NA",2
+"124","Squamous cell lung cancer || ILCCO || 2014 || log odds",3
+"125","Squamous cell lung cancer || TRICL || NA || NA",9
+"126","Subjective well being || SSGAC || 2016 || SD",1
+"127","Systemic lupus erythematosus || NA || 2008 || log odds",3
+"128","Systemic lupus erythematosus || NA || 2015 || log odds",43
+"129","Systolic blood pressure || ICBP || 2011 || SD",8
+"130","Telomere length || NA || 2012 || kilobase pair",6
+"131","Thyroid cancer || NA || 2013 || log odds",348
+"132","Top 1 % survival || UK Biobank || 2016 || log odds",1
+"133","Total cholesterol || GLGC || 2013 || SD (mg/dL)",88
+"134","Transferrin || GIS || 2014 || SD",8
+"135","Transferrin Saturation || GIS || 2014 || SD",4
+"136","Triglycerides || GLGC || 2013 || SD (mg/dL)",54
+"137","Type 1 diabetes || NA || 2015 || log odds",37
+"138","Type 1 diabetes || NA || NA || log odds",19
+"139","Type 2 diabetes || DIAGRAM || 2014 || log odds",34
+"140","Type 2 diabetes || UK Biobank || 2016 || log odds",2
+"141","Ulcerative colitis || IIBDGC || 2012 || log odds",62
+"142","Ulcerative colitis || IIBDGC || 2015 || log odds",111
+"143","Urate || GUGC || 2013 || mg/dl",25
+"144","Urate || GUGC || 2015 || SD (mg/dL)",19
+"145","Urinary albumin-to-creatinine ratio || CKDGen || 2015 || log mg/g",1
+"146","Waist circumference || GIANT || 2015 || SD (cm)",46
+"147","Waist-to-hip ratio || GIANT || 2015 || SD",31
+"148","Weight || GIANT || 2013 || SD (kg)",9
+"149","Years of schooling || SSGAC || 2013 || SD (years)",3
+"150","Years of schooling || SSGAC || 2014 || SD (years)",3
+"151","Years of schooling || SSGAC || 2016 || SD (years)",73
+"152","Zinc || NA || 2013 || SD",2
