@@ -238,6 +238,8 @@ write.csv(sum1, "../data/sum1.csv")
 write.csv(sum2, "../data/sum2.csv")
 write.csv(sum3, "../data/sum3.csv")
 
+write.table(unique(dat$SNP), file="../data/snplist.txt", row=F, col=F, qu=F)
+
 
 ### 
 
