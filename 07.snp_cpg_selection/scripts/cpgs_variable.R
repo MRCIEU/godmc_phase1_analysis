@@ -32,21 +32,27 @@ cormeans <- cor(means[,-c(1)], use="pair")
 corsds <- cor(sds[,-c(1)], use="pair")
 
 
-top_sds <- group_by(dat, cohort) %>%
+load("../data/filtered_probe_list.RData")
+retain <- scan("../data/retain_from_Naeem_multimap.txt", what="character")
+retaincpg <- unique(c(probeinfo$TargetID, retain))
+
+dat_clean <- subset(dat, cpg %in% retaincpg)
+
+top_sds <- group_by(dat_clean, cohort) %>%
 	do({
 		x <- .
-		thresh <- quantile(x$sd, 0.7)
+		thresh <- quantile(x$sd, 0.2)
 		return(subset(x, sd >= thresh, select=c(cpg, sd)))
 	})
 
 tab_cpg <- table(top_sds$cpg)
-
-cpglist <- names(tab_cpg)[tab_cpg >= 23]
+table(tab_cpg)
+cpglist <- names(tab_cpg)[tab_cpg >= 20]
 length(cpglist)
 
 ## 
 
-cpgdat <- data.frame(cpg = cpglist, source = "20k most variable sites amongst all 23 GoDMC phase 1 cohorts", stringsAsFactors=FALSE)
+cpgdat <- data.frame(cpg = cpglist, source = "250k most variable sites amongst all 23 GoDMC phase 1 cohorts", stringsAsFactors=FALSE)
 
 ##
 
@@ -60,7 +66,7 @@ feats <- subset(feat, name %in% cpglist)
 a <- table(feat$chromosome) / nrow(feat)
 b <- table(feats$chromosome) / nrow(feats)
 
-plot(as.numeric(a)[1:22], as.numeric(b), xlab='Proportion of CpGs on chromosome', ylab="Proportion of selected CpGs on chromosome")
+plot(as.numeric(a), as.numeric(b), xlab='Proportion of CpGs on chromosome', ylab="Proportion of selected CpGs on chromosome")
 
 
 # Selected has more from open sea and shores, less from islands
@@ -110,6 +116,9 @@ cpgdat <- rbind(cpgdat,
 load("../data/illig.RData")
 smok <- Illig_data$cpgs
 
+load("../data/joehanes.rdata")
+smok <- joehanes$Probe.ID
+
 table(smok %in% cpglist)
 table(table(top_sds$cpg[top_sds$cpg %in% smok]))
 
@@ -118,6 +127,15 @@ cpgdat <- rbind(cpgdat,
 )
 
 
+# scz
+
+a1 <- read.table("../data/scz_cpg1.txt", sep="\t", stringsAsFactors=FALSE)
+a2 <- read.table("../data/scz_cpg2.txt", sep=" ", stringsAsFactors=FALSE)
+
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=a1$V1, source="Schizophrenia, Hannon et al 2016"),
+	data.frame(cpg=a2$V1, source="Schizophrenia, Montana et al 2016")
+)
 
 ## summarise and write
 
@@ -125,6 +143,6 @@ cpgsum <- dplyr::group_by(cpgdat, source) %>%
 	dplyr::summarise(n=n())
 
 
-save(cpgdat, file="../data/cpgdat.rdata")
+save(cpgdat, file="../data/cpgs_variable.rdata")
 
 write.csv(cpgsum, file="../data/cpgsum.csv")
