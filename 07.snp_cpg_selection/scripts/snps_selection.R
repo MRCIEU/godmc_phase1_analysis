@@ -1,3 +1,5 @@
+library(dplyr)
 load("~/data/1000g_reference/1000GP_Phase3/vcf/pop_freq/all_fst.rdata")
 selection <- filter(dat, EUR > 0.1, EUR < 0.9, fst > 0.5)
+selection$SNP <- as.character(selection$SNP)
 save(selection, file="../data/snps_selection.rdata")
