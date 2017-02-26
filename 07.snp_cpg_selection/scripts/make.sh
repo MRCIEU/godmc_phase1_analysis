@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm ../lists/*
 Rscript make.R
 cd ../lists
 tar czvf ../lists_17.tgz *

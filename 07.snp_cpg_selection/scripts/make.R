@@ -6,6 +6,7 @@ library(meffil)
 
 # CpGs
 
+nchunk <- 300
 load("../data/cpgs_variable.rdata")
 
 feat <- meffil.get.features()
@@ -20,9 +21,9 @@ b <- arrange(a, chr, position)
 cpglist <- b$name
 
 chunk <- function(x, n) split(x, sort(rank(x) %% n))
-c <- chunk(cpglist, 100)
+c <- chunk(cpglist, nchunk)
 
-for(i in 1:100)
+for(i in 1:nchunk)
 {
 	write.table(c[[i]], file=paste0("../lists/cpglist_", i, ".txt"), row=F, col=F, qu=F)
 }
