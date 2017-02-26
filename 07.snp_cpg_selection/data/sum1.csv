@@ -1,11 +1,10 @@
 "","source","nsnp"
-"1","Chromatin QTLs",19559
-"2","gtex_eqtl",3077
-"3","GWAS catalog",7895
-"4","metab_qtls",1088
-"5","mrbase",3785
+"1","Chromatin QTLs",13446
+"2","gtex_eqtl",2916
+"3","GWAS catalog",6365
+"4","metab_qtls",239
+"5","mrbase",3244
 "6","Neanderthal alleles, Simonti et al 2016",1328
 "7","proteomic_qtls",55
-"8","Randomly selected HapMap3 SNPs from genic regions",1000
-"9","SNPs with evidence for selection, high global Fst and MAF in Europeans",1266
-"10","westra_transeqtl",1524
+"8","westra_transeqtl",349
+"9","Total unique SNPs",26688

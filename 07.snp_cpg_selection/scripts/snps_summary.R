@@ -9,8 +9,6 @@ load("../data/snps_proteomic.rdata")
 load("../data/snps_expression.rdata")
 load("../data/snps_chromatin.rdata")
 load("../data/snps_neanderthal.rdata")
-load("../data/snps_selection.rdata")
-controls <- read.table("../data/snps_control.txt", header=FALSE)
 
 dat <- rbind(
 	data.frame(SNP = gwas$id, reason = gwas$exposure, source = gwas$data_source.exposure, stringsAsFactors=FALSE),
@@ -18,9 +16,7 @@ dat <- rbind(
 	data.frame(SNP = proteomic$id, reason = proteomic$exposure, source = proteomic$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = expression$id, reason = expression$exposure, source = expression$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = chromatin$id, reason = chromatin$exposure, source = chromatin$data_source.exposure, stringsAsFactors=FALSE),
-	data.frame(SNP = neanderthal$id, reason = NA, source = "Neanderthal alleles, Simonti et al 2016", stringsAsFactors=FALSE),
-	data.frame(SNP = as.character(controls$V2), reason = NA, source = "Randomly selected HapMap3 SNPs from genic regions", stringsAsFactors=FALSE),
-	data.frame(SNP = as.character(selection$SNP), reason = NA, source = "SNPs with evidence for selection, high global Fst and MAF in Europeans", stringsAsFactors=FALSE)
+	data.frame(SNP = neanderthal$id, reason = NA, source = "Neanderthal alleles, Simonti et al 2016", stringsAsFactors=FALSE)
 )
 
 # group_by(dat, reason) %>%
@@ -28,7 +24,9 @@ dat <- rbind(
 # 	arrange(desc(source)) %>% as.data.frame()
 
 sum1 <- group_by(dat, source) %>%
+	filter(!duplicated(SNP)) %>%
 	dplyr::summarise(nsnp=n())
+sum1 <- rbind(sum1, data.frame(source="Total unique SNPs", nsnp=length(unique(dat$SNP))))
 
 sum2 <- filter(dat, source == "mrbase") %>%
 	group_by(reason) %>%
