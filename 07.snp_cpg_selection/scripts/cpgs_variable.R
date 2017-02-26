@@ -123,7 +123,7 @@ table(smok %in% cpglist)
 table(table(top_sds$cpg[top_sds$cpg %in% smok]))
 
 cpgdat <- rbind(cpgdat,
-	data.frame(cpg=smok, source="Smoking associated CpGs from Zeilinger et al 2013")
+	data.frame(cpg=smok, source="Smoking associated CpGs from Joehanes et al")
 )
 
 
@@ -141,7 +141,7 @@ cpgdat <- rbind(cpgdat,
 
 cpgsum <- dplyr::group_by(cpgdat, source) %>%
 	dplyr::summarise(n=n())
-
+cpgsum <- rbind(cpgsum, data.frame(source="Total unique CpGs", n=length(unique(cpgdat$cpg))))
 
 save(cpgdat, file="../data/cpgs_variable.rdata")
 
