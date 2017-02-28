@@ -34,10 +34,15 @@ corsds <- cor(sds[,-c(1)], use="pair")
 
 load("../data/filtered_probe_list.RData")
 retain <- scan("../data/retain_from_Naeem_multimap.txt", what="character")
+mafs <- read.table("../data/SNPatCpG_AFs.txt.gz", he=T, stringsAsFactors=FALSE)
 retaincpg <- unique(c(probeinfo$TargetID, retain))
 
-dat_clean <- subset(dat, cpg %in% retaincpg)
+mafs2 <- strsplit(mafs$EUR_AF, split=",")
+rem <- sapply(mafs2, function(x) any(x > 0.01 & x < 0.99))
+retaincpg <- retaincpg[! retaincpg %in% mafs$name[rem]]
 
+dat_clean <- subset(dat, cpg %in% retaincpg)
+dim(dat_clean)
 top_sds <- group_by(dat_clean, cohort) %>%
 	do({
 		x <- .
