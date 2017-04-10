@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #PBS -N counts
-#PBS -o /panfs/panasas01/shared-godmc/job_report/counts-output
-#PBS -e /panfs/panasas01/shared-godmc/job_report/counts-error
+#PBS -o /panfs/panasas01/shared-godmc/job_report_2017/counts-output
+#PBS -e /panfs/panasas01/shared-godmc/job_report_2017/counts-error
 #PBS -l walltime=12:00:00
-#PBS -t 1-17
-# PBS -t 3
+#PBS -t 1-23
+# PBS -t 19
 #PBS -l nodes=1:ppn=8
 #PBS -S /bin/bash
 
@@ -17,8 +17,8 @@ fi
 
 echo "Running on ${HOSTNAME}"
 
-
-filename="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt"
+MYDIR="/panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL"
+filename="/panfs/panasas01/shared-godmc/scripts/cohorts.txt"
 
 user=`head -n ${PBS_ARRAYID} ${filename} | tail -n 1 | cut -d " " -f 1`
 cohort=`head -n ${PBS_ARRAYID} ${filename} | tail -n 1 | cut -d " " -f 2`
@@ -34,11 +34,11 @@ echo $cohort
 
 ###extract cis/trans SNP.CpG pairs from *Robj and generate count summaries
  
-cd /panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/02.extract_counts/scripts
-mkdir -p /panfs/panasas01/shared-godmc/counts/${user}_${cohort}
-mkdir -p /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}_${cohort}
+cd $MYDIR/repo/godmc_phase1_analysis/02.extract_counts/scripts
+#mkdir -p /panfs/panasas01/shared-godmc/counts_2017/${user}_${cohort}
+#mkdir -p /panfs/panasas01/shared-godmc/meta-analysis_2017/inputfiles/${user}_${cohort}
 
-Rscript mqtl.count.R $user $cohort
+#Rscript mqtl.count.R $user $cohort
 
 #74 subgroups
 pvals=("1e-05" "1e-06" "1e-07" "1e-08" "1e-09" "1e-10" "1e-11" "1e-12" "1e-13")
@@ -49,7 +49,7 @@ cpgs=("cg0000[0-9]" "cg0001" "cg0002" "cg0003" "cg0004" "cg0005" "cg0006" "cg000
 #cpgs=("_ch")
 #cpgs=("cg007" "cg008" "cg009")
 
-cd /panfs/panasas01/shared-godmc/counts/${user}_${cohort}
+cd /panfs/panasas01/shared-godmc/counts_2017/${user}_${cohort}
 
 for i in ${pvals[@]}; do
 echo $i
@@ -61,20 +61,18 @@ gzip cis.assoc.*.${user}_${cohort}.$i.txt
 gzip trans.assoc.*.${user}_${cohort}.$i.txt
 
 #the line below doesn't work on the node
-#mv *gz /projects/MRC-IEU/groups/godmc/counts/
-
-cd /panfs/panasas01/shared-godmc/counts/${user}_${cohort}
+#mv *gz /projects/MRC-IEU/groups/godmc/counts_2017/
 
 for j in ${cpgs[@]}; do
 echo $j
-grep $j cis.assoc.${user}\_${cohort}.$i.txt > cis.assoc.${user}\_${cohort}.${i}.${j}.txt
-grep $j trans.assoc.${user}\_${cohort}.$i.txt > trans.assoc.${user}\_${cohort}.${i}.${j}.txt
+grep $j cis.assoc.${user}\_${cohort}.$i.txt > cis.assoc.${user}\_${cohort}.${i}.${j}.txt || :
+grep $j trans.assoc.${user}\_${cohort}.$i.txt > trans.assoc.${user}\_${cohort}.${i}.${j}.txt  || :
 done
 done
 
 #make files by probe rather than by SNPchunks
 
-cd /panfs/panasas01/shared-godmc/meta-analysis/inputfiles/${user}\_${cohort}
+cd /panfs/panasas01/shared-godmc/meta-analysis_2017/inputfiles/${user}\_${cohort}
 echo SNP CpG ID BETA SE P |perl -pe 's/ /\t/g' >${user}\_${cohort}.gwama.formatted.txt
 cat ${user}\_${cohort}.*.gwama.formatted.txt >>${user}\_${cohort}.gwama.formatted.txt
 awk 'NR>1 {print $2}' <${user}\_${cohort}.gwama.formatted.txt |sort -u >${user}\_${cohort}.probes
@@ -83,7 +81,7 @@ gzip ${user}\_${cohort}.*.gwama.formatted.txt
 #split -l $(( $( wc -l < ${user}\_${cohort}.probes ) / 50 + 1 )) ${user}\_${cohort}.probes probe.${user}\_${cohort}
 #ls probe.${user}\_${cohort}* >probe.${user}\_${cohort}.files
 zcat /panfs/panasas01/shared-godmc/sftp/GoDMC/$user/$cohort/results/02/data.frq.gz | sed -e 's/[[:space:]]\+/ /g' |perl -pe 's/^ //g'|perl -pe 's/ /\t/g'|awk -v OFS='\t' '{ if(NR>1) print $1,$2,$3,$4,$5,$6/2; else print $0;}'|perl -pe 's/A1/EA/g' |perl -pe 's/A2/NEA/g' |perl -pe 's/MAF/EAF/g'|perl -pe 's/NCHROBS/N/g' |perl -pe 's/ /\t/g'>$cohort.frq.tmp
-perl ~/repo/godmc_phase1_analysis/02.extract_counts/scripts/join_file.pl -i "${user}_${cohort}.gwama.formatted.txt,TAB,0 $cohort.frq.tmp,TAB,1" -o ${user}_${cohort}.gwama.formatted.txt2 -a 1
+perl /panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL/repo/godmc_phase1_analysis/02.extract_counts/scripts/join_file.pl -i "${user}_${cohort}.gwama.formatted.txt,TAB,0 $cohort.frq.tmp,TAB,1" -o ${user}_${cohort}.gwama.formatted.txt2 -a 1
 awk -F'\t' '{ if(NR>1) print $0; else print "POS","CpG","ID","BETA","SE","P","CHR","SNP","EA","NEA","EAF","N";}' OFS='\t'<${user}\_${cohort}.gwama.formatted.txt2 | sed 's/\:SNP//1'|sed 's/\:INDEL//1' |sed 's/[^:]*://1' >${user}\_${cohort}.gwama.formatted.txt3
 rm ${user}\_${cohort}.gwama.formatted.txt2
 
@@ -102,25 +100,4 @@ grep $k ${user}\_${cohort}.probes > ${user}\_${cohort}.$j.probes
 done
 
 ls ${user}\_${cohort}.*.probes >probe.${user}\_${cohort}.files
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ls -l ${user}\_${cohort}.*.probes >probe.${user}\_${cohort}.files2
