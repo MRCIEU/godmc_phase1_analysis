@@ -18,7 +18,7 @@ intermediate="temp"
 
 # 1-3
 
-for f in /panfs/panasas01/shared-godmc/counts/combined/*cg*ge1.2*.txt.gz
+for f in /panfs/panasas01/shared-godmc/counts_2017/combined/*ge1.2*.txt.gz
 do
 	zcat ${f} | sort -t" " -k3,3 
 done > ${intermediate}
