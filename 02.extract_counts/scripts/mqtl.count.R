@@ -67,7 +67,7 @@ eqtl$cis<-ifelse(eqtl$cischr==1 & abs(eqtl$X2-eqtl$position)<1000000,"cis","tran
 #trans chr
 #eqtl$transchr<-ifelse(eqtl$cischr==0,"trans","cis")
 
-write.table(eqtl2,paste("/panfs/panasas01/shared-godmc/meta-analysis/inputfiles/",users[k],"_",cohorts[k],"/",users[k],"_",cohorts[k],".",i,".gwama.formatted.txt",sep=""),sep="\t",quote=F,row.names=F,col.names=F)
+write.table(eqtl2,paste("/panfs/panasas01/shared-godmc/meta-analysis_2017/inputfiles/",users[k],"_",cohorts[k],"/",users[k],"_",cohorts[k],".",i,".gwama.formatted.txt",sep=""),sep="\t",quote=F,row.names=F,col.names=F)
 
 probe.cis<-list()
 probe.trans<-list()
@@ -95,8 +95,8 @@ probe.trans[[p]]<-unique(as.character(eqtl[eqtl$cis=="trans","gene"]))
 assoc.cis[[p]]<-unique(as.character(eqtl[eqtl$cis=="cis","assoc"]))
 assoc.trans[[p]]<-unique(as.character(eqtl[eqtl$cis=="trans","assoc"]))
 
-write.table(assoc.cis[[p]],paste("/panfs/panasas01/shared-godmc/counts/",users[k],"_",cohorts[k],"/cis.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
-write.table(assoc.trans[[p]],paste("/panfs/panasas01/shared-godmc/counts/",users[k],"_",cohorts[k],"/trans.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
+write.table(assoc.cis[[p]],paste("/panfs/panasas01/shared-godmc/counts_2017/",users[k],"_",cohorts[k],"/cis.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
+write.table(assoc.trans[[p]],paste("/panfs/panasas01/shared-godmc/counts_2017/",users[k],"_",cohorts[k],"/trans.assoc.",i,".",users[k],"_",cohorts[k],".",pvals[p],".txt",sep=""),quote=F,row.names=F,col.names=F,sep="\t")
 
 }
 
@@ -120,8 +120,8 @@ assoc.trans.all <- lapply(assoc.trans.all, unique)
 }
 write.table(eqtl.count,paste("/panfs/panasas01/shared-godmc/cohort_summary/mqtlcount.",users[k],"_",cohorts[k],".txt",sep=""),quote=F,row.names=F,col.names=T,sep="\t")
 
-#save(assoc.cis.all,file=paste("/panfs/panasas01/shared-godmc/counts/cis.assoc.",users[k],".Robj",sep=""))
-#save(assoc.trans.all,file=paste("/panfs/panasas01/shared-godmc/counts/trans.assoc.",users[k],".Robj",sep=""))
+#save(assoc.cis.all,file=paste("/panfs/panasas01/shared-godmc/counts_2017/cis.assoc.",users[k],".Robj",sep=""))
+#save(assoc.trans.all,file=paste("/panfs/panasas01/shared-godmc/counts_2017/trans.assoc.",users[k],".Robj",sep=""))
 
 ###
 
