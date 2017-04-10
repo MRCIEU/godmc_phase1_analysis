@@ -2,9 +2,9 @@
 
 #/panfs/panasas01/shared-godmc/counts_summary
 library(ggplot2)
-path="/panfs/panasas01/shared-godmc/counts/combined"
-cohorts<-read.table("/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt",sep=" ",header=F)
-cohorts<-cohorts[1:17,]
+path="/panfs/panasas01/shared-godmc/counts_2017/combined"
+cohorts<-read.table("/panfs/panasas01/shared-godmc/scripts/cohorts_noRAINE.txt",sep=" ",header=F)
+cohorts<-cohorts[1:22,]
 
 counts<-data.frame()
 for (i in 1:nrow(cohorts)){
@@ -39,7 +39,7 @@ scale_y_continuous(breaks=c(seq(0,max(counts$Overlapping_cis_SNP.CpG_pairs.N_1e6
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
 
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/cisassocacrosscohort.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/cisassocacrosscohort.png",height=6,width=8)
 
 p1<-ggplot(counts,aes(x=reorder(Pvalue,-Pvalue),Overlapping_trans_SNP.CpG_pairs.N_1e6,fill=nocohorts)) +
 geom_bar(stat="identity",position="dodge") +
@@ -49,7 +49,7 @@ scale_y_continuous(breaks=c(seq(0,max(counts$Overlapping_trans_SNP.CpG_pairs.N_1
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
 
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/transassocacrosscohort.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/transassocacrosscohort.png",height=6,width=8)
 
 p1<-ggplot(counts,aes(x=reorder(Pvalue,-Pvalue),Overlapping_cis_SNP.CpG_pairs...,fill=nocohorts)) +
 geom_bar(stat="identity",position="dodge") +
@@ -59,7 +59,7 @@ scale_y_continuous(breaks=c(seq(0,100,10)), limits = c(0, 100)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
 
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/cisassocacrosscohortsperc.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/cisassocacrosscohortsperc.png",height=6,width=8)
 
 p1<-ggplot(counts,aes(x=reorder(Pvalue,-Pvalue),Overlapping_trans_SNP.CpG_pairs...,fill=nocohorts)) +
 geom_bar(stat="identity",position="dodge") +
@@ -68,7 +68,7 @@ ylab("number of overlapping SNP-CpG pairs (%) (trans) ") +
 scale_y_continuous(breaks=c(seq(0,100,10)), limits = c(0,100)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/transassocacrosscohortsperc.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/transassocacrosscohortsperc.png",height=6,width=8)
 
 #counts cumulative
 counts.c<-data.frame()
@@ -98,7 +98,7 @@ ylab("number of overlapping SNP-CpG pairs (cis)x1e6") +
 scale_y_continuous(breaks=c(seq(0,max(counts.c$Overlapping_cis_SNP.CpG_pairs.N_1e6)+1,2)), limits = c(0, max(counts.c$Overlapping_cis_SNP.CpG_pairs.N_1e6)+1)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/cisassocacrosscohorts_cumulative.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/cisassocacrosscohorts_cumulative.png",height=6,width=8)
 
 p1<-ggplot(counts.c,aes(x=reorder(Pvalue,-Pvalue),Overlapping_trans_SNP.CpG_pairs.N_1e6,fill=nocohorts)) +
 geom_bar(stat="identity",position="dodge") +
@@ -107,7 +107,7 @@ ylab("number of overlapping SNP-CpG pairs (trans)x1e6") +
 scale_y_continuous(breaks=c(seq(0,max(counts.c$Overlapping_trans_SNP.CpG_pairs.N_1e6)+1,8)), limits = c(0, max(counts.c$Overlapping_trans_SNP.CpG_pairs.N_1e6)+1)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/transassocacrosscohorts_cumulative.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/transassocacrosscohorts_cumulative.png",height=6,width=8)
 
 counts.c2<-counts.c[counts.c$nocohorts!=1,]
 
@@ -118,7 +118,7 @@ ylab("number of overlapping SNP-CpG pairs (cis)x1e6") +
 scale_y_continuous(breaks=c(seq(0,max(counts.c2$Overlapping_cis_SNP.CpG_pairs.N_1e6)+1,2)), limits = c(0, max(counts.c2$Overlapping_cis_SNP.CpG_pairs.N_1e6)+1)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/cisassocacrosscohorts_cumulative_atleast2.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/cisassocacrosscohorts_cumulative_atleast2.png",height=6,width=8)
 
 p1<-ggplot(counts.c2,aes(x=reorder(Pvalue,-Pvalue),Overlapping_trans_SNP.CpG_pairs.N_1e6,fill=nocohorts)) +
 geom_bar(stat="identity",position="dodge") +
@@ -127,7 +127,7 @@ ylab("number of overlapping SNP-CpG pairs (trans)x1e6") +
 scale_y_continuous(breaks=c(seq(0,max(counts.c2$Overlapping_trans_SNP.CpG_pairs.N_1e6)+1,2)), limits = c(0, max(counts.c2$Overlapping_trans_SNP.CpG_pairs.N_1e6)+1)) +
 scale_fill_discrete(name="No of cohorts") +
 theme(axis.text.x = element_text(face = "bold"))
-ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary/transassocacrosscohorts_cumulative_atleast2.png",height=6,width=8)
+ggsave(p1,file="/panfs/panasas01/shared-godmc/counts_summary_2017/transassocacrosscohorts_cumulative_atleast2.png",height=6,width=8)
 
 
 #any association
