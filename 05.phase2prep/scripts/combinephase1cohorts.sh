@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#PBS -N combinecounts
-#PBS -o /panfs/panasas01/shared-godmc/job_report/combinecounts-output
-#PBS -e /panfs/panasas01/shared-godmc/job_report/combinecounts-error
+#PBS -N combinecounts_noRAINE
+#PBS -o /panfs/panasas01/shared-godmc/job_report_2017/combinecounts_noRAINE-output
+#PBS -e /panfs/panasas01/shared-godmc/job_report_2017/combinecounts_noRAINE-error
 #PBS -l walltime=12:00:00
 # PBS -t 1-10
-#PBS -l nodes=1:ppn=16
+#PBS -l nodes=1:ppn=12
 #PBS -S /bin/bash
 
 
@@ -17,12 +17,13 @@
 
 TMPDIR=/panfs/panasas01/shared-godmc/tmp
 
-filename="/panfs/panasas01/sscm/epzjlm/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt"
+#filename="/panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts_noRAINE.txt"
+#filename="/panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts.txt"
+filename="/panfs/panasas01/shared-godmc/scripts/cohorts_noRAINE.txt"
 
-mydir="/panfs/panasas01/shared-godmc/counts"
+mydir="/panfs/panasas01/shared-godmc/counts_2017"
 
-
-mkdir -p /panfs/panasas01/shared-godmc/counts/combined
+mkdir -p /panfs/panasas01/shared-godmc/counts_2017/combined
 
 
 pvals=("1e-05" "1e-06" "1e-07" "1e-08" "1e-09" "1e-10" "1e-11" "1e-12" "1e-13")
@@ -46,7 +47,8 @@ echo $j
 
     #generate cat list
     
-    list="$(find $mydir -mindepth 2 -type f -name "cis.assoc.*.${i}."${k}".txt")"
+    #list="$(find $mydir -mindepth 2 -type f -name "cis.assoc.*.${i}."${k}".txt")"
+	list="$(find $mydir -mindepth 2 -type f -name "cis.assoc.*.${i}."${k}".txt" ! -name "cis.assoc.cpennell_Raine.${i}."${k}".txt")"
     echo $list
 
     #concatenate and count
@@ -59,7 +61,8 @@ echo $j
 
     date
     
-    list="$(find $mydir -mindepth 2 -type f -name "trans.assoc.*.${i}."${k}".txt")"
+    #list="$(find $mydir -mindepth 2 -type f -name "cis.assoc.*.${i}."${k}".txt")"
+	list="$(find $mydir -mindepth 2 -type f -name "trans.assoc.*.${i}."${k}".txt" ! -name "trans.assoc.cpennell_Raine.${i}."${k}".txt")"
     echo $list
     
     cat $list | awk '{c[$0]++}END{for(l in c){print c[l], l}}' | sort -n -r > $mydir/combined/trans.${i}\_${j}.allcohorts.txt
@@ -157,10 +160,12 @@ echo $j
 #rsync -av $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.probes /panfs/panasas01/sscm/epzjlm/repo/godmc/processed_data/methylation_data/
 #rsync -av $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt /panfs/panasas01/sscm/epzjlm/repo/godmc/processed_data/methylation_data/
 
+#no cis =1, no trans =2
+
 nocis="1"
-perl -pe 's/_/ /g' <$mydir/combined/cis.${i}\_${j}.allcohorts.txt | awk '$1>='$no' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${nocis}.allcohorts.cis.txt
+perl -pe 's/_/ /g' <$mydir/combined/cis.${i}\_${j}.allcohorts.txt | awk '$1>='$nocis' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${nocis}.allcohorts.cis.txt
 notrans="2"
-perl -pe 's/_/ /g' <$mydir/combined/trans.${i}\_${j}.allcohorts.txt| awk '$1>='$no' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${notrans}.allcohorts.trans.txt
+perl -pe 's/_/ /g' <$mydir/combined/trans.${i}\_${j}.allcohorts.txt| awk '$1>='$notrans' {print $0}' > $mydir/combined/cis_trans.${i}\_${j}.ge${notrans}.allcohorts.trans.txt
 
 no="1.2"
 
@@ -172,7 +177,3 @@ awk '{print $3}' <$mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt | 
 gzip $mydir/combined/cis_trans.${i}\_${j}.ge${no}.allcohorts.txt
 
 done
-
-
-
-
