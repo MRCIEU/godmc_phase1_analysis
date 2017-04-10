@@ -17,9 +17,11 @@
 #cohort summaries
 #cd /panfs/panasas01/shared-godmc/cohort_summary
 
+library("gdata")
+
 path="/panfs/panasas01/shared-godmc/cohort_summary/"
-coh<-read.table("/panfs/panasas01/shared-godmc/scripts/cohorts.txt",sep=" ",header=F)
-coh<-coh[1:17,]
+coh<-read.table("/panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL/repo/godmc_phase1_analysis/01.extract_sftp/data/cohorts_noRAINE.txt",sep=" ",header=F)
+coh<-coh[1:22,]
 #mqtlcount.amcrae_BSGS.summary.txt
 
 r.out<-data.frame()
@@ -57,10 +59,16 @@ df.out<-merge(df.out,df,by.x=1,by.y=1,all=T)
 names(df.out)[-1]<-as.character(cohorts[,2])
 #add TwinsUK
 #df.out[6,"TwinsUK"]<-833
-studyN<-data.frame(names(df.out),N=t(df.out[6,]),N_snp=t(df.out[55,]))
+
+# Add in real N
+real.N <- read.table("/panfs/panasas01/sscm/epwkb/GoDMC_Analysis/CpG_SNP_FINAL/repo/godmc_phase1_analysis/01.extract_sftp/data/cohort_samplesizes_noRAINE.txt")
+studyN<-data.frame(names(df.out),N=t(df.out[6,]),N_snp=t(df.out[55,]),N_real=real.N[,3],cohort_real=real.N[,2])
+
+#studyN<-data.frame(names(df.out),N=t(df.out[6,]),N_snp=t(df.out[55,]))
 
 m<-match(r.out[,2],studyN[,1])
 r.out<-data.frame(r.out,studyN[m,])
+r.out <- drop.levels(r.out)
 
 library(ggplot2)
 
@@ -79,20 +87,20 @@ r.out2<-r.out
 r.out<-r.out2
 #r.out$V2<-paste(r.out$V2," (N=",r.out$X6,")",sep="")
 
-df.o<-unique(data.frame(r.out$V2,r.out$X6))
+df.o<-unique(data.frame(r.out$V2,r.out$N_real))
 o<-order(as.numeric(as.character(df.o[,2])))
 df.o<-df.o[o,]
 
 r.out$V2 <- as.factor(r.out$V2)
-r.out$X6<-as.factor(r.out$X6)
+r.out$N_real<-as.factor(r.out$N_real)
 r.out$cisassoc_1000<-r.out$cisassoc/1000
 r.out$cisassoc_1e6<-r.out$cisassoc/1000000
 r.out$transassoc_1e6<-r.out$transassoc/1000000
 r.out$V2<-factor(r.out$V2,levels=df.o[,1])
-r.out$Cohort<-paste(r.out$V2," (N=",r.out$X6,")",sep="")
+r.out$Cohort<-paste(r.out$V2," (N=",r.out$N_real,")",sep="")
 r.out$Cohort<-gsub("Leiden_Longevity_Study","LLS",r.out$Cohort)
 
-df.o<-unique(data.frame(r.out$Cohort,r.out$X6))
+df.o<-unique(data.frame(r.out$Cohort,r.out$N_real))
 o<-order(as.numeric(as.character(df.o[,2])))
 df.o<-df.o[o,]
 
@@ -135,12 +143,12 @@ theme(axis.text.x = element_text(face = "bold"))
 ggsave(p1,file="transCpGsbycohort.png",width=8,height=6)
 
 
-r.out_n<-unique(r.out[,c(1,2,10:12,16)])
-r.out_n$X6<-as.numeric(as.character(r.out_n$X6))
+r.out_n<-unique(r.out[,c(1,2,10,13,12,18)])
+r.out_n$N_real<-as.numeric(as.character(r.out_n$N_real))
 r.out_n$X55<-as.numeric(as.character(r.out_n$X55))
 
-p1<-ggplot(r.out_n,aes(x=X6,y=X55))+
-geom_point(aes(colour=factor(r.out_n$Cohort),size=r.out_n$X6)) +
+p1<-ggplot(r.out_n,aes(x=N_real,y=X55))+
+geom_point(aes(colour=factor(r.out_n$Cohort),size=r.out_n$N_real)) +
 xlab("Cohort N") +
 ylab("N SNPs") +
 #scale_y_continuous(breaks=c(seq(0,max(r.out$transCpGs_1000)+1,50)), limits = c(0, max(r.out$transCpGs_1000)+1)) +
