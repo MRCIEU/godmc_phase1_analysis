@@ -1,6 +1,6 @@
-library(dplyr)
-library(tidyr)
+library(tidyverse)
 library(meffil)
+library(data.table)
 
 cmd <- "ls /panfs/panasas01/shared-godmc/sftp/GoDMC/*/*/results/01/methylation_summary.RData > filelist.txt"
 system(cmd)
@@ -32,21 +32,24 @@ cormeans <- cor(means[,-c(1)], use="pair")
 corsds <- cor(sds[,-c(1)], use="pair")
 
 
-load("../data/filtered_probe_list.RData")
-retain <- scan("../data/retain_from_Naeem_multimap.txt", what="character")
-mafs <- read.table("../data/SNPatCpG_AFs.txt.gz", he=T, stringsAsFactors=FALSE)
-retaincpg <- unique(c(probeinfo$TargetID, retain))
+# load("../data/filtered_probe_list.RData")
+# retain <- scan("../data/retain_from_Naeem_multimap.txt", what="character")
+# mafs <- read.table("../data/SNPatCpG_AFs.txt.gz", he=T, stringsAsFactors=FALSE)
+# retaincpg <- unique(c(probeinfo$TargetID, retain))
 
-mafs2 <- strsplit(mafs$EUR_AF, split=",")
-rem <- sapply(mafs2, function(x) any(x > 0.01 & x < 0.99))
-retaincpg <- retaincpg[! retaincpg %in% mafs$name[rem]]
+# mafs2 <- strsplit(mafs$EUR_AF, split=",")
+# rem <- sapply(mafs2, function(x) any(x > 0.01 & x < 0.99))
+# retaincpg <- retaincpg[! retaincpg %in% mafs$name[rem]]
+
+
+retaincpg <- scan("../data/retain_from_zhou.txt", what="character")
 
 dat_clean <- subset(dat, cpg %in% retaincpg)
 dim(dat_clean)
 top_sds <- group_by(dat_clean, cohort) %>%
 	do({
 		x <- .
-		thresh <- quantile(x$sd, 0.2)
+		thresh <- quantile(x$sd, 0.1)
 		return(subset(x, sd >= thresh, select=c(cpg, sd)))
 	})
 
@@ -55,9 +58,9 @@ table(tab_cpg)
 cpglist <- names(tab_cpg)[tab_cpg >= 20]
 length(cpglist)
 
-## 
+##
 
-cpgdat <- data.frame(cpg = cpglist, source = "250k most variable sites amongst all 23 GoDMC phase 1 cohorts", stringsAsFactors=FALSE)
+cpgdat <- data.frame(cpg = cpglist, source = "320k most variable sites amongst all 23 GoDMC phase 1 cohorts", stringsAsFactors=FALSE)
 
 ##
 
@@ -95,6 +98,7 @@ geom_bar(stat="Identity", position="dodge", aes(fill=what))
 # BMI
 bmi <- scan("../data/bmi_cpg.txt", what="character")
 table(bmi %in% cpglist)
+table(bmi %in% retaincpg)
 
 table(table(top_sds$cpg[top_sds$cpg %in% bmi]))
 
@@ -110,6 +114,7 @@ a <- read.csv("../data/AdditionalFile3.csv.gz")
 age <- unique(as.character(a$CpGmarker[-1]))
 
 table(age %in% cpglist)
+table(age %in% retaincpg)
 table(table(top_sds$cpg[top_sds$cpg %in% age]))
 
 cpgdat <- rbind(cpgdat,
@@ -126,7 +131,7 @@ smok <- joehanes$Probe.ID
 
 table(smok %in% cpglist)
 table(table(top_sds$cpg[top_sds$cpg %in% smok]))
-
+table(smok %in% retaincpg)
 cpgdat <- rbind(cpgdat,
 	data.frame(cpg=smok, source="Smoking associated CpGs from Joehanes et al")
 )
@@ -136,6 +141,11 @@ cpgdat <- rbind(cpgdat,
 
 a1 <- read.table("../data/scz_cpg1.txt", sep="\t", stringsAsFactors=FALSE)
 a2 <- read.table("../data/scz_cpg2.txt", sep=" ", stringsAsFactors=FALSE)
+
+table(a1$V1 %in% cpglist)
+table(a1$V1 %in% retaincpg)
+table(a2$V1 %in% cpglist)
+table(a2$V1 %in% retaincpg)
 
 cpgdat <- rbind(cpgdat,
 	data.frame(cpg=a1$V1, source="Schizophrenia, Hannon et al 2016"),
