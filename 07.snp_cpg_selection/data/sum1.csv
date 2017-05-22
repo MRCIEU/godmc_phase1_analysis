@@ -2,9 +2,10 @@
 "1","Chromatin QTLs",13446
 "2","gtex_eqtl",2916
 "3","GWAS catalog",6365
-"4","metab_qtls",239
-"5","mrbase",3244
-"6","Neanderthal alleles, Simonti et al 2016",1328
-"7","proteomic_qtls",55
-"8","westra_transeqtl",349
-"9","Total unique SNPs",26688
+"4","ispc_eqtl",7061
+"5","metab_qtls",239
+"6","mrbase",3244
+"7","Neanderthal alleles, Simonti et al 2016",1328
+"8","proteomic_qtls",1069
+"9","westra_transeqtl",349
+"10","Total unique SNPs",34525

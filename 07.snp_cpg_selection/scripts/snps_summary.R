@@ -9,6 +9,10 @@ load("../data/snps_proteomic.rdata")
 load("../data/snps_expression.rdata")
 load("../data/snps_chromatin.rdata")
 load("../data/snps_neanderthal.rdata")
+load("../data/SOMA_pQTL.RData")
+load("../data/ispc_eqtl.rdata")
+
+
 
 dat <- rbind(
 	data.frame(SNP = gwas$id, reason = gwas$exposure, source = gwas$data_source.exposure, stringsAsFactors=FALSE),
@@ -16,7 +20,11 @@ dat <- rbind(
 	data.frame(SNP = proteomic$id, reason = proteomic$exposure, source = proteomic$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = expression$id, reason = expression$exposure, source = expression$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = chromatin$id, reason = chromatin$exposure, source = chromatin$data_source.exposure, stringsAsFactors=FALSE),
+	data.frame(SNP = p$id, reason = p$SOMAmerID, source = "proteomic_qtls", stringsAsFactors=FALSE),
+	data.frame(SNP = r$SNP, reason = r$gene_id, source = "ispc_eqtl", stringsAsFactors=FALSE),
 	data.frame(SNP = neanderthal$id, reason = NA, source = "Neanderthal alleles, Simonti et al 2016", stringsAsFactors=FALSE)
+
+
 )
 
 # group_by(dat, reason) %>%
