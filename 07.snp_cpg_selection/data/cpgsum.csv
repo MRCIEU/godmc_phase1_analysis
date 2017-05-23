@@ -1,7 +1,10 @@
 "","source","n"
-"1","320k most variable sites amongst all 23 GoDMC phase 1 cohorts",319761
+"1","320k most variable sites amongst all 23 GoDMC phase 1 cohorts",334700
 "2","Age associated CpGs used in Horvath predictor",353
-"3","BMI associated CpGs from Wilson et al 2017",187
-"4","Schizophrenia, Hannon et al 2016",25
-"5","Schizophrenia, Montana et al 2016",172
-"6","Total unique CpGs",319861
+"3","BMI associated CpGs from Wahl et al 2017",187
+"4","heritable CpGs (h2>0.5) from TwinsUK",28618
+"5","heritable CpGs (h2>0.5) from van Dongen et al 2016",36339
+"6","Schizophrenia, Hannon et al 2016",25
+"7","Schizophrenia, Montana et al 2016",172
+"8","Smoking associated CpGs from Joehanes et al",18760
+"9","Total unique CpGs",345109

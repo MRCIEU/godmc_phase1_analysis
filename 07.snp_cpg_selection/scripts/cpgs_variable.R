@@ -2,6 +2,14 @@ library(tidyverse)
 library(meffil)
 library(data.table)
 
+feat <- meffil.get.features()
+#486425
+xy<-which(feat$chromosome%in%c("chrX","chrY"))
+probes_xy<-as.character(feat[xy,"name"])
+#11648
+feat_noxy<-feat[-xy,]
+#474777
+
 cmd <- "ls /panfs/panasas01/shared-godmc/sftp/GoDMC/*/*/results/01/methylation_summary.RData > filelist.txt"
 system(cmd)
 
@@ -19,7 +27,10 @@ for(i in 1:length(filelist))
 {
 	message(i)
 	load(filelist[i])
+	w<-which(meth_summary$cpg%in%probes_xy)
+	if(length(w)>0){meth_summary<-meth_summary[-w,]}
 	meth_summary$cohort <- info$cohort[i]
+
 	l[[i]] <- meth_summary
 }
 
@@ -43,6 +54,15 @@ corsds <- cor(sds[,-c(1)], use="pair")
 
 
 retaincpg <- scan("../data/retain_from_zhou.txt", what="character")
+#435391
+
+#exclusion probes from TwinsUK
+excl<-read.table("../data/450k_exclusion_probes.txt",he=T)
+#42446
+rm<-which(retaincpg%in%excl[,1])
+#14882
+retaincpg<-retaincpg[-rm]
+#420509
 
 dat_clean <- subset(dat, cpg %in% retaincpg)
 dim(dat_clean)
@@ -65,13 +85,13 @@ cpgdat <- data.frame(cpg = cpglist, source = "320k most variable sites amongst a
 ##
 
 
-feat <- meffil.get.features()
+
 
 # Randomly sampled from each chromosome
 
-feats <- subset(feat, name %in% cpglist)
+feats <- subset(feat_noxy, name %in% cpglist)
 
-a <- table(feat$chromosome) / nrow(feat)
+a <- table(feat_noxy$chromosome) / nrow(feat_noxy)
 b <- table(feats$chromosome) / nrow(feats)
 
 pdf("../data/cpgsselection.pdf",height=6,width=6)
@@ -83,7 +103,7 @@ plot(as.numeric(a), as.numeric(b), xlab='Proportion of CpGs on chromosome', ylab
 # Most tissue / cancer differentiation occurs at shores, not at islands
 # Irizarry RA, Ladd-Acosta C, Wen B, Wu Z, Montano C, Onyango P, Cui H, Gabo K, Rongione M, Webster M, Ji H, Potash JB, Sabunciyan S, Feinberg AP (2009). "The human colon cancer methylome shows similar hypo- and hypermethylation at conserved tissue-specific CpG island shores". Nature Genetics. 41 (2): 178–186
 
-a <- table(feat$relation.to.island) / nrow(feat)
+a <- table(feat_noxy$relation.to.island) / nrow(feat_noxy)
 b <- table(feats$relation.to.island) / nrow(feats)
 d1 <- as.data.frame(a)
 d1$what <- "All"
@@ -109,6 +129,22 @@ table(table(top_sds$cpg[top_sds$cpg %in% h2probes]))
 cpgdat <- rbind(cpgdat,
 	data.frame(cpg=h2probes, source="heritable CpGs (h2>0.5) from van Dongen et al 2016")
 )
+
+#For this we used 364 twin pairs adjusting for age, BMI, cell heterogeneity, smoking, alcohol, and technical covs (plate and position). 
+h<-read.table("../data/TwinsUK_330MZ_34DZ_h2.txt",sep="\t",he=F)
+h<-h[which(h$V2>0.5),]
+#28618
+h<-as.character(h$V1)
+
+table(h %in% cpglist)
+table(h %in% retaincpg)
+
+table(table(top_sds$cpg[top_sds$cpg %in% h]))
+
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=h, source="heritable CpGs (h2>0.5) from TwinsUK")
+)
+
 
 # BMI
 bmi <- scan("../data/bmi_cpg.txt", what="character")
