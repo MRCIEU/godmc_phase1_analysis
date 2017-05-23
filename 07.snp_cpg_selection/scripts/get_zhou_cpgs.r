@@ -17,9 +17,8 @@ library(data.table)
 #http://zwdzwd.io/InfiniumAnnotation/current/hm450/hm450.manifest.tsv.gz
 
 a <- fread("hm450.manifest.tsv.gz", header=TRUE)
-#feat <- meffil.get.features()
-b <- subset(a, probeID %in% feat$name & !MASK.general)
-#write.table(b$probeID, "../data/retain_from_zhou.txt", row=F, col=F, qu=F)
+a<-a[which(a$MASK.general==FALSE),]
+write.table(a$probeID, "../data/retain_from_zhou.txt", row=F, col=F, qu=F)
 
 #table(r$MASK.general)
 

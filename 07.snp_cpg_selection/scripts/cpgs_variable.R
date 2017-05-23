@@ -74,6 +74,7 @@ feats <- subset(feat, name %in% cpglist)
 a <- table(feat$chromosome) / nrow(feat)
 b <- table(feats$chromosome) / nrow(feats)
 
+pdf("../data/cpgsselection.pdf",height=6,width=6)
 plot(as.numeric(a), as.numeric(b), xlab='Proportion of CpGs on chromosome', ylab="Proportion of selected CpGs on chromosome")
 
 
@@ -93,7 +94,21 @@ d <- rbind(d1, d2)
 ggplot(d, aes(x=Var1, y=Freq)) +
 geom_bar(stat="Identity", position="dodge", aes(fill=what))
 
+dev.off()
 
+# heritable probes
+# filtered on h2_total>0.5
+load("../data/vanDongen_h2gt50_probes.RData")
+h2probes<-as.character(r$cgid)
+
+table(h2probes %in% cpglist)
+table(h2probes %in% retaincpg)
+
+table(table(top_sds$cpg[top_sds$cpg %in% h2probes]))
+
+cpgdat <- rbind(cpgdat,
+	data.frame(cpg=h2probes, source="heritable CpGs (h2>0.5) from van Dongen et al 2016")
+)
 
 # BMI
 bmi <- scan("../data/bmi_cpg.txt", what="character")
@@ -103,7 +118,7 @@ table(bmi %in% retaincpg)
 table(table(top_sds$cpg[top_sds$cpg %in% bmi]))
 
 cpgdat <- rbind(cpgdat,
-	data.frame(cpg=bmi, source="BMI associated CpGs from Wilson et al 2017")
+	data.frame(cpg=bmi, source="BMI associated CpGs from Wahl et al 2017")
 )
 
 
