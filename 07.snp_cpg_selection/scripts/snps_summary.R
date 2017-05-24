@@ -11,7 +11,6 @@ load("../data/snps_chromatin.rdata")
 load("../data/snps_neanderthal.rdata")
 load("../data/SOMA_pQTL.RData")
 load("../data/ispc_eqtl.rdata")
-w<-read.table("../data/Westra_transsnps_fdr0.05.txt",he=F)
 
 
 dat <- rbind(
@@ -19,7 +18,6 @@ dat <- rbind(
 	data.frame(SNP = metabolomic$id, reason = metabolomic$exposure, source = metabolomic$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = proteomic$id, reason = proteomic$exposure, source = proteomic$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = expression$id, reason = expression$exposure, source = expression$data_source.exposure, stringsAsFactors=FALSE),
-	data.frame(SNP = w$V1, reason = w$V1, source = "Westra transSNPs FDR<0.05", stringsAsFactors=FALSE),
 	data.frame(SNP = chromatin$id, reason = chromatin$exposure, source = chromatin$data_source.exposure, stringsAsFactors=FALSE),
 	data.frame(SNP = p$id, reason = p$SOMAmerID, source = "proteomic_qtls", stringsAsFactors=FALSE),
 	data.frame(SNP = r$SNP, reason = r$gene_id, source = "ispc_eqtl", stringsAsFactors=FALSE),
