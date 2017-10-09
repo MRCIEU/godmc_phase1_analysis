@@ -1,0 +1,20 @@
+ALS1, ALS2, ARIES, BiB, BRAGGSS, EPIC, EPIC Norfolk, Erisk, GS:SFHS, IoW, LBC1936, LBC1921, NSHD, SABRE, SCZ1, SCZ2, TwinsUK, UnderstandingSociety	United Kingdom
+EPICOR	Italy
+Athero-Express Biobank Study, GenR, LLS, NTR, PIAMA, Project MiNE, RADAR, Rotterdam Study 	Netherlands
+BSGS, RAINE	Australia
+EGC_CTG, EGC_asthma 	Estonia
+Factor_V_Leiden_Family_Study, SYS, OFCCR 	Canada
+BASICMAR, INMA, MCC, PRECISESADS	Spain
+MARTHA	France
+MDEG, EMPHASIS	Gambia
+Norway Facial Clefts Study	Norway
+Progress	Mexico
+FTC, Glaku, Predo	Finland
+Genomic response to severe nutrient stress in childhood	Jamaica
+BAMSE	Sweden
+Genomic response to severe nutrient stress in childhood	Malawi
+GoYA	Denmark
+EMPHASIS, SABRE	India
+DunedIn	New Zealand
+COBRE	United States
+GSK, MARS	Germany
